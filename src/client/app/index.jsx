@@ -4,17 +4,17 @@ import {render} from 'react-dom';
 class App extends React.Component {
   render () {
     return (
-	    <div class="container text-xs-center">
-	      <div class="row">
-	        <div class="col-sm-6 offset-sm-3">
+	    <div className="container text-xs-center">
+	      <div className="row">
+	        <div className="col-sm-6 offset-sm-3">
 	          <p>Quero hospedar 1 site ↓ para uso pessoal ↓<br/>
 	            Programado(s) em PHP ↓ / Utilizando plataforma WordPress ↓<br/>
 	            Em ambiente compartilhado ↓ (?)<br/>
 	            Com 1 banco(s) de dados MySQL ↓<br/>
 	            Espero receber até 1000 visitas por mês ↓ em cada um ↓ (d)eles</p>
 
-	          <p><span class="h4">A hospedagem do seu <em>site</em> custará:</span><br/>
-	          <span class="h2">R$6,00  por mês no plano Site Pro da Umbler</span><br/>
+	          <p><span className="h4">A hospedagem do seu <em>site</em> custará:</span><br/>
+	          <span className="h2">R$6,00  por mês no plano Site Pro da Umbler</span><br/>
 	          ou em média R$25,00 por mês em outras empresas </p>
 
 
