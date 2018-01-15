@@ -9,7 +9,7 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber) {
+function calcDatabase(database, databaseNumber, finalVisits) {
   let result;
   if (database === 'sql') {
     result = databaseNumber * constants.extraSitePrices.sql;
@@ -26,7 +26,7 @@ class SiteResults extends React.Component {
     const {hostNumber, platform, environment, databaseNumber, database, period, complement, visits} = this.props;
     let umblerPlan = 0;
     let finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-    let databasePrice = calcDatabase(database.value, databaseNumber);
+    let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits);
     let branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
     if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {

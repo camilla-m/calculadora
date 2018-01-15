@@ -7,14 +7,11 @@ const constants = {
     {value: 'bt200and250', label: 'entre 250 e 300'},{value: 'morethan300', label: 'mais de 300'},
   ],
   hostOptions: [
-    {value: 'site', label: 'Site'},
-    {value: 'app', label: 'App'},
-    {value: 'email', label: 'E-mail'}],
+    {value: 'site', label: 'Site'}, {value: 'app', label: 'App'}, {value: 'email', label: 'E-mail'}
+  ],
   pluralHostOptions: [
-    {value: 'site', label: 'Sites'},
-    {value: 'app', label: 'Apps'},
-    {value: 'email', label: 'E-mails'}
-    ],
+    {value: 'site', label: 'Sites'}, {value: 'app', label: 'Apps'}, {value: 'email', label: 'E-mails'}
+  ],
   purposeOptions: [
     {value: 'personal', label: 'uso pessoal'},{value: 'clients', label: 'uso dos meus clientes'}
   ],

@@ -22490,7 +22490,7 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber) {
+function calcDatabase(database, databaseNumber, finalVisits) {
   var result = void 0;
   if (database === 'sql') {
     result = databaseNumber * _constants2.default.extraSitePrices.sql;
@@ -22525,7 +22525,7 @@ var SiteResults = function (_React$Component) {
 
       var umblerPlan = 0;
       var finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-      var databasePrice = calcDatabase(database.value, databaseNumber);
+      var databasePrice = calcDatabase(database.value, databaseNumber, finalVisits);
       var branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
       if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
