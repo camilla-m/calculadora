@@ -65,21 +65,6 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(21);
-} else {
-  module.exports = __webpack_require__(22);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -269,6 +254,21 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(21);
+} else {
+  module.exports = __webpack_require__(22);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -354,7 +354,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(26);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 4 */
@@ -368,11 +368,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 var constants = {
   hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 'bt10and20', label: 'entre 10 e 20' }, { value: 'bt20and50', label: 'entre 20 e 50' }, { value: 'bt50and100', label: 'entre 50 e 100' }, { value: 'bt100and150', label: 'entre 100 e 150' }, { value: 'bt200and250', label: 'entre 250 e 300' }, { value: 'morethan300', label: 'mais de 300' }],
-  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
-  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }],
+  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
+  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }],
   purposeOptions: [{ value: 'personal', label: 'uso pessoal' }, { value: 'clients', label: 'uso dos meus clientes' }],
-  programmingLanguages: [{ value: 'php', label: 'PHP' }, { value: 'net', label: '.NET' }, { value: 'other', label: 'Outra linguagem' }, { value: 'none', label: 'Não utiliza/não sei a plataforma' }],
-  platforms: [{ value: 'wordpress', label: 'WordPress' }, { value: 'joomla', label: 'Joomla' }, { value: 'drupal', label: 'Drupal' }, { value: 'opencart', label: 'OpenCart' }, { value: 'prestashop', label: 'PrestaShop' }, { value: 'laravel', label: 'Laravel' }, { value: 'none', label: 'Não utiliza/não sei a plataforma' }],
+  programmingLanguages: [{ value: 'php', label: 'PHP' }, { value: 'net', label: '.NET' }, { value: 'other', label: 'Outra linguagem' }, { value: 'none', label: 'Não utiliza / não sei a plataforma' }],
+  platforms: [{ value: 'wordpress', label: 'WordPress' }, { value: 'joomla', label: 'Joomla' }, { value: 'drupal', label: 'Drupal' }, { value: 'opencart', label: 'OpenCart' }, { value: 'prestashop', label: 'PrestaShop' }, { value: 'laravel', label: 'Laravel' }, { value: 'none', label: 'Não utiliza / não sei a plataforma' }],
   environments: [{ value: 'shared', label: 'compartilhado' }, { value: 'dedicated', label: 'dedicado' }],
   databaseNumbers: [{ value: 1, label: '1 banco' }, { value: 2, label: '2 bancos' }, { value: 3, label: '3 bancos' }, { value: 4, label: '4 bancos' }, { value: 5, label: '5 bancos' }, { value: 10, label: 'até 10' }, { value: 25, label: 'até 25' }, { value: 50, label: 'mais de 50' }],
   databases: [{ value: 'mysql', label: 'MySQL Server' }, { value: 'sql', label: 'SQL Server' }],
@@ -539,7 +539,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 7 */
@@ -562,7 +562,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dom__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_dom__);
@@ -3253,7 +3253,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 9 */
@@ -3322,7 +3322,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 10 */
@@ -3389,7 +3389,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 11 */
@@ -3412,6 +3412,22 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 /* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var Frag = function Frag(_ref) {
+  var children = _ref.children;
+  return children || null;
+};
+exports.default = Frag;
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3450,7 +3466,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3528,10 +3544,10 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3573,7 +3589,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3644,7 +3660,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3687,7 +3703,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3715,22 +3731,6 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var Frag = function Frag(_ref) {
-  var children = _ref.children;
-  return children || null;
-};
-exports.default = Frag;
 
 /***/ }),
 /* 19 */
@@ -3765,7 +3765,7 @@ if (process.env.NODE_ENV !== 'production') {
   module.exports = __webpack_require__(34)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 20 */
@@ -3778,7 +3778,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -3881,7 +3881,8 @@ var App = function (_React$Component) {
               handleHostTypeChange: this.handleHostTypeChange,
               handleHostNumberChange: this.handleHostNumberChange,
               handlePurposeChange: this.handlePurposeChange })),
-            hostSelectedOption.value === 'site' && _react2.default.createElement(_SiteDetails2.default, this.state),
+            (hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && _react2.default.createElement(_SiteDetails2.default, this.state),
+            hostSelectedOption.value === 'store' && _react2.default.createElement(_SiteDetails2.default, this.state),
             hostSelectedOption.value === 'email' && _react2.default.createElement(_EmailDetails2.default, null),
             hostSelectedOption.value === 'app' && _react2.default.createElement(_AppDetails2.default, null)
           )
@@ -5286,7 +5287,7 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 23 */
@@ -5305,7 +5306,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(12),B=__webpack_require__(5),C=__webpack_require__(2),ba=__webpack_require__(13),da=__webpack_require__(14),ea=__webpack_require__(15),fa=__webpack_require__(16),ia=__webpack_require__(17),D=__webpack_require__(8);
+var aa=__webpack_require__(1),l=__webpack_require__(13),B=__webpack_require__(5),C=__webpack_require__(2),ba=__webpack_require__(14),da=__webpack_require__(15),ea=__webpack_require__(16),fa=__webpack_require__(17),ia=__webpack_require__(18),D=__webpack_require__(8);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -5602,17 +5603,17 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(0);
+var React = __webpack_require__(1);
 var invariant = __webpack_require__(6);
 var warning = __webpack_require__(9);
-var ExecutionEnvironment = __webpack_require__(12);
+var ExecutionEnvironment = __webpack_require__(13);
 var _assign = __webpack_require__(5);
 var emptyFunction = __webpack_require__(2);
-var EventListener = __webpack_require__(13);
-var getActiveElement = __webpack_require__(14);
-var shallowEqual = __webpack_require__(15);
-var containsNode = __webpack_require__(16);
-var focusNode = __webpack_require__(17);
+var EventListener = __webpack_require__(14);
+var getActiveElement = __webpack_require__(15);
+var shallowEqual = __webpack_require__(16);
+var containsNode = __webpack_require__(17);
+var focusNode = __webpack_require__(18);
 var emptyObject = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(10);
 var hyphenateStyleName = __webpack_require__(27);
@@ -20980,7 +20981,7 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 27 */
@@ -21151,7 +21152,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -21215,7 +21216,7 @@ var FirstInput = function (_React$Component) {
           className: 'select select-host-type',
           searchable: false,
           clearable: false }),
-        this.props.hostSelectedOption.value === 'site' && _react2.default.createElement(
+        (hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && _react2.default.createElement(
           Frag,
           null,
           _react2.default.createElement(
@@ -21240,7 +21241,7 @@ var FirstInput = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = FirstInput;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
 /* 32 */
@@ -21257,7 +21258,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22064,7 +22065,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 34 */
@@ -22201,7 +22202,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22448,7 +22449,7 @@ var SiteDetails = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SiteDetails;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
 /* 37 */
@@ -22463,7 +22464,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22490,13 +22491,16 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber, finalVisits) {
+function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   var result = void 0;
   if (database === 'sql') {
     result = databaseNumber * _constants2.default.extraSitePrices.sql;
   } else {
-    var mysqlprice = databaseNumber <= 25 ? _constants2.default.extraSitePrices.mysql1 : _constants2.default.extraSitePrices.mysql2;
-    result = mysqlprice * databaseNumber;
+    if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
+      result = _constants2.default.extraSitePrices.mysql2;
+    } else {
+      result = _constants2.default.extraSitePrices.mysql1;
+    }
   }
   return result;
 }
@@ -22514,6 +22518,7 @@ var SiteResults = function (_React$Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
+          hostSelectedOption = _props.hostSelectedOption,
           hostNumber = _props.hostNumber,
           platform = _props.platform,
           environment = _props.environment,
@@ -22525,7 +22530,7 @@ var SiteResults = function (_React$Component) {
 
       var umblerPlan = 0;
       var finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-      var databasePrice = calcDatabase(database.value, databaseNumber, finalVisits);
+      var databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value);
       var branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
       if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
@@ -22546,7 +22551,7 @@ var SiteResults = function (_React$Component) {
 
       var hostPrice = _constants2.default.sitePlans[umblerPlan].price;
       var title = _constants2.default.sitePlans[umblerPlan].title;
-      var price = hostPrice + databasePrice;
+      var price = umblerPlan === 0 ? hostPrice * hostNumber.value + databasePrice : hostPrice + databasePrice;
       var branchPrice = _constants2.default.sitePlans[umblerPlan].branchPrice * hostNumber.value + branchDatabasePrice;
 
       return _react2.default.createElement(
@@ -22603,12 +22608,21 @@ var SiteResults = function (_React$Component) {
               'Receba este resultado por email'
             )
           ),
-          _react2.default.createElement(
+          platform.value !== 'none' ? _react2.default.createElement(
             'p',
             null,
             'Ganhe at\xE9 R$100 em cr\xE9ditos para hospedar seu site ',
             platform.label,
-            ' na Umbler. Comece agora: ',
+            ' na Umbler.'
+          ) : _react2.default.createElement(
+            'p',
+            null,
+            'Ganhe at\xE9 R$100 em cr\xE9ditos para hospedar seu site na Umbler.'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Comece agora: ',
             _react2.default.createElement('input', { type: 'text', name: 'email' }),
             ' ',
             _react2.default.createElement(
@@ -22617,7 +22631,7 @@ var SiteResults = function (_React$Component) {
               'TESTAR GR\xC1TIS'
             )
           ),
-          _react2.default.createElement(
+          platform.value !== 'none' ? _react2.default.createElement(
             'p',
             null,
             'Ainda com d\xFAvidas? Fale com um especialista em hospedagem de sites ',
@@ -22627,6 +22641,10 @@ var SiteResults = function (_React$Component) {
               platform.label
             ),
             '.'
+          ) : _react2.default.createElement(
+            'p',
+            null,
+            'Ainda com d\xFAvidas? Fale com um especialista em hospedagem de sites.'
           ),
           _react2.default.createElement(
             'p',
@@ -22642,7 +22660,7 @@ var SiteResults = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SiteResults;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
 /* 38 */
@@ -22657,7 +22675,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22717,7 +22735,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 

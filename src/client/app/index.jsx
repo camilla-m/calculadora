@@ -50,7 +50,11 @@ class App extends React.Component {
               handleHostNumberChange={this.handleHostNumberChange}
               handlePurposeChange={this.handlePurposeChange} />
 
-            {hostSelectedOption.value === 'site' && (
+            {(hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && (
+              <SiteDetails {...this.state}/>
+            )}
+
+            {hostSelectedOption.value === 'store' && (
               <SiteDetails {...this.state}/>
             )}
 

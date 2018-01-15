@@ -7,22 +7,22 @@ const constants = {
     {value: 'bt200and250', label: 'entre 250 e 300'},{value: 'morethan300', label: 'mais de 300'},
   ],
   hostOptions: [
-    {value: 'site', label: 'Site'}, {value: 'app', label: 'App'}, {value: 'email', label: 'E-mail'}
+    {value: 'site', label: 'Site'},{value: 'store', label: 'Loja virtual'}, {value: 'app', label: 'App'}, {value: 'email', label: 'E-mail'}
   ],
   pluralHostOptions: [
-    {value: 'site', label: 'Sites'}, {value: 'app', label: 'Apps'}, {value: 'email', label: 'E-mails'}
+    {value: 'site', label: 'Sites'},{value: 'store', label: 'Lojas virtuais'}, {value: 'app', label: 'Apps'}, {value: 'email', label: 'E-mails'}
   ],
   purposeOptions: [
     {value: 'personal', label: 'uso pessoal'},{value: 'clients', label: 'uso dos meus clientes'}
   ],
   programmingLanguages: [
     {value: 'php', label: 'PHP'},{value: 'net', label: '.NET'},
-    {value: 'other', label: 'Outra linguagem'},{value: 'none', label: 'Não utiliza/não sei a plataforma'}
+    {value: 'other', label: 'Outra linguagem'},{value: 'none', label: 'Não utiliza / não sei a plataforma'}
   ],
   platforms: [
     {value: 'wordpress', label: 'WordPress'},{value: 'joomla', label: 'Joomla'},{value: 'drupal', label: 'Drupal'},
     {value: 'opencart', label: 'OpenCart'},{value: 'prestashop', label: 'PrestaShop'},{value: 'laravel', label: 'Laravel'},
-    {value: 'none', label: 'Não utiliza/não sei a plataforma'}
+    {value: 'none', label: 'Não utiliza / não sei a plataforma'}
   ],
   environments: [
     {value: 'shared', label: 'compartilhado'},{value: 'dedicated', label: 'dedicado'}

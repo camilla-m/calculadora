@@ -9,24 +9,26 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber, finalVisits) {
+function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   let result;
   if (database === 'sql') {
     result = databaseNumber * constants.extraSitePrices.sql;
   } else {
-    let mysqlprice = databaseNumber <= 25 ? constants.extraSitePrices.mysql1
-                                          : constants.extraSitePrices.mysql2;
-    result = mysqlprice * databaseNumber;
+    if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
+      result = constants.extraSitePrices.mysql2;
+    } else {
+      result = constants.extraSitePrices.mysql1;
+    }
   }
   return result;
 }
 
 class SiteResults extends React.Component {
   render() {
-    const {hostNumber, platform, environment, databaseNumber, database, period, complement, visits} = this.props;
+    const {hostSelectedOption, hostNumber, platform, environment, databaseNumber, database, period, complement, visits} = this.props;
     let umblerPlan = 0;
     let finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-    let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits);
+    let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value);
     let branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
     if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
@@ -47,7 +49,7 @@ class SiteResults extends React.Component {
 
     let hostPrice = constants.sitePlans[umblerPlan].price;
     let title = constants.sitePlans[umblerPlan].title;
-    let price = hostPrice + databasePrice;
+    let price = umblerPlan === 0 ? (hostPrice * hostNumber.value) + databasePrice : hostPrice + databasePrice;
     let branchPrice = (constants.sitePlans[umblerPlan].branchPrice * hostNumber.value) + branchDatabasePrice;
 
     return(
@@ -64,10 +66,18 @@ class SiteResults extends React.Component {
         </div>
         <div className='row'>
           <p><a href='#'>Receba este resultado por email</a></p>
-          <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.
-          Comece agora: <input type='text' name='email' /> <button>TESTAR GRÁTIS</button></p>
+          {platform.value !== 'none' ? (
+            <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.</p>
+          ) : (
+            <p>Ganhe até R$100 em créditos para hospedar seu site na Umbler.</p>
+          )}
+          <p>Comece agora: <input type='text' name='email' /> <button>TESTAR GRÁTIS</button></p>
 
-          <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites <em>{platform.label}</em>.</p>
+          {platform.value !== 'none' ? (
+            <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites <em>{platform.label}</em>.</p>
+          ) : (
+            <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites.</p>
+          )}
 
           <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
         </div>

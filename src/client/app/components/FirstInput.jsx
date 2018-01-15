@@ -25,7 +25,7 @@ class FirstInput extends React.Component {
           className='select select-host-type'
           searchable={false}
           clearable={false} />
-        {this.props.hostSelectedOption.value === 'site' && (
+        {(hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && (
           <Frag>
             <span className='input-text'>para</span>
             <Select
