@@ -45,6 +45,11 @@ var config = {
       }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      Frag: [APP_DIR + '/components/Frag.jsx', 'default']
+    })
+  ],
 };
 
 module.exports = config;

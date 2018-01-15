@@ -1,0 +1,60 @@
+#app {
+  line-height: 34px;
+  margin-top: 20px;
+}
+
+.row-result {
+  margin-top: 30px;
+}
+
+.select {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.input-number {
+  min-width: 40px;
+  text-align: center;
+  margin: 0 5px;
+  max-width: 80px;
+}
+
+.input-number--database {
+  max-width: 50px;
+}
+
+.input-text,
+.select {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Select component changes */
+.Select-control,
+.input-number {
+  border: 0;
+  border-bottom: 2px dashed;
+  border-radius: 0;
+  width: auto;
+}
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  position: relative;
+}
+
+.Select-control .Select-input,
+.Select-control .Select-input:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+}
+
+.Select-menu-outer {
+  min-width: 100px;
+}
+
+.Select-arrow-zone {
+  display: none;
+}

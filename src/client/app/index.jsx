@@ -1,31 +1,66 @@
 import React from 'react';
 import {render} from 'react-dom';
+import constants from './constants';
+import FirstInput from './components/FirstInput.jsx';
+import SiteDetails from './components/SiteDetails.jsx';
+import EmailDetails from './components/EmailDetails.jsx';
+import AppDetails from './components/AppDetails.jsx';
 
 class App extends React.Component {
-  render () {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hostOptions: constants.hostOptions,
+      hostSelectedOption: constants.hostOptions[0],
+      purposeSelectedOption: constants.purposeOptions[0],
+      hostNumber: constants.hostNumbers[0]
+    }
+
+    this.handleHostTypeChange = this.handleHostTypeChange.bind(this);
+    this.handleHostNumberChange = this.handleHostNumberChange.bind(this);
+    this.handlePurposeChange = this.handlePurposeChange.bind(this);
+  }
+
+  handleHostTypeChange (hostSelectedOption) {
+    this.setState({hostSelectedOption});
+  }
+
+  handlePurposeChange (purposeSelectedOption) {
+    this.setState({purposeSelectedOption});
+  }
+
+  handleHostNumberChange (hostNumber) {
+    let updatedHostOption = hostNumber.value != 1 ? constants.pluralHostOptions.find(item => item.value === this.state.hostSelectedOption.value)
+                                                  : constants.hostOptions.find(item => item.value === this.state.hostSelectedOption.value);
+    this.setState({
+      hostNumber: hostNumber,
+      hostOptions: hostNumber.value != 1 ? constants.pluralHostOptions : constants.hostOptions,
+      hostSelectedOption: updatedHostOption
+    });
+  }
+
+  render() {
+    const {hostOptions, hostSelectedOption, purposeSelectedOption, hostNumber} = this.state;
     return (
-	    <div className="container text-xs-center">
-	      <div className="row">
-	        <div className="col-sm-6 offset-sm-3">
-	          <p>Quero hospedar 1 site ↓ para uso pessoal ↓<br/>
-	            Programado(s) em PHP ↓ / Utilizando plataforma WordPress ↓<br/>
-	            Em ambiente compartilhado ↓ (?)<br/>
-	            Com 1 banco(s) de dados MySQL ↓<br/>
-	            Espero receber até 1000 visitas por mês ↓ em cada um ↓ (d)eles</p>
+	    <div className='container text-xs-center'>
+	      <div className='row'>
+	        <div className='col-sm-6 offset-sm-3'>
+            <FirstInput {...this.state}
+              handleHostTypeChange={this.handleHostTypeChange}
+              handleHostNumberChange={this.handleHostNumberChange}
+              handlePurposeChange={this.handlePurposeChange} />
 
-	          <p><span className="h4">A hospedagem do seu <em>site</em> custará:</span><br/>
-	          <span className="h2">R$6,00  por mês no plano Site Pro da Umbler</span><br/>
-	          ou em média R$25,00 por mês em outras empresas </p>
+            {hostSelectedOption.value === 'site' && (
+              <SiteDetails {...this.state}/>
+            )}
 
+            {hostSelectedOption.value === 'email' && (
+              <EmailDetails />
+            )}
 
-	          <p><a href="#">Receba este resultado por email</a></p>
-
-	          <p>Ganhe até R$100 em créditos para hospedar seu site WordPress na Umbler. 
-	          Comece agora: <input type="text" name="email" /> <button>TESTAR GRÁTIS</button></p>
-
-	          <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites <em>WordPress</em>.</p>
-
-	          <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
+            {hostSelectedOption.value === 'app' && (
+              <AppDetails />
+            )}
 	        </div>
 	      </div>
 	    </div>
