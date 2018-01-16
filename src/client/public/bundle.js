@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -261,9 +261,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(21);
-} else {
   module.exports = __webpack_require__(22);
+} else {
+  module.exports = __webpack_require__(23);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -349,9 +349,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(23);
+  module.exports = __webpack_require__(24);
 } else {
-  module.exports = __webpack_require__(26);
+  module.exports = __webpack_require__(27);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -366,7 +366,7 @@ if (process.env.NODE_ENV === 'production') {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var constants = {
+var siteConstants = {
   hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 'bt10and20', label: 'entre 10 e 20' }, { value: 'bt20and50', label: 'entre 20 e 50' }, { value: 'bt50and100', label: 'entre 50 e 100' }, { value: 'bt100and150', label: 'entre 100 e 150' }, { value: 'bt200and250', label: 'entre 250 e 300' }, { value: 'morethan300', label: 'mais de 300' }],
   hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
   pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }],
@@ -382,7 +382,7 @@ var constants = {
   extraSitePrices: { mysql1: 0, mysql2: 10, sql: 15 }
 };
 
-exports.default = constants;
+exports.default = siteConstants;
 
 /***/ }),
 /* 5 */
@@ -556,11 +556,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultArrowRenderer", function() { return arrowRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultClearRenderer", function() { return clearRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultFilterOptions", function() { return filterOptions; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_input_autosize__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react__);
@@ -3675,7 +3675,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(24);
+var isTextNode = __webpack_require__(25);
 
 /*eslint-disable no-bitwise */
 
@@ -3736,6 +3736,24 @@ module.exports = focusNode;
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var mainConstants = {
+  hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 250, label: 'entre 250 e 300' }, { value: 300, label: 'mais de 300' }],
+  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
+  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }]
+};
+
+exports.default = mainConstants;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -3758,17 +3776,17 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(33)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(34)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(34)();
+  module.exports = __webpack_require__(35)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3784,23 +3802,27 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(3);
 
-var _constants = __webpack_require__(4);
+var _mainConstants = __webpack_require__(19);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _mainConstants2 = _interopRequireDefault(_mainConstants);
 
-var _FirstInput = __webpack_require__(31);
+var _siteConstants = __webpack_require__(4);
+
+var _siteConstants2 = _interopRequireDefault(_siteConstants);
+
+var _FirstInput = __webpack_require__(32);
 
 var _FirstInput2 = _interopRequireDefault(_FirstInput);
 
-var _SiteDetails = __webpack_require__(36);
+var _SiteDetails = __webpack_require__(37);
 
 var _SiteDetails2 = _interopRequireDefault(_SiteDetails);
 
-var _EmailDetails = __webpack_require__(38);
+var _EmailDetails = __webpack_require__(39);
 
 var _EmailDetails2 = _interopRequireDefault(_EmailDetails);
 
-var _AppDetails = __webpack_require__(39);
+var _AppDetails = __webpack_require__(40);
 
 var _AppDetails2 = _interopRequireDefault(_AppDetails);
 
@@ -3821,10 +3843,10 @@ var App = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
     _this.state = {
-      hostOptions: _constants2.default.hostOptions,
-      hostSelectedOption: _constants2.default.hostOptions[0],
-      purposeSelectedOption: _constants2.default.purposeOptions[0],
-      hostNumber: _constants2.default.hostNumbers[0]
+      hostOptions: _mainConstants2.default.hostOptions,
+      hostSelectedOption: _mainConstants2.default.hostOptions[3],
+      purposeSelectedOption: _siteConstants2.default.purposeOptions[0],
+      hostNumber: _mainConstants2.default.hostNumbers[0]
     };
 
     _this.handleHostTypeChange = _this.handleHostTypeChange.bind(_this);
@@ -3848,14 +3870,14 @@ var App = function (_React$Component) {
     value: function handleHostNumberChange(hostNumber) {
       var _this2 = this;
 
-      var updatedHostOption = hostNumber.value != 1 ? _constants2.default.pluralHostOptions.find(function (item) {
+      var updatedHostOption = hostNumber.value != 1 ? _mainConstants2.default.pluralHostOptions.find(function (item) {
         return item.value === _this2.state.hostSelectedOption.value;
-      }) : _constants2.default.hostOptions.find(function (item) {
+      }) : _mainConstants2.default.hostOptions.find(function (item) {
         return item.value === _this2.state.hostSelectedOption.value;
       });
       this.setState({
         hostNumber: hostNumber,
-        hostOptions: hostNumber.value != 1 ? _constants2.default.pluralHostOptions : _constants2.default.hostOptions,
+        hostOptions: hostNumber.value != 1 ? _mainConstants2.default.pluralHostOptions : _mainConstants2.default.hostOptions,
         hostSelectedOption: updatedHostOption
       });
     }
@@ -3882,9 +3904,8 @@ var App = function (_React$Component) {
               handleHostNumberChange: this.handleHostNumberChange,
               handlePurposeChange: this.handlePurposeChange })),
             (hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && _react2.default.createElement(_SiteDetails2.default, this.state),
-            hostSelectedOption.value === 'store' && _react2.default.createElement(_SiteDetails2.default, this.state),
-            hostSelectedOption.value === 'email' && _react2.default.createElement(_EmailDetails2.default, null),
-            hostSelectedOption.value === 'app' && _react2.default.createElement(_AppDetails2.default, null)
+            hostSelectedOption.value === 'email' && _react2.default.createElement(_EmailDetails2.default, this.state),
+            hostSelectedOption.value === 'app' && _react2.default.createElement(_AppDetails2.default, this.state)
           )
         )
       );
@@ -3897,7 +3918,7 @@ var App = function (_React$Component) {
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3925,7 +3946,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5290,7 +5311,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5526,7 +5547,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5541,7 +5562,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(25);
+var isNode = __webpack_require__(26);
 
 /**
  * @param {*} object The object to check.
@@ -5554,7 +5575,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5582,7 +5603,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5616,8 +5637,8 @@ var containsNode = __webpack_require__(17);
 var focusNode = __webpack_require__(18);
 var emptyObject = __webpack_require__(8);
 var checkPropTypes = __webpack_require__(10);
-var hyphenateStyleName = __webpack_require__(27);
-var camelizeStyleName = __webpack_require__(29);
+var hyphenateStyleName = __webpack_require__(28);
+var camelizeStyleName = __webpack_require__(30);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -20984,7 +21005,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20999,7 +21020,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(28);
+var hyphenate = __webpack_require__(29);
 
 var msPattern = /^ms-/;
 
@@ -21026,7 +21047,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21062,7 +21083,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21077,7 +21098,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(30);
+var camelize = __webpack_require__(31);
 
 var msPattern = /^-ms-/;
 
@@ -21105,7 +21126,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21140,7 +21161,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21162,9 +21183,13 @@ var _reactSelect = __webpack_require__(7);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _constants = __webpack_require__(4);
+var _mainConstants = __webpack_require__(19);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _mainConstants2 = _interopRequireDefault(_mainConstants);
+
+var _siteConstants = __webpack_require__(4);
+
+var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21204,7 +21229,7 @@ var FirstInput = function (_React$Component) {
           name: 'host-number',
           value: hostNumber,
           onChange: this.props.handleHostNumberChange,
-          options: _constants2.default.hostNumbers,
+          options: _mainConstants2.default.hostNumbers,
           className: 'select',
           searchable: false,
           clearable: false }),
@@ -21228,7 +21253,7 @@ var FirstInput = function (_React$Component) {
             name: 'purpose-type',
             value: purposeSelectedOption,
             onChange: this.props.handlePurposeChange,
-            options: _constants2.default.purposeOptions,
+            options: _siteConstants2.default.purposeOptions,
             className: 'select',
             searchable: false,
             clearable: false })
@@ -21244,7 +21269,7 @@ exports.default = FirstInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21262,7 +21287,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(19);
+var _propTypes = __webpack_require__(20);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -21518,7 +21543,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22068,7 +22093,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22133,7 +22158,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22188,7 +22213,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22212,11 +22237,11 @@ var _reactSelect = __webpack_require__(7);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _constants = __webpack_require__(4);
+var _siteConstants = __webpack_require__(4);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
-var _SiteResults = __webpack_require__(37);
+var _SiteResults = __webpack_require__(38);
 
 var _SiteResults2 = _interopRequireDefault(_SiteResults);
 
@@ -22237,13 +22262,13 @@ var SiteDetails = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (SiteDetails.__proto__ || Object.getPrototypeOf(SiteDetails)).call(this, props));
 
     _this.state = {
-      programmingLanguage: _constants2.default.programmingLanguages[0],
-      platform: _constants2.default.platforms[0],
-      environment: _constants2.default.environments[0],
+      programmingLanguage: _siteConstants2.default.programmingLanguages[0],
+      platform: _siteConstants2.default.platforms[0],
+      environment: _siteConstants2.default.environments[0],
       databaseNumber: 1,
-      database: _constants2.default.databases[0],
-      period: _constants2.default.periods[0],
-      complement: _constants2.default.complements[0],
+      database: _siteConstants2.default.databases[0],
+      period: _siteConstants2.default.periods[0],
+      complement: _siteConstants2.default.complements[0],
       visits: 1000
     };
 
@@ -22333,7 +22358,7 @@ var SiteDetails = function (_React$Component) {
             name: 'programming-language',
             value: programmingLanguage,
             onChange: this.handleProgrammingLanguageChange,
-            options: _constants2.default.programmingLanguages,
+            options: _siteConstants2.default.programmingLanguages,
             className: 'select',
             searchable: false,
             clearable: false }),
@@ -22346,7 +22371,7 @@ var SiteDetails = function (_React$Component) {
             name: 'platform',
             value: platform,
             onChange: this.handlePlatformChange,
-            options: _constants2.default.platforms,
+            options: _siteConstants2.default.platforms,
             className: 'select',
             searchable: false,
             clearable: false })
@@ -22363,7 +22388,7 @@ var SiteDetails = function (_React$Component) {
             name: 'environment',
             value: environment,
             onChange: this.handleEnvironmentChange,
-            options: _constants2.default.environments,
+            options: _siteConstants2.default.environments,
             className: 'select',
             searchable: false,
             clearable: false }),
@@ -22393,7 +22418,7 @@ var SiteDetails = function (_React$Component) {
             name: 'database',
             value: database,
             onChange: this.handleDatabaseChange,
-            options: _constants2.default.databases,
+            options: _siteConstants2.default.databases,
             className: 'select',
             searchable: false,
             clearable: false })
@@ -22422,7 +22447,7 @@ var SiteDetails = function (_React$Component) {
             name: 'period',
             value: period,
             onChange: this.handlePeriodChange,
-            options: _constants2.default.periods,
+            options: _siteConstants2.default.periods,
             className: 'select',
             searchable: false,
             clearable: false }),
@@ -22435,7 +22460,7 @@ var SiteDetails = function (_React$Component) {
             name: 'complement',
             value: complement,
             onChange: this.handleComplementChange,
-            options: _constants2.default.complements,
+            options: _siteConstants2.default.complements,
             className: 'select',
             searchable: false,
             clearable: false })
@@ -22452,7 +22477,7 @@ exports.default = SiteDetails;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22474,9 +22499,9 @@ var _reactSelect = __webpack_require__(7);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _constants = __webpack_require__(4);
+var _siteConstants = __webpack_require__(4);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22494,12 +22519,12 @@ function calcVisits(period, visits, complement, hostNumber) {
 function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   var result = void 0;
   if (database === 'sql') {
-    result = databaseNumber * _constants2.default.extraSitePrices.sql;
+    result = databaseNumber * _siteConstants2.default.extraSitePrices.sql;
   } else {
     if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
-      result = _constants2.default.extraSitePrices.mysql2;
+      result = _siteConstants2.default.extraSitePrices.mysql2;
     } else {
-      result = _constants2.default.extraSitePrices.mysql1;
+      result = _siteConstants2.default.extraSitePrices.mysql1;
     }
   }
   return result;
@@ -22549,10 +22574,10 @@ var SiteResults = function (_React$Component) {
         umblerPlan = 0;
       }
 
-      var hostPrice = _constants2.default.sitePlans[umblerPlan].price;
-      var title = _constants2.default.sitePlans[umblerPlan].title;
+      var hostPrice = _siteConstants2.default.sitePlans[umblerPlan].price;
+      var title = _siteConstants2.default.sitePlans[umblerPlan].title;
       var price = umblerPlan === 0 ? hostPrice * hostNumber.value + databasePrice : hostPrice + databasePrice;
-      var branchPrice = _constants2.default.sitePlans[umblerPlan].branchPrice * hostNumber.value + branchDatabasePrice;
+      var branchPrice = _siteConstants2.default.sitePlans[umblerPlan].branchPrice * hostNumber.value + branchDatabasePrice;
 
       return _react2.default.createElement(
         Frag,
@@ -22605,7 +22630,7 @@ var SiteResults = function (_React$Component) {
             _react2.default.createElement(
               'a',
               { href: '#' },
-              'Receba este resultado por email'
+              'Receba este resultado por -email'
             )
           ),
           platform.value !== 'none' ? _react2.default.createElement(
@@ -22663,14 +22688,14 @@ exports.default = SiteResults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(Frag) {
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -22685,9 +22710,9 @@ var _reactSelect = __webpack_require__(7);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _constants = __webpack_require__(4);
+var _emailConstants = __webpack_require__(41);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _emailConstants2 = _interopRequireDefault(_emailConstants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22698,32 +22723,245 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var EmailDetails = function (_React$Component) {
-  _inherits(EmailDetails, _React$Component);
+		_inherits(EmailDetails, _React$Component);
 
-  function EmailDetails() {
-    _classCallCheck(this, EmailDetails);
+		function EmailDetails(props) {
+				_classCallCheck(this, EmailDetails);
 
-    return _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).apply(this, arguments));
-  }
+				var _this = _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).call(this, props));
 
-  _createClass(EmailDetails, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        'Cada conta precisar\xE1 ter 1Gb, 2Gb, 5Gb, 10Gb, 20Gb, 25Gb, 50Gb de espa\xE7o Preciso tamb\xE9m \u2610 MAPI, \u2610 ActiveSync, \u2611 Compartilhamento de agenda entre contas'
-      );
-    }
-  }]);
+				_this.state = {
+						emailSpace: _emailConstants2.default.space[0],
+						mapi: false,
+						activesync: false,
+						share: false
+				};
 
-  return EmailDetails;
+				_this.handleSpaceChange = _this.handleSpaceChange.bind(_this);
+				_this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
+				_this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
+				_this.handleShareCheck = _this.handleShareCheck.bind(_this);
+				return _this;
+		}
+
+		_createClass(EmailDetails, [{
+				key: 'handleSpaceChange',
+				value: function handleSpaceChange(emailSpace) {
+						this.setState({ emailSpace: emailSpace });
+				}
+		}, {
+				key: 'handleMapiCheck',
+				value: function handleMapiCheck() {
+						this.setState({ mapi: !this.state.mapi });
+				}
+		}, {
+				key: 'handleActivesyncCheck',
+				value: function handleActivesyncCheck() {
+						this.setState({ activesync: !this.state.activesync });
+				}
+		}, {
+				key: 'handleShareCheck',
+				value: function handleShareCheck() {
+						this.setState({ share: !this.state.share });
+				}
+		}, {
+				key: 'render',
+				value: function render() {
+						var _state = this.state,
+						    emailSpace = _state.emailSpace,
+						    mapi = _state.mapi,
+						    activesync = _state.activesync,
+						    share = _state.share;
+						var hostNumber = this.props.hostNumber;
+						var emailPlans = _emailConstants2.default.emailPlans,
+						    emailPrices = _emailConstants2.default.emailPrices,
+						    space = _emailConstants2.default.space;
+
+						var pricePlan = emailPrices[0].price;
+						var title = emailPlans[0];
+						if (mapi || activesync || share || emailSpace.value === 50) {
+								title = emailPlans[1];
+								pricePlan = emailPrices[6].price;
+						} else {
+								pricePlan = emailPrices.find(function (plan) {
+										return plan.size === emailSpace.value;
+								});
+								pricePlan = pricePlan.price;
+						}
+						var price = pricePlan * hostNumber.value;
+						price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+						return _react2.default.createElement(
+								Frag,
+								null,
+								_react2.default.createElement(
+										'div',
+										{ className: 'row' },
+										_react2.default.createElement(
+												'span',
+												{ className: 'input-text' },
+												'Cada conta precisar\xE1 ter '
+										),
+										_react2.default.createElement(_reactSelect2.default, {
+												name: 'emailSpace',
+												value: emailSpace,
+												onChange: this.handleSpaceChange,
+												options: space,
+												className: 'select',
+												searchable: false,
+												clearable: false }),
+										_react2.default.createElement(
+												'span',
+												{ className: 'input-text' },
+												'de espa\xE7o '
+										)
+								),
+								_react2.default.createElement(
+										'div',
+										{ className: 'row row--checkbox' },
+										_react2.default.createElement(
+												'legend',
+												{ className: 'col-form-legend col-sm-4' },
+												'Preciso tamb\xE9m de'
+										),
+										_react2.default.createElement(
+												'div',
+												{ className: 'col-sm-8' },
+												_react2.default.createElement(
+														'div',
+														{ className: 'form-check' },
+														_react2.default.createElement('input', {
+																className: 'form-check-input',
+																type: 'checkbox',
+																name: 'mapi',
+																id: 'mapi',
+																checked: mapi,
+																onClick: this.handleMapiCheck }),
+														_react2.default.createElement(
+																'label',
+																{ className: 'form-check-label', htmlFor: 'mapi' },
+																'MAPI'
+														)
+												),
+												_react2.default.createElement(
+														'div',
+														{ className: 'form-check' },
+														_react2.default.createElement('input', {
+																className: 'form-check-input',
+																type: 'checkbox',
+																name: 'activesync',
+																id: 'activesync',
+																checked: activesync,
+																onClick: this.handleActivesyncCheck }),
+														_react2.default.createElement(
+																'label',
+																{ className: 'form-check-label', htmlFor: 'activesync' },
+																'Active Sync'
+														)
+												),
+												_react2.default.createElement(
+														'div',
+														{ className: 'form-check' },
+														_react2.default.createElement('input', {
+																className: 'form-check-input',
+																type: 'checkbox',
+																name: 'share',
+																id: 'share',
+																checked: share,
+																onClick: this.handleShareCheck }),
+														_react2.default.createElement(
+																'label',
+																{ className: 'form-check-label', htmlFor: 'share' },
+																'Compartilhamento de agenda entre contas'
+														)
+												)
+										)
+								),
+								_react2.default.createElement(
+										'div',
+										{ className: 'row row-result' },
+										hostNumber.value === 1 ? _react2.default.createElement(
+												'span',
+												{ className: 'h4' },
+												'A hospedagem do seu ',
+												_react2.default.createElement(
+														'em',
+														null,
+														'e-mail'
+												),
+												' custar\xE1:',
+												_react2.default.createElement('br', null)
+										) : _react2.default.createElement(
+												'span',
+												{ className: 'h4' },
+												'A hospedagem do seus ',
+												_react2.default.createElement(
+														'em',
+														null,
+														'e-mails'
+												),
+												' custar\xE1:',
+												_react2.default.createElement('br', null)
+										),
+										_react2.default.createElement(
+												'span',
+												{ className: 'h3' },
+												price,
+												'  por m\xEAs no plano ',
+												title
+										)
+								),
+								_react2.default.createElement(
+										'div',
+										{ className: 'row' },
+										_react2.default.createElement(
+												'p',
+												null,
+												_react2.default.createElement(
+														'a',
+														{ href: '#' },
+														'Receba este resultado por e-mail'
+												)
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'Ganhe at\xE9 R$100 em cr\xE9ditos para hospedar seus e-mails na Umbler.'
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'Comece agora: ',
+												_react2.default.createElement('input', { type: 'text', name: 'email' }),
+												' ',
+												_react2.default.createElement(
+														'button',
+														null,
+														'TESTAR GR\xC1TIS'
+												)
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'Ainda com d\xFAvidas? Fale com um especialista em hospedagem de e=mails.'
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc.'
+										)
+								)
+						);
+				}
+		}]);
+
+		return EmailDetails;
 }(_react2.default.Component);
 
 exports.default = EmailDetails;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)["default"]))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22745,9 +22983,9 @@ var _reactSelect = __webpack_require__(7);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _constants = __webpack_require__(4);
+var _siteConstants = __webpack_require__(4);
 
-var _constants2 = _interopRequireDefault(_constants);
+var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22781,6 +23019,24 @@ var AppDetails = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = AppDetails;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var emailConstants = {
+  space: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 5, label: 5 }, { value: 10, label: 10 }, { value: 50, label: 50 }],
+  emailPlans: ['E-mail Umbler', 'E-mail Exchange'],
+  emailPrices: [{ size: 1, price: 0.75 }, { size: 2, price: 1.5 }, { size: 5, price: 3.75 }, { size: 10, price: 7.5 }, { size: 20, price: 15 }, { size: 25, price: 9 }, { size: 50, price: 14 }]
+};
+
+exports.default = emailConstants;
 
 /***/ })
 /******/ ]);

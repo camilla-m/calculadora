@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
-import constants from '../constants';
+import siteConstants from '../constants/siteConstants';
 
 function calcVisits(period, visits, complement, hostNumber) {
   let result = (complement === 'each') ? ((period * visits) * hostNumber)
@@ -12,12 +12,12 @@ function calcVisits(period, visits, complement, hostNumber) {
 function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   let result;
   if (database === 'sql') {
-    result = databaseNumber * constants.extraSitePrices.sql;
+    result = databaseNumber * siteConstants.extraSitePrices.sql;
   } else {
     if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
-      result = constants.extraSitePrices.mysql2;
+      result = siteConstants.extraSitePrices.mysql2;
     } else {
-      result = constants.extraSitePrices.mysql1;
+      result = siteConstants.extraSitePrices.mysql1;
     }
   }
   return result;
@@ -47,10 +47,10 @@ class SiteResults extends React.Component {
       umblerPlan = 0;
     }
 
-    let hostPrice = constants.sitePlans[umblerPlan].price;
-    let title = constants.sitePlans[umblerPlan].title;
+    let hostPrice = siteConstants.sitePlans[umblerPlan].price;
+    let title = siteConstants.sitePlans[umblerPlan].title;
     let price = umblerPlan === 0 ? (hostPrice * hostNumber.value) + databasePrice : hostPrice + databasePrice;
-    let branchPrice = (constants.sitePlans[umblerPlan].branchPrice * hostNumber.value) + branchDatabasePrice;
+    let branchPrice = (siteConstants.sitePlans[umblerPlan].branchPrice * hostNumber.value) + branchDatabasePrice;
 
     return(
       <Frag>
@@ -65,7 +65,7 @@ class SiteResults extends React.Component {
             ou em média R${branchPrice},00 por mês em outras empresas
         </div>
         <div className='row'>
-          <p><a href='#'>Receba este resultado por email</a></p>
+          <p><a href='#'>Receba este resultado por -email</a></p>
           {platform.value !== 'none' ? (
             <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.</p>
           ) : (

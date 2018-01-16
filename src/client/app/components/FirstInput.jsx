@@ -1,7 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
-import constants from '../constants';
+import mainConstants from '../constants/mainConstants';
+import siteConstants from '../constants/siteConstants';
 
 class FirstInput extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class FirstInput extends React.Component {
           name='host-number'
           value={hostNumber}
           onChange={this.props.handleHostNumberChange}
-          options={constants.hostNumbers}
+          options={mainConstants.hostNumbers}
           className='select'
           searchable={false}
           clearable={false} />
@@ -32,12 +33,13 @@ class FirstInput extends React.Component {
               name='purpose-type'
               value={purposeSelectedOption}
               onChange={this.props.handlePurposeChange}
-              options={constants.purposeOptions}
+              options={siteConstants.purposeOptions}
               className='select'
               searchable={false}
               clearable={false} />
           </Frag>
         )}
+        
 	  </div>
     );
   }

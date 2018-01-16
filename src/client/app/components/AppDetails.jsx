@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
-import constants from '../constants';
+import siteConstants from '../constants/siteConstants';
 
 class AppDetails extends React.Component {
   render() {

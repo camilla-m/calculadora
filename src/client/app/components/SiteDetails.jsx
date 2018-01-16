@@ -1,20 +1,20 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
-import constants from '../constants';
+import siteConstants from '../constants/siteConstants';
 import SiteResults from './SiteResults.jsx';
 
 class SiteDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      programmingLanguage: constants.programmingLanguages[0],
-      platform: constants.platforms[0],
-      environment: constants.environments[0],
+      programmingLanguage: siteConstants.programmingLanguages[0],
+      platform: siteConstants.platforms[0],
+      environment: siteConstants.environments[0],
       databaseNumber: 1,
-      database: constants.databases[0],
-      period: constants.periods[0],
-      complement: constants.complements[0],
+      database: siteConstants.databases[0],
+      period: siteConstants.periods[0],
+      complement: siteConstants.complements[0],
       visits: 1000
     }
 
@@ -71,7 +71,7 @@ class SiteDetails extends React.Component {
             name='programming-language'
             value={programmingLanguage}
             onChange={this.handleProgrammingLanguageChange}
-            options={constants.programmingLanguages}
+            options={siteConstants.programmingLanguages}
             className='select'
             searchable={false}
             clearable={false} />
@@ -80,7 +80,7 @@ class SiteDetails extends React.Component {
             name='platform'
             value={platform}
             onChange={this.handlePlatformChange}
-            options={constants.platforms}
+            options={siteConstants.platforms}
             className='select'
             searchable={false}
             clearable={false} />
@@ -91,7 +91,7 @@ class SiteDetails extends React.Component {
             name='environment'
             value={environment}
             onChange={this.handleEnvironmentChange}
-            options={constants.environments}
+            options={siteConstants.environments}
             className='select'
             searchable={false}
             clearable={false} />
@@ -113,7 +113,7 @@ class SiteDetails extends React.Component {
             name='database'
             value={database}
             onChange={this.handleDatabaseChange}
-            options={constants.databases}
+            options={siteConstants.databases}
             className='select'
             searchable={false}
             clearable={false} />
@@ -132,7 +132,7 @@ class SiteDetails extends React.Component {
             name='period'
             value={period}
             onChange={this.handlePeriodChange}
-            options={constants.periods}
+            options={siteConstants.periods}
             className='select'
             searchable={false}
             clearable={false} />
@@ -141,7 +141,7 @@ class SiteDetails extends React.Component {
             name='complement'
             value={complement}
             onChange={this.handleComplementChange}
-            options={constants.complements}
+            options={siteConstants.complements}
             className='select'
             searchable={false}
             clearable={false} />

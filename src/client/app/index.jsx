@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import constants from './constants';
+import mainConstants from './constants/mainConstants';
+import siteConstants from './constants/siteConstants';
 import FirstInput from './components/FirstInput.jsx';
 import SiteDetails from './components/SiteDetails.jsx';
 import EmailDetails from './components/EmailDetails.jsx';
@@ -10,10 +11,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hostOptions: constants.hostOptions,
-      hostSelectedOption: constants.hostOptions[0],
-      purposeSelectedOption: constants.purposeOptions[0],
-      hostNumber: constants.hostNumbers[0]
+      hostOptions: mainConstants.hostOptions,
+      hostSelectedOption: mainConstants.hostOptions[3],
+      purposeSelectedOption: siteConstants.purposeOptions[0],
+      hostNumber: mainConstants.hostNumbers[0]
     }
 
     this.handleHostTypeChange = this.handleHostTypeChange.bind(this);
@@ -30,11 +31,11 @@ class App extends React.Component {
   }
 
   handleHostNumberChange (hostNumber) {
-    let updatedHostOption = hostNumber.value != 1 ? constants.pluralHostOptions.find(item => item.value === this.state.hostSelectedOption.value)
-                                                  : constants.hostOptions.find(item => item.value === this.state.hostSelectedOption.value);
+    let updatedHostOption = hostNumber.value != 1 ? mainConstants.pluralHostOptions.find(item => item.value === this.state.hostSelectedOption.value)
+                                                  : mainConstants.hostOptions.find(item => item.value === this.state.hostSelectedOption.value);
     this.setState({
       hostNumber: hostNumber,
-      hostOptions: hostNumber.value != 1 ? constants.pluralHostOptions : constants.hostOptions,
+      hostOptions: hostNumber.value != 1 ? mainConstants.pluralHostOptions : mainConstants.hostOptions,
       hostSelectedOption: updatedHostOption
     });
   }
@@ -51,19 +52,15 @@ class App extends React.Component {
               handlePurposeChange={this.handlePurposeChange} />
 
             {(hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && (
-              <SiteDetails {...this.state}/>
-            )}
-
-            {hostSelectedOption.value === 'store' && (
-              <SiteDetails {...this.state}/>
+              <SiteDetails {...this.state} />
             )}
 
             {hostSelectedOption.value === 'email' && (
-              <EmailDetails />
+              <EmailDetails {...this.state} />
             )}
 
             {hostSelectedOption.value === 'app' && (
-              <AppDetails />
+              <AppDetails {...this.state} />
             )}
 	        </div>
 	      </div>
