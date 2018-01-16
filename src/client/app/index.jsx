@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       hostOptions: mainConstants.hostOptions,
-      hostSelectedOption: mainConstants.hostOptions[3],
+      hostSelectedOption: mainConstants.hostOptions[0],
       purposeSelectedOption: siteConstants.purposeOptions[0],
       hostNumber: mainConstants.hostNumbers[0]
     }
