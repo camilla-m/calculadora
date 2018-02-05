@@ -2,9 +2,10 @@ const siteConstants = {
   hostNumbers: [
     {value: 1, label: 1}, {value: 2, label: 2}, {value: 3, label: 3}, {value: 4, label: 4}, {value: 5, label: 5},
     {value: 6, label: 6}, {value: 7, label: 7}, {value: 8, label: 8}, {value: 9, label: 9}, {value: 10, label: 10},
-    {value: 'bt10and20', label: 'entre 10 e 20'},{value: 'bt20and50', label: 'entre 20 e 50'},
-    {value: 'bt50and100', label: 'entre 50 e 100'},{value: 'bt100and150', label: 'entre 100 e 150'},
-    {value: 'bt200and250', label: 'entre 250 e 300'},{value: 'morethan300', label: 'mais de 300'},
+    {value: 20, label: 'entre 10 e 20'},{value: 50, label: 'entre 20 e 50'},{value: 100, label: 'entre 50 e 100'},
+    {value: 150, label: 'entre 100 e 150'},{value: 200, label: 'entre 150 e 200'},
+    {value: 250, label: 'entre 200 e 250'},{value: 300, label: 'entre 250 e 300'},
+    {value: 400, label: 'mais de 300'}
   ],
   hostOptions: [
     {value: 'site', label: 'Site'},{value: 'store', label: 'Loja virtual'}, {value: 'app', label: 'App'}, {value: 'email', label: 'E-mail'}
@@ -41,9 +42,9 @@ const siteConstants = {
     {value: 'each', label: 'cada um deles'},{value: 'all', label: 'todos eles'}
   ],
   sitePlans: [
-    {title: 'Site Pro', price: 6, branchPrice: 34},{title: 'Cloud Sites PP', price: 60, branchPrice: 273},
-    {title: 'Cloud Sites P', price: 120, branchPrice: 454},{title: 'Cloud Sites M', price: 240, branchPrice: 640},
-    {title: 'Cloud Sites G', price: 480, branchPrice: 640},{title: 'Cloud Sites GG', price: 960, branchPrice: 1259}
+    {title: 'Site Pro', price: 6, benchPrice: 34.90},{title: 'Cloud Sites PP', price: 60, benchPrice: 273.60},
+    {title: 'Cloud Sites P', price: 120, benchPrice: 454.40},{title: 'Cloud Sites M', price: 240, benchPrice: 640.90},
+    {title: 'Cloud Sites G', price: 480, benchPrice: 640.90},{title: 'Cloud Sites GG', price: 960, benchPrice: 1259.30}
   ],
   extraSitePrices: {mysql1: 0, mysql2: 10, sql: 15}
 };

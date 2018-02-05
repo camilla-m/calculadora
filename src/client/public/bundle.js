@@ -524,7 +524,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var siteConstants = {
-  hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 'bt10and20', label: 'entre 10 e 20' }, { value: 'bt20and50', label: 'entre 20 e 50' }, { value: 'bt50and100', label: 'entre 50 e 100' }, { value: 'bt100and150', label: 'entre 100 e 150' }, { value: 'bt200and250', label: 'entre 250 e 300' }, { value: 'morethan300', label: 'mais de 300' }],
+  hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 200, label: 'entre 150 e 200' }, { value: 250, label: 'entre 200 e 250' }, { value: 300, label: 'entre 250 e 300' }, { value: 400, label: 'mais de 300' }],
   hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
   pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }],
   purposeOptions: [{ value: 'personal', label: 'uso pessoal' }, { value: 'clients', label: 'uso dos meus clientes' }],
@@ -535,7 +535,7 @@ var siteConstants = {
   databases: [{ value: 'mysql', label: 'MySQL Server' }, { value: 'sql', label: 'SQL Server' }],
   periods: [{ value: 1, label: 'Mês' }, { value: 30, label: 'Day' }],
   complements: [{ value: 'each', label: 'cada um deles' }, { value: 'all', label: 'todos eles' }],
-  sitePlans: [{ title: 'Site Pro', price: 6, branchPrice: 34 }, { title: 'Cloud Sites PP', price: 60, branchPrice: 273 }, { title: 'Cloud Sites P', price: 120, branchPrice: 454 }, { title: 'Cloud Sites M', price: 240, branchPrice: 640 }, { title: 'Cloud Sites G', price: 480, branchPrice: 640 }, { title: 'Cloud Sites GG', price: 960, branchPrice: 1259 }],
+  sitePlans: [{ title: 'Site Pro', price: 6, benchPrice: 34.90 }, { title: 'Cloud Sites PP', price: 60, benchPrice: 273.60 }, { title: 'Cloud Sites P', price: 120, benchPrice: 454.40 }, { title: 'Cloud Sites M', price: 240, benchPrice: 640.90 }, { title: 'Cloud Sites G', price: 480, benchPrice: 640.90 }, { title: 'Cloud Sites GG', price: 960, benchPrice: 1259.30 }],
   extraSitePrices: { mysql1: 0, mysql2: 10, sql: 15 }
 };
 
@@ -3743,7 +3743,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var mainConstants = {
-  hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 250, label: 'entre 250 e 300' }, { value: 300, label: 'mais de 300' }],
+  hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 200, label: 'entre 150 e 200' }, { value: 250, label: 'entre 200 e 250' }, { value: 300, label: 'entre 250 e 300' }, { value: 400, label: 'mais de 300' }],
   hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
   pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }]
 };
@@ -3898,7 +3898,7 @@ var App = function (_React$Component) {
           { className: 'row' },
           _react2.default.createElement(
             'div',
-            { className: 'col-sm-6 offset-sm-3' },
+            { className: 'col-sm-8 offset-sm-2' },
             _react2.default.createElement(_FirstInput2.default, _extends({}, this.state, {
               handleHostTypeChange: this.handleHostTypeChange,
               handleHostNumberChange: this.handleHostNumberChange,
@@ -22521,7 +22521,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
   if (database === 'sql') {
     result = databaseNumber * _siteConstants2.default.extraSitePrices.sql;
   } else {
-    if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
+    if (databaseNumber > 25 || finalVisits >= 120000 || hostSelectedOption === 'store') {
       result = _siteConstants2.default.extraSitePrices.mysql2;
     } else {
       result = _siteConstants2.default.extraSitePrices.mysql1;
@@ -22559,15 +22559,19 @@ var SiteResults = function (_React$Component) {
       var branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
       if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
-        if (finalVisits < 360000) {
+        if (finalVisits < 360000 || hostNumber.value < 150) {
           umblerPlan = 1;
-        } else if (finalVisits >= 360000 && finalVisits < 540000) {
+        }
+        if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
           umblerPlan = 2;
-        } else if (finalVisits >= 540000 && finalVisits < 780000) {
+        }
+        if (finalVisits >= 540000 && finalVisits < 780000 || hostNumber.value === 200) {
           umblerPlan = 3;
-        } else if (finalVisits >= 780000 && finalVisits < 900000) {
+        }
+        if (finalVisits >= 780000 && finalVisits < 900000 || hostNumber.value === 250) {
           umblerPlan = 4;
-        } else if (finalVisits >= 900000) {
+        }
+        if (finalVisits >= 900000 || hostNumber.value >= 300) {
           umblerPlan = 5;
         }
       } else {
@@ -22577,7 +22581,9 @@ var SiteResults = function (_React$Component) {
       var hostPrice = _siteConstants2.default.sitePlans[umblerPlan].price;
       var title = _siteConstants2.default.sitePlans[umblerPlan].title;
       var price = umblerPlan === 0 ? hostPrice * hostNumber.value + databasePrice : hostPrice + databasePrice;
-      var branchPrice = _siteConstants2.default.sitePlans[umblerPlan].branchPrice * hostNumber.value + branchDatabasePrice;
+      var benchPrice = umblerPlan === 0 ? _siteConstants2.default.sitePlans[umblerPlan].benchPrice * hostNumber.value + branchDatabasePrice : _siteConstants2.default.sitePlans[umblerPlan].benchPrice + branchDatabasePrice;
+      price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+      benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
 
       return _react2.default.createElement(
         Frag,
@@ -22611,15 +22617,14 @@ var SiteResults = function (_React$Component) {
           _react2.default.createElement(
             'span',
             { className: 'h3' },
-            'R$',
             price,
-            ',00  por m\xEAs no plano ',
+            '  por m\xEAs no plano ',
             title
           ),
           _react2.default.createElement('br', null),
-          'ou em m\xE9dia R$',
-          branchPrice,
-          ',00 por m\xEAs em outras empresas'
+          'ou em m\xE9dia ',
+          benchPrice,
+          ' por m\xEAs em outras empresas'
         ),
         _react2.default.createElement(
           'div',
@@ -22777,19 +22782,23 @@ var EmailDetails = function (_React$Component) {
 						    emailPrices = _emailConstants2.default.emailPrices,
 						    space = _emailConstants2.default.space;
 
-						var pricePlan = emailPrices[0].price;
+						var pricePlan = emailPrices[0];
 						var title = emailPlans[0];
+
 						if (mapi || activesync || share || emailSpace.value === 50) {
 								title = emailPlans[1];
-								pricePlan = emailPrices[6].price;
+								pricePlan = emailPrices[6];
 						} else {
 								pricePlan = emailPrices.find(function (plan) {
 										return plan.size === emailSpace.value;
 								});
-								pricePlan = pricePlan.price;
 						}
-						var price = pricePlan * hostNumber.value;
+
+						var price = pricePlan.price * hostNumber.value;
+						var benchPrice = pricePlan.benchPrice * hostNumber.value;
 						price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+						benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+
 						return _react2.default.createElement(
 								Frag,
 								null,
@@ -22908,7 +22917,11 @@ var EmailDetails = function (_React$Component) {
 												price,
 												'  por m\xEAs no plano ',
 												title
-										)
+										),
+										_react2.default.createElement('br', null),
+										'ou em m\xE9dia ',
+										benchPrice,
+										' por m\xEAs em outras empresas'
 								),
 								_react2.default.createElement(
 										'div',
@@ -22971,9 +22984,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var emailConstants = {
-  space: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 5, label: 5 }, { value: 10, label: 10 }, { value: 50, label: 50 }],
+  space: [{ value: 1, label: '1GB' }, { value: 2, label: '2GB' }, { value: 5, label: '5GB' }, { value: 10, label: '10GB' }, { value: 50, label: '50GB' }],
   emailPlans: ['E-mail Umbler', 'E-mail Exchange'],
-  emailPrices: [{ size: 1, price: 0.75 }, { size: 2, price: 1.5 }, { size: 5, price: 3.75 }, { size: 10, price: 7.5 }, { size: 20, price: 15 }, { size: 25, price: 9 }, { size: 50, price: 14 }]
+  emailPrices: [{ size: 1, price: 0.75, benchPrice: 1.58 }, { size: 2, price: 1.5, benchPrice: 3.10 }, { size: 5, price: 3.75, benchPrice: 4.90 }, { size: 10, price: 7.5, benchPrice: 9.90 }, { size: 20, price: 15, benchPrice: 19.90 }, { size: 25, price: 9, benchPrice: 12.90 }, { size: 50, price: 14, benchPrice: 21.90 }]
 };
 
 exports.default = emailConstants;

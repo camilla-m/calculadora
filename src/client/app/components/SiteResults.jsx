@@ -4,8 +4,8 @@ import Select from 'react-select';
 import siteConstants from '../constants/siteConstants';
 
 function calcVisits(period, visits, complement, hostNumber) {
-  let result = (complement === 'each') ? ((period * visits) * hostNumber)
-                                       : ((period * visits) / hostNumber);
+  const result = (complement === 'each') ? ((period * visits) * hostNumber)
+                                          : ((period * visits) / hostNumber);
   return result;
 }
 
@@ -14,7 +14,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
   if (database === 'sql') {
     result = databaseNumber * siteConstants.extraSitePrices.sql;
   } else {
-    if (databaseNumber > 25 || finalVisits >= 4000 || hostSelectedOption === 'store') {
+    if (databaseNumber > 25 || finalVisits >= 120000 || hostSelectedOption === 'store') {
       result = siteConstants.extraSitePrices.mysql2;
     } else {
       result = siteConstants.extraSitePrices.mysql1;
@@ -32,15 +32,19 @@ class SiteResults extends React.Component {
     let branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
     if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
-      if (finalVisits < 360000) {
+      if (finalVisits < 360000 || hostNumber.value < 150) {
         umblerPlan = 1;
-      } else if (finalVisits >= 360000 && finalVisits < 540000) {
+      }
+      if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
         umblerPlan = 2;
-      } else if (finalVisits >= 540000 && finalVisits < 780000) {
+      }
+      if (finalVisits >= 540000 && finalVisits < 780000 || hostNumber.value === 200) {
         umblerPlan = 3;
-      } else if (finalVisits >= 780000 && finalVisits < 900000) {
+      }
+      if (finalVisits >= 780000 && finalVisits < 900000 || hostNumber.value === 250) {
         umblerPlan = 4;
-      } else if (finalVisits >= 900000) {
+      }
+      if (finalVisits >= 900000 || hostNumber.value >= 300) {
         umblerPlan = 5;
       }
     } else {
@@ -49,8 +53,12 @@ class SiteResults extends React.Component {
 
     let hostPrice = siteConstants.sitePlans[umblerPlan].price;
     let title = siteConstants.sitePlans[umblerPlan].title;
-    let price = umblerPlan === 0 ? (hostPrice * hostNumber.value) + databasePrice : hostPrice + databasePrice;
-    let branchPrice = (siteConstants.sitePlans[umblerPlan].branchPrice * hostNumber.value) + branchDatabasePrice;
+    let price = umblerPlan === 0 ? (hostPrice * hostNumber.value) + databasePrice
+                                 : hostPrice + databasePrice;
+    let benchPrice = umblerPlan === 0 ? (siteConstants.sitePlans[umblerPlan].benchPrice * hostNumber.value) + branchDatabasePrice
+                                       : siteConstants.sitePlans[umblerPlan].benchPrice + branchDatabasePrice;
+    price = price.toLocaleString(window.navigator.language, {style:"currency", currency:"BRL", minimumFractionDigits:2});
+    benchPrice = benchPrice.toLocaleString(window.navigator.language, {style:"currency", currency:"BRL", minimumFractionDigits:2});
 
     return(
       <Frag>
@@ -61,8 +69,8 @@ class SiteResults extends React.Component {
             <span className='h4'>A hospedagem do seus <em>sites</em> custará:<br/></span>
           )}
 
-            <span className='h3'>R${price},00  por mês no plano {title}</span><br/>
-            ou em média R${branchPrice},00 por mês em outras empresas
+            <span className='h3'>{price}  por mês no plano {title}</span><br/>
+            ou em média {benchPrice} por mês em outras empresas
         </div>
         <div className='row'>
           <p><a href='#'>Receba este resultado por -email</a></p>

@@ -45,7 +45,7 @@ class App extends React.Component {
     return (
 	    <div className='container text-xs-center'>
 	      <div className='row'>
-	        <div className='col-sm-6 offset-sm-3'>
+	        <div className='col-sm-8 offset-sm-2'>
             <FirstInput {...this.state}
               handleHostTypeChange={this.handleHostTypeChange}
               handleHostNumberChange={this.handleHostNumberChange}
