@@ -1,6 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
+import MailForm from './MailForm.jsx';
+import MailModal from './MailModal.jsx';
 import siteConstants from '../constants/siteConstants';
 
 function calcVisits(period, visits, complement, hostNumber) {
@@ -72,14 +74,14 @@ class SiteResults extends React.Component {
             <span className='h3'>{price}  por mês no plano {title}</span><br/>
             ou em média {benchPrice} por mês em outras empresas
         </div>
-        <div className='row'>
-          <p><a href='#'>Receba este resultado por -email</a></p>
+        <div className='row form-inline'>
+          <MailModal />
           {platform.value !== 'none' ? (
             <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.</p>
           ) : (
             <p>Ganhe até R$100 em créditos para hospedar seu site na Umbler.</p>
           )}
-          <p>Comece agora: <input type='text' name='email' /> <button>TESTAR GRÁTIS</button></p>
+          <MailForm />
 
           {platform.value !== 'none' ? (
             <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites <em>{platform.label}</em>.</p>

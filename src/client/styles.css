@@ -38,6 +38,23 @@
   vertical-align: middle;
 }
 
+/* Modal Component */
+.ReactModal__Overlay {
+  background: rgba(0,0,0,.3) !important;
+}
+
+.mail-modal-content {
+  width: 45%;
+  margin: 3vh auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.modal-header {
+  padding: 0;
+}
+
 /* Select component changes */
 .Select-control,
 .input-number {

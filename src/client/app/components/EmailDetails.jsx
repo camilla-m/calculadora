@@ -2,6 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import Select from 'react-select';
 import emailConstants from '../constants/emailConstants';
+import MailForm from './MailForm.jsx';
+import MailModal from './MailModal.jsx';
 
 class EmailDetails extends React.Component {
   constructor(props) {
@@ -112,10 +114,10 @@ class EmailDetails extends React.Component {
 	          <span className='h3'>{price}  por mês no plano {title}</span><br />
             ou em média {benchPrice} por mês em outras empresas
 	      </div>
-	      <div className='row'>
-	        <p><a href='#'>Receba este resultado por e-mail</a></p>
+	      <div className='row form-inline'>
+          <MailModal />
 	        <p>Ganhe até R$100 em créditos para hospedar seus e-mails na Umbler.</p>
-	        <p>Comece agora: <input type='text' name='email' /> <button>TESTAR GRÁTIS</button></p>
+          <MailForm />
 	        <p>Ainda com dúvidas? Fale com um especialista em hospedagem de e=mails.</p>
 
 	        <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
