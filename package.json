@@ -23,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/vikaiello/umbler.git"
+    "url": "git+ssh://git@bitbucket.org:thiagot/umbler-quantocustahospedar.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/vikaiello/umbler#readme"
+  "homepage": "https://bitbucket.org/thiagot/umbler-quantocustahospedar#readme"
 }
