@@ -1,7 +1,7 @@
 const emailConstants = {
   space: [
     {value: 1, label: '1GB'}, {value: 2, label: '2GB'}, {value: 5, label: '5GB'},
-    {value: 10, label: '10GB'}, {value: 50, label: '50GB'}
+    {value: 10, label: '10GB'}, {value: 20, label: '20GB'}, {value: 25, label: '25GB'}, {value: 50, label: '50GB'}
   ],
   emailPlans: ['E-mail Umbler', 'E-mail Exchange'],
   emailPrices: [

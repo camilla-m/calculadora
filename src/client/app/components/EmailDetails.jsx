@@ -49,7 +49,7 @@ class EmailDetails extends React.Component {
       pricePlan = emailPrices[6];
   	} else {
   		pricePlan = emailPrices.find(plan => plan.size === emailSpace.value);
-  	}
+		}
 
   	let price = pricePlan.price * hostNumber.value;
     let benchPrice = pricePlan.benchPrice * hostNumber.value;

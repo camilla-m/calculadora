@@ -8,7 +8,7 @@ const siteConstants = {
     {value: 400, label: 'mais de 300'}
   ],
   hostOptions: [
-    {value: 'site', label: 'Site'},{value: 'store', label: 'Loja virtual'}, {value: 'app', label: 'App'}, {value: 'email', label: 'E-mail'}
+    {value: 'site', label: 'Site'},{value: 'store', label: 'Loja virtual'}, {value: 'email', label: 'E-mail'}
   ],
   pluralHostOptions: [
     {value: 'site', label: 'Sites'},{value: 'store', label: 'Lojas virtuais'}, {value: 'app', label: 'Apps'}, {value: 'email', label: 'E-mails'}
