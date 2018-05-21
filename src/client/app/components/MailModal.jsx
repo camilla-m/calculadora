@@ -30,7 +30,6 @@ class MailModal extends React.Component {
             <button type='button' className='close' data-dismiss='modal' aria-label='Close' onClick={this.openCloseModal}>
               <span className='icon icon-close'></span>
             </button>
-            <h4 className='modal-title'>Receba este resultado por e-mail</h4>
           </div>
           <p className='form-text text-muted'>* Campos obrigatórios</p>
           <div className='row'>

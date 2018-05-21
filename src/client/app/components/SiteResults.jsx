@@ -11,6 +11,8 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
+
+
 function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   let result;
   if (database === 'sql') {
@@ -39,6 +41,9 @@ class SiteResults extends React.Component {
     if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
       if (finalVisits < 360000 || hostNumber.value < 150) {
         umblerPlan = 1;
+      }
+      if(hostNumber.value >= 100) {
+        
       }
       if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
         umblerPlan = 2;
