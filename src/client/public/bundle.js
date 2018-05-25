@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 25);
+/******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(26);
+  module.exports = __webpack_require__(28);
 } else {
-  module.exports = __webpack_require__(27);
+  module.exports = __webpack_require__(29);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -349,9 +349,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(28);
+  module.exports = __webpack_require__(30);
 } else {
-  module.exports = __webpack_require__(31);
+  module.exports = __webpack_require__(33);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -525,8 +525,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var siteConstants = {
   hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 200, label: 'entre 150 e 200' }, { value: 250, label: 'entre 200 e 250' }, { value: 300, label: 'entre 250 e 300' }, { value: 400, label: 'mais de 300' }],
-  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
-  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }],
+  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'email', label: 'E-mail' }],
+  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'email', label: 'E-mails' }],
   purposeOptions: [{ value: 'personal', label: 'uso pessoal' }, { value: 'clients', label: 'uso dos meus clientes' }],
   programmingLanguages: [{ value: 'php', label: 'PHP' }, { value: 'net', label: '.NET' }, { value: 'other', label: 'Outra linguagem' }, { value: 'none', label: 'Não utiliza / não sei a plataforma' }],
   platforms: [{ value: 'wordpress', label: 'WordPress' }, { value: 'joomla', label: 'Joomla' }, { value: 'drupal', label: 'Drupal' }, { value: 'opencart', label: 'OpenCart' }, { value: 'prestashop', label: 'PrestaShop' }, { value: 'laravel', label: 'Laravel' }, { value: 'none', label: 'Não utiliza / não sei a plataforma' }],
@@ -572,9 +572,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultArrowRenderer", function() { return arrowRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultClearRenderer", function() { return clearRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultFilterOptions", function() { return filterOptions; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_input_autosize__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -3366,11 +3366,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(38)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(40)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(39)();
+  module.exports = __webpack_require__(41)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -3710,7 +3710,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(29);
+var isTextNode = __webpack_require__(31);
 
 /*eslint-disable no-bitwise */
 
@@ -3779,8 +3779,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var mainConstants = {
   hostNumbers: [{ value: 1, label: 1 }, { value: 2, label: 2 }, { value: 3, label: 3 }, { value: 4, label: 4 }, { value: 5, label: 5 }, { value: 6, label: 6 }, { value: 7, label: 7 }, { value: 8, label: 8 }, { value: 9, label: 9 }, { value: 10, label: 10 }, { value: 20, label: 'entre 10 e 20' }, { value: 50, label: 'entre 20 e 50' }, { value: 100, label: 'entre 50 e 100' }, { value: 150, label: 'entre 100 e 150' }, { value: 200, label: 'entre 150 e 200' }, { value: 250, label: 'entre 200 e 250' }, { value: 300, label: 'entre 250 e 300' }, { value: 400, label: 'mais de 300' }],
-  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'app', label: 'App' }, { value: 'email', label: 'E-mail' }],
-  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'app', label: 'Apps' }, { value: 'email', label: 'E-mails' }]
+  hostOptions: [{ value: 'site', label: 'Site' }, { value: 'store', label: 'Loja virtual' }, { value: 'email', label: 'E-mail' }],
+  pluralHostOptions: [{ value: 'site', label: 'Sites' }, { value: 'store', label: 'Lojas virtuais' }, { value: 'email', label: 'E-mails' }]
 };
 
 exports.default = mainConstants;
@@ -3864,6 +3864,213 @@ exports.default = MailForm;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(Frag) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactModal = __webpack_require__(23);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MailModal = function (_React$Component) {
+  _inherits(MailModal, _React$Component);
+
+  function MailModal(props) {
+    _classCallCheck(this, MailModal);
+
+    var _this = _possibleConstructorReturn(this, (MailModal.__proto__ || Object.getPrototypeOf(MailModal)).call(this, props));
+
+    _this.state = {
+      modal: false
+    };
+
+    _this.openCloseModal = _this.openCloseModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(MailModal, [{
+    key: 'openCloseModal',
+    value: function openCloseModal() {
+      this.setState({
+        modal: !this.state.modal
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
+      return _react2.default.createElement(
+        Frag,
+        null,
+        _react2.default.createElement(
+          'p',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: '#', onClick: this.openCloseModal },
+            'Receba este resultado por e-mail'
+          )
+        ),
+        _react2.default.createElement(
+          _reactModal2.default,
+          {
+            isOpen: this.state.modal,
+            onRequestClose: this.openCloseModal,
+            className: 'mail-modal-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'modal-header' },
+            _react2.default.createElement(
+              'button',
+              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModal },
+              _react2.default.createElement('span', { className: 'icon icon-close' })
+            ),
+            _react2.default.createElement(
+              'h4',
+              { className: 'modal-title' },
+              'Receba este resultado por e-mail'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'form-text text-muted' },
+            '* Campos obrigat\xF3rios'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'name' },
+                'Nome*'
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name', placeholder: 'Seu nome' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'email' },
+                'E-mail*'
+              ),
+              _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'email', placeholder: 'Seu e-mail' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'company' },
+                'Empresa*'
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'company', placeholder: 'Nome da sua empresa' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'jobName' },
+                'Cargo*'
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'jobName', placeholder: 'Nome do cargo que voc\xEA ocupa' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'currentHost' },
+                'Hospedagem atual'
+              ),
+              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'currentHost', placeholder: 'Nome da sua hospedagem atual' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group col-sm-12' },
+              _react2.default.createElement(
+                'button',
+                { className: 'btn btn-primary', type: 'submit' },
+                'Enviar'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return MailModal;
+}(_react2.default.Component);
+
+exports.default = MailModal;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Modal = __webpack_require__(45);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Modal2.default;
+module.exports = exports["default"];
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -3924,7 +4131,7 @@ function findTabbableDescendants(element) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3997,7 +4204,7 @@ function resetForTesting() {
 }
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4023,7 +4230,7 @@ var canUseDOM = exports.canUseDOM = EE.canUseDOM;
 exports.default = SafeHTMLElement;
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4047,19 +4254,19 @@ var _siteConstants = __webpack_require__(6);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
-var _FirstInput = __webpack_require__(36);
+var _FirstInput = __webpack_require__(38);
 
 var _FirstInput2 = _interopRequireDefault(_FirstInput);
 
-var _SiteDetails = __webpack_require__(41);
+var _SiteDetails = __webpack_require__(43);
 
 var _SiteDetails2 = _interopRequireDefault(_SiteDetails);
 
-var _EmailDetails = __webpack_require__(52);
+var _EmailDetails = __webpack_require__(54);
 
 var _EmailDetails2 = _interopRequireDefault(_EmailDetails);
 
-var _AppDetails = __webpack_require__(54);
+var _AppDetails = __webpack_require__(56);
 
 var _AppDetails2 = _interopRequireDefault(_AppDetails);
 
@@ -4141,8 +4348,7 @@ var App = function (_React$Component) {
               handleHostNumberChange: this.handleHostNumberChange,
               handlePurposeChange: this.handlePurposeChange })),
             (hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && _react2.default.createElement(_SiteDetails2.default, this.state),
-            hostSelectedOption.value === 'email' && _react2.default.createElement(_EmailDetails2.default, this.state),
-            hostSelectedOption.value === 'app' && _react2.default.createElement(_AppDetails2.default, this.state)
+            hostSelectedOption.value === 'email' && _react2.default.createElement(_EmailDetails2.default, this.state)
           )
         )
       );
@@ -4155,7 +4361,7 @@ var App = function (_React$Component) {
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4183,7 +4389,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5548,7 +5754,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5784,7 +5990,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5799,7 +6005,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(30);
+var isNode = __webpack_require__(32);
 
 /**
  * @param {*} object The object to check.
@@ -5812,7 +6018,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5840,7 +6046,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5874,8 +6080,8 @@ var containsNode = __webpack_require__(18);
 var focusNode = __webpack_require__(19);
 var emptyObject = __webpack_require__(9);
 var checkPropTypes = __webpack_require__(12);
-var hyphenateStyleName = __webpack_require__(32);
-var camelizeStyleName = __webpack_require__(34);
+var hyphenateStyleName = __webpack_require__(34);
+var camelizeStyleName = __webpack_require__(36);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -21242,7 +21448,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21257,7 +21463,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(33);
+var hyphenate = __webpack_require__(35);
 
 var msPattern = /^ms-/;
 
@@ -21284,7 +21490,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21320,7 +21526,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21335,7 +21541,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(35);
+var camelize = __webpack_require__(37);
 
 var msPattern = /^-ms-/;
 
@@ -21363,7 +21569,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21398,7 +21604,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21506,7 +21712,7 @@ exports.default = FirstInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21780,7 +21986,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22330,7 +22536,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22395,7 +22601,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22450,7 +22656,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22478,7 +22684,7 @@ var _siteConstants = __webpack_require__(6);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
-var _SiteResults = __webpack_require__(42);
+var _SiteResults = __webpack_require__(44);
 
 var _SiteResults2 = _interopRequireDefault(_SiteResults);
 
@@ -22714,7 +22920,7 @@ exports.default = SiteDetails;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22740,9 +22946,13 @@ var _MailForm = __webpack_require__(21);
 
 var _MailForm2 = _interopRequireDefault(_MailForm);
 
-var _MailModal = __webpack_require__(43);
+var _MailModal = __webpack_require__(22);
 
 var _MailModal2 = _interopRequireDefault(_MailModal);
+
+var _RegisterModal = __webpack_require__(53);
+
+var _RegisterModal2 = _interopRequireDefault(_RegisterModal);
 
 var _siteConstants = __webpack_require__(6);
 
@@ -22771,6 +22981,9 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
     } else {
       result = _siteConstants2.default.extraSitePrices.mysql1;
     }
+  }
+  if (finalVisits === 1000) {
+    result = _siteConstants2.default.extraSitePrices.mysql2;
   }
   return result;
 }
@@ -22806,6 +23019,9 @@ var SiteResults = function (_React$Component) {
       if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {
         if (finalVisits < 360000 || hostNumber.value < 150) {
           umblerPlan = 1;
+        }
+        if (hostNumber.value >= 100) {
+          $('#register').on('shown.bs.modal', function () {});
         }
         if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
           umblerPlan = 2;
@@ -22907,6 +23123,55 @@ var SiteResults = function (_React$Component) {
             null,
             'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc.'
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          { 'class': 'modal fade' },
+          _react2.default.createElement(
+            'div',
+            { 'class': 'modal-dialog', role: 'document' },
+            _react2.default.createElement(
+              'div',
+              { 'class': 'modal-content' },
+              _react2.default.createElement(
+                'div',
+                { 'class': 'modal-header', id: 'register' },
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', 'class': 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                  _react2.default.createElement('span', { 'class': 'icon icon-close' })
+                ),
+                _react2.default.createElement(
+                  'h4',
+                  { 'class': 'modal-title' },
+                  'Modal title'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { 'class': 'modal-body' },
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Duis mollis, est non commodo luctus, nisi erat porttitor ligula.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { 'class': 'modal-footer' },
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', 'class': 'btn btn-primary mr-1', 'data-dismiss': 'modal' },
+                  'Close'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  { type: 'button', 'class': 'btn btn-primary' },
+                  'Save changes'
+                )
+              )
+            )
+          )
         )
       );
     }
@@ -22917,213 +23182,6 @@ var SiteResults = function (_React$Component) {
 
 exports.default = SiteResults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(Frag) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _reactModal = __webpack_require__(44);
-
-var _reactModal2 = _interopRequireDefault(_reactModal);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MailModal = function (_React$Component) {
-  _inherits(MailModal, _React$Component);
-
-  function MailModal(props) {
-    _classCallCheck(this, MailModal);
-
-    var _this = _possibleConstructorReturn(this, (MailModal.__proto__ || Object.getPrototypeOf(MailModal)).call(this, props));
-
-    _this.state = {
-      modal: false
-    };
-
-    _this.openCloseModal = _this.openCloseModal.bind(_this);
-    return _this;
-  }
-
-  _createClass(MailModal, [{
-    key: 'openCloseModal',
-    value: function openCloseModal() {
-      this.setState({
-        modal: !this.state.modal
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
-      return _react2.default.createElement(
-        Frag,
-        null,
-        _react2.default.createElement(
-          'p',
-          null,
-          _react2.default.createElement(
-            'a',
-            { href: '#', onClick: this.openCloseModal },
-            'Receba este resultado por e-mail'
-          )
-        ),
-        _react2.default.createElement(
-          _reactModal2.default,
-          {
-            isOpen: this.state.modal,
-            onRequestClose: this.openCloseModal,
-            className: 'mail-modal-content' },
-          _react2.default.createElement(
-            'div',
-            { className: 'modal-header' },
-            _react2.default.createElement(
-              'button',
-              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModal },
-              _react2.default.createElement('span', { className: 'icon icon-close' })
-            ),
-            _react2.default.createElement(
-              'h4',
-              { className: 'modal-title' },
-              'Receba este resultado por e-mail'
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'form-text text-muted' },
-            '* Campos obrigat\xF3rios'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'name' },
-                'Nome*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name', placeholder: 'Seu nome' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'email' },
-                'E-mail*'
-              ),
-              _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'email', placeholder: 'Seu e-mail' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'company' },
-                'Empresa*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'company', placeholder: 'Nome da sua empresa' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'jobName' },
-                'Cargo*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'jobName', placeholder: 'Nome do cargo que voc\xEA ocupa' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'currentHost' },
-                'Hospedagem atual'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'currentHost', placeholder: 'Nome da sua hospedagem atual' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-primary', type: 'submit' },
-                'Enviar'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return MailModal;
-}(_react2.default.Component);
-
-exports.default = MailModal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _Modal = __webpack_require__(45);
-
-var _Modal2 = _interopRequireDefault(_Modal);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _Modal2.default;
-module.exports = exports["default"];
 
 /***/ }),
 /* 45 */
@@ -23157,13 +23215,15 @@ var _ModalPortal = __webpack_require__(46);
 
 var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
 
-var _ariaAppHider = __webpack_require__(23);
+var _ariaAppHider = __webpack_require__(25);
 
 var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
 
-var _safeHTMLElement = __webpack_require__(24);
+var _safeHTMLElement = __webpack_require__(26);
 
 var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _reactLifecyclesCompat = __webpack_require__(52);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -23227,31 +23287,37 @@ var Modal = function (_Component) {
       !isReact16 && this.renderPortal(this.props);
     }
   }, {
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(newProps) {
-      if (!_safeHTMLElement.canUseDOM) return;
-      var isOpen = newProps.isOpen;
-      // Stop unnecessary renders if modal is remaining closed
-
-      if (!this.props.isOpen && !isOpen) return;
-
-      var currentParent = getParentElement(this.props.parentSelector);
-      var newParent = getParentElement(newProps.parentSelector);
-
-      if (newParent !== currentParent) {
-        currentParent.removeChild(this.node);
-        newParent.appendChild(this.node);
-      }
-
-      !isReact16 && this.renderPortal(newProps);
+    key: "getSnapshotBeforeUpdate",
+    value: function getSnapshotBeforeUpdate(prevProps) {
+      var prevParent = getParentElement(prevProps.parentSelector);
+      var nextParent = getParentElement(this.props.parentSelector);
+      return { prevParent: prevParent, nextParent: nextParent };
     }
   }, {
-    key: "componentWillUpdate",
-    value: function componentWillUpdate(newProps) {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, _, snapshot) {
       if (!_safeHTMLElement.canUseDOM) return;
-      if (newProps.portalClassName !== this.props.portalClassName) {
-        this.node.className = newProps.portalClassName;
+      var _props = this.props,
+          isOpen = _props.isOpen,
+          portalClassName = _props.portalClassName;
+
+
+      if (prevProps.portalClassName !== portalClassName) {
+        this.node.className = portalClassName;
       }
+
+      // Stop unnecessary renders if modal is remaining closed
+      if (!prevProps.isOpen && !isOpen) return;
+
+      var prevParent = snapshot.prevParent,
+          nextParent = snapshot.nextParent;
+
+      if (nextParent !== prevParent) {
+        prevParent.removeChild(this.node);
+        nextParent.appendChild(this.node);
+      }
+
+      !isReact16 && this.renderPortal(this.props);
     }
   }, {
     key: "componentWillUnmount",
@@ -23311,6 +23377,7 @@ Modal.propTypes = {
   }),
   portalClassName: _propTypes2.default.string,
   bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
   className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
     base: _propTypes2.default.string.isRequired,
     afterOpen: _propTypes2.default.string.isRequired,
@@ -23375,6 +23442,10 @@ Modal.defaultStyles = {
     padding: "20px"
   }
 };
+
+
+(0, _reactLifecyclesCompat.polyfill)(Modal);
+
 exports.default = Modal;
 
 /***/ }),
@@ -23410,15 +23481,15 @@ var _scopeTab = __webpack_require__(48);
 
 var _scopeTab2 = _interopRequireDefault(_scopeTab);
 
-var _ariaAppHider = __webpack_require__(23);
+var _ariaAppHider = __webpack_require__(25);
 
 var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
 
-var _bodyClassList = __webpack_require__(50);
+var _classList = __webpack_require__(50);
 
-var bodyClassList = _interopRequireWildcard(_bodyClassList);
+var classList = _interopRequireWildcard(_classList);
 
-var _safeHTMLElement = __webpack_require__(24);
+var _safeHTMLElement = __webpack_require__(26);
 
 var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
 
@@ -23451,10 +23522,6 @@ var ModalPortal = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (ModalPortal.__proto__ || Object.getPrototypeOf(ModalPortal)).call(this, props));
 
-    _this.setFocusAfterRender = function (focus) {
-      _this.focusAfterRender = _this.props.shouldFocusAfterRender && focus;
-    };
-
     _this.setOverlayRef = function (overlay) {
       _this.overlay = overlay;
       _this.props.overlayRef && _this.props.overlayRef(overlay);
@@ -23468,11 +23535,15 @@ var ModalPortal = function (_Component) {
     _this.afterClose = function () {
       var _this$props = _this.props,
           appElement = _this$props.appElement,
-          ariaHideApp = _this$props.ariaHideApp;
+          ariaHideApp = _this$props.ariaHideApp,
+          htmlOpenClassName = _this$props.htmlOpenClassName,
+          bodyOpenClassName = _this$props.bodyOpenClassName;
 
-      // Remove body class
+      // Remove classes.
 
-      bodyClassList.remove(_this.props.bodyOpenClassName);
+      classList.remove(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.remove(document.getElementsByTagName("html")[0], htmlOpenClassName);
 
       // Reset aria-hidden attribute if all modals have been removed
       if (ariaHideApp && ariaHiddenInstances > 0) {
@@ -23566,16 +23637,6 @@ var ModalPortal = function (_Component) {
         }
       }
       _this.shouldClose = null;
-      _this.moveFromContentToOverlay = null;
-    };
-
-    _this.handleOverlayOnMouseUp = function () {
-      if (_this.moveFromContentToOverlay === null) {
-        _this.shouldClose = false;
-      }
-      if (_this.props.shouldCloseOnOverlayClick) {
-        _this.shouldClose = true;
-      }
     };
 
     _this.handleContentOnMouseUp = function () {
@@ -23586,7 +23647,6 @@ var ModalPortal = function (_Component) {
       if (!_this.props.shouldCloseOnOverlayClick && event.target == _this.overlay) {
         event.preventDefault();
       }
-      _this.moveFromContentToOverlay = false;
     };
 
     _this.handleContentOnClick = function () {
@@ -23595,7 +23655,6 @@ var ModalPortal = function (_Component) {
 
     _this.handleContentOnMouseDown = function () {
       _this.shouldClose = false;
-      _this.moveFromContentToOverlay = false;
     };
 
     _this.requestClose = function (event) {
@@ -23650,35 +23709,33 @@ var ModalPortal = function (_Component) {
   _createClass(ModalPortal, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      // Focus needs to be set when mounting and already open
       if (this.props.isOpen) {
-        this.setFocusAfterRender(true);
         this.open();
-      }
-    }
-  }, {
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(newProps) {
-      if (process.env.NODE_ENV !== "production") {
-        if (newProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
-          // eslint-disable-next-line no-console
-          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
-        }
-      }
-      // Focus only needs to be set once when the modal is being opened
-      if (!this.props.isOpen && newProps.isOpen) {
-        this.setFocusAfterRender(true);
-        this.open();
-      } else if (this.props.isOpen && !newProps.isOpen) {
-        this.close();
       }
     }
   }, {
     key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      if (this.focusAfterRender) {
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (process.env.NODE_ENV !== "production") {
+        if (prevProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+        if (prevProps.htmlOpenClassName !== this.props.htmlOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "htmlOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+      }
+
+      if (this.props.isOpen && !prevProps.isOpen) {
+        this.open();
+      } else if (!this.props.isOpen && prevProps.isOpen) {
+        this.close();
+      }
+
+      // Focus only needs to be set once when the modal is being opened
+      if (this.props.shouldFocusAfterRender && this.state.isOpen && !prevState.isOpen) {
         this.focusContent();
-        this.setFocusAfterRender(false);
       }
     }
   }, {
@@ -23693,11 +23750,15 @@ var ModalPortal = function (_Component) {
       var _props = this.props,
           appElement = _props.appElement,
           ariaHideApp = _props.ariaHideApp,
+          htmlOpenClassName = _props.htmlOpenClassName,
           bodyOpenClassName = _props.bodyOpenClassName;
-      // Add body class
 
-      bodyClassList.add(bodyOpenClassName);
-      // Add aria-hidden to appElement
+      // Add classes.
+
+      classList.add(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.add(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
       if (ariaHideApp) {
         ariaHiddenInstances += 1;
         ariaAppHider.hide(appElement);
@@ -23725,7 +23786,6 @@ var ModalPortal = function (_Component) {
           style: _extends({}, overlayStyles, this.props.style.overlay),
           onClick: this.handleOverlayOnClick,
           onMouseDown: this.handleOverlayOnMouseDown,
-          onMouseUp: this.handleOverlayOnMouseUp,
           "aria-modal": "true"
         },
         _react2.default.createElement(
@@ -23741,7 +23801,9 @@ var ModalPortal = function (_Component) {
             onClick: this.handleContentOnClick,
             role: this.props.role,
             "aria-label": this.props.contentLabel
-          }, this.ariaAttributes(this.props.aria || {})),
+          }, this.ariaAttributes(this.props.aria || {}), {
+            "data-testid": this.props.testId
+          }),
           this.props.children
         )
       );
@@ -23755,7 +23817,8 @@ ModalPortal.defaultProps = {
   style: {
     overlay: {},
     content: {}
-  }
+  },
+  defaultStyles: {}
 };
 ModalPortal.propTypes = {
   isOpen: _propTypes2.default.bool.isRequired,
@@ -23770,6 +23833,7 @@ ModalPortal.propTypes = {
   className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
   overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
   bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
   ariaHideApp: _propTypes2.default.bool,
   appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
   onAfterOpen: _propTypes2.default.func,
@@ -23784,7 +23848,8 @@ ModalPortal.propTypes = {
   children: _propTypes2.default.node,
   shouldCloseOnEsc: _propTypes2.default.bool,
   overlayRef: _propTypes2.default.func,
-  contentRef: _propTypes2.default.func
+  contentRef: _propTypes2.default.func,
+  testId: _propTypes2.default.string
 };
 exports.default = ModalPortal;
 module.exports = exports["default"];
@@ -23808,7 +23873,7 @@ exports.popWithoutFocus = popWithoutFocus;
 exports.setupScopedFocus = setupScopedFocus;
 exports.teardownScopedFocus = teardownScopedFocus;
 
-var _tabbable = __webpack_require__(22);
+var _tabbable = __webpack_require__(24);
 
 var _tabbable2 = _interopRequireDefault(_tabbable);
 
@@ -23902,7 +23967,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = scopeTab;
 
-var _tabbable = __webpack_require__(22);
+var _tabbable = __webpack_require__(24);
 
 var _tabbable2 = _interopRequireDefault(_tabbable);
 
@@ -24046,46 +24111,114 @@ module.exports = warning;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var classListMap = {};
+exports.dumpClassLists = dumpClassLists;
+var htmlClassList = {};
+var docBodyClassList = {};
 
-var addClassToMap = function addClassToMap(className) {
-  // Set variable and default if none
-  if (!classListMap[className]) {
-    classListMap[className] = 0;
+function dumpClassLists() {
+  if (process.env.NODE_ENV !== "production") {
+    var classes = document.getElementsByTagName("html")[0].className;
+    var buffer = "Show tracked classes:\n\n";
+
+    buffer += "<html /> (" + classes + "):\n";
+    for (var x in htmlClassList) {
+      buffer += "  " + x + " " + htmlClassList[x] + "\n";
+    }
+
+    classes = document.body.className;
+
+    // eslint-disable-next-line max-len
+    buffer += "\n\ndoc.body (" + classes + "):\n";
+    for (var _x in docBodyClassList) {
+      buffer += "  " + _x + " " + docBodyClassList[_x] + "\n";
+    }
+
+    buffer += "\n";
+
+    // eslint-disable-next-line no-console
+    console.log(buffer);
   }
-  classListMap[className] += 1;
+}
+
+/**
+ * Track the number of reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var incrementReference = function incrementReference(poll, className) {
+  if (!poll[className]) {
+    poll[className] = 0;
+  }
+  poll[className] += 1;
   return className;
 };
 
-var removeClassFromMap = function removeClassFromMap(className) {
-  if (classListMap[className]) {
-    classListMap[className] -= 1;
+/**
+ * Drop the reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var decrementReference = function decrementReference(poll, className) {
+  if (poll[className]) {
+    poll[className] -= 1;
   }
   return className;
 };
 
-var add = function add(bodyClass) {
-  bodyClass.split(" ").map(addClassToMap).forEach(function (className) {
-    return document.body.classList.add(className);
+/**
+ * Track a class and add to the given class list.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be tracked.
+ */
+var trackClass = function trackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    incrementReference(poll, className);
+    classListRef.add(className);
   });
 };
 
-var remove = function remove(bodyClass) {
-  // Remove unused class(es) from body
-  bodyClass.split(" ").map(removeClassFromMap).filter(function (className) {
-    return classListMap[className] === 0;
-  }).forEach(function (className) {
-    return document.body.classList.remove(className);
+/**
+ * Untrack a class and remove from the given class list if the reference
+ * reaches 0.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be untracked.
+ */
+var untrackClass = function untrackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    decrementReference(poll, className);
+    poll[className] === 0 && classListRef.remove(className);
   });
 };
 
-exports.add = add;
-exports.remove = remove;
+/**
+ * Public inferface to add classes to the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var add = exports.add = function add(element, classString) {
+  return trackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/**
+ * Public inferface to remove classes from the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var remove = exports.remove = function remove(element, classString) {
+  return untrackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 51 */
@@ -24136,6 +24269,341 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 /* 52 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+function componentWillMount() {
+  // Call this.constructor.gDSFP to support sub-classes.
+  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
+  if (state !== null && state !== undefined) {
+    this.setState(state);
+  }
+}
+
+function componentWillReceiveProps(nextProps) {
+  // Call this.constructor.gDSFP to support sub-classes.
+  // Use the setState() updater to ensure state isn't stale in certain edge cases.
+  function updater(prevState) {
+    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
+    return state !== null && state !== undefined ? state : null;
+  }
+  // Binding "this" is important for shallow renderer support.
+  this.setState(updater.bind(this));
+}
+
+function componentWillUpdate(nextProps, nextState) {
+  try {
+    var prevProps = this.props;
+    var prevState = this.state;
+    this.props = nextProps;
+    this.state = nextState;
+    this.__reactInternalSnapshotFlag = true;
+    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
+      prevProps,
+      prevState
+    );
+  } finally {
+    this.props = prevProps;
+    this.state = prevState;
+  }
+}
+
+// React may warn about cWM/cWRP/cWU methods being deprecated.
+// Add a flag to suppress these warnings for this special case.
+componentWillMount.__suppressDeprecationWarning = true;
+componentWillReceiveProps.__suppressDeprecationWarning = true;
+componentWillUpdate.__suppressDeprecationWarning = true;
+
+function polyfill(Component) {
+  var prototype = Component.prototype;
+
+  if (!prototype || !prototype.isReactComponent) {
+    throw new Error('Can only polyfill class components');
+  }
+
+  if (
+    typeof Component.getDerivedStateFromProps !== 'function' &&
+    typeof prototype.getSnapshotBeforeUpdate !== 'function'
+  ) {
+    return Component;
+  }
+
+  // If new component APIs are defined, "unsafe" lifecycles won't be called.
+  // Error if any of these lifecycles are present,
+  // Because they would work differently between older and newer (16.3+) versions of React.
+  var foundWillMountName = null;
+  var foundWillReceivePropsName = null;
+  var foundWillUpdateName = null;
+  if (typeof prototype.componentWillMount === 'function') {
+    foundWillMountName = 'componentWillMount';
+  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
+    foundWillMountName = 'UNSAFE_componentWillMount';
+  }
+  if (typeof prototype.componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'componentWillReceiveProps';
+  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
+  }
+  if (typeof prototype.componentWillUpdate === 'function') {
+    foundWillUpdateName = 'componentWillUpdate';
+  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
+    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
+  }
+  if (
+    foundWillMountName !== null ||
+    foundWillReceivePropsName !== null ||
+    foundWillUpdateName !== null
+  ) {
+    var componentName = Component.displayName || Component.name;
+    var newApiName =
+      typeof Component.getDerivedStateFromProps === 'function'
+        ? 'getDerivedStateFromProps()'
+        : 'getSnapshotBeforeUpdate()';
+
+    throw Error(
+      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
+        componentName +
+        ' uses ' +
+        newApiName +
+        ' but also contains the following legacy lifecycles:' +
+        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
+        (foundWillReceivePropsName !== null
+          ? '\n  ' + foundWillReceivePropsName
+          : '') +
+        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
+        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
+        'https://fb.me/react-async-component-lifecycle-hooks'
+    );
+  }
+
+  // React <= 16.2 does not support static getDerivedStateFromProps.
+  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
+  // Newer versions of React will ignore these lifecycles if gDSFP exists.
+  if (typeof Component.getDerivedStateFromProps === 'function') {
+    prototype.componentWillMount = componentWillMount;
+    prototype.componentWillReceiveProps = componentWillReceiveProps;
+  }
+
+  // React <= 16.2 does not support getSnapshotBeforeUpdate.
+  // As a workaround, use cWU to invoke the new lifecycle.
+  // Newer versions of React will ignore that lifecycle if gSBU exists.
+  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
+    if (typeof prototype.componentDidUpdate !== 'function') {
+      throw new Error(
+        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
+      );
+    }
+
+    prototype.componentWillUpdate = componentWillUpdate;
+
+    var componentDidUpdate = prototype.componentDidUpdate;
+
+    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
+      prevProps,
+      prevState,
+      maybeSnapshot
+    ) {
+      // 16.3+ will not execute our will-update method;
+      // It will pass a snapshot value to did-update though.
+      // Older versions will require our polyfilled will-update value.
+      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
+      // Because for <= 15.x versions this might be a "prevContext" object.
+      // We also can't just check "__reactInternalSnapshot",
+      // Because get-snapshot might return a falsy value.
+      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
+      var snapshot = this.__reactInternalSnapshotFlag
+        ? this.__reactInternalSnapshot
+        : maybeSnapshot;
+
+      componentDidUpdate.call(this, prevProps, prevState, snapshot);
+    };
+  }
+
+  return Component;
+}
+
+
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactModal = __webpack_require__(23);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RegisterModal = function (_React$Component) {
+  _inherits(RegisterModal, _React$Component);
+
+  function RegisterModal(props) {
+    _classCallCheck(this, RegisterModal);
+
+    var _this = _possibleConstructorReturn(this, (RegisterModal.__proto__ || Object.getPrototypeOf(RegisterModal)).call(this, props));
+
+    _this.state = {
+      modal: false
+    };
+
+    _this.openCloseModalRegister = _this.openCloseModalRegister.bind(_this);
+    return _this;
+  }
+
+  _createClass(RegisterModal, [{
+    key: 'openCloseModalRegister',
+    value: function openCloseModalRegister() {
+      this.setState({
+        modal: !this.state.modal
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
+      return _react2.default.createElement(
+        _reactModal2.default,
+        {
+          isOpen: this.state.modal,
+          onRequestClose: this.openCloseModal,
+          className: 'mail-modal-content' },
+        _react2.default.createElement(
+          'div',
+          { className: 'modal-header' },
+          _react2.default.createElement(
+            'button',
+            { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModal },
+            _react2.default.createElement('span', { className: 'icon icon-close' })
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'form-text text-muted' },
+          '* Campos obrigat\xF3rios'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'label',
+              { htmlFor: 'name' },
+              'Nome*'
+            ),
+            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'nameRegister', placeholder: 'Seu nome' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'label',
+              { htmlFor: 'email' },
+              'E-mail*'
+            ),
+            _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'emailRegister', placeholder: 'Seu e-mail' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'label',
+              { htmlFor: 'telephone' },
+              'Telefone*'
+            ),
+            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'telephone', placeholder: 'Telefone' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'label',
+              { htmlFor: 'issue' },
+              'Assunto'
+            ),
+            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'issue', placeholder: 'Assunto' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'label',
+              { htmlFor: 'message' },
+              'Mensagem'
+            ),
+            _react2.default.createElement('input', { type: 'textarea', className: 'form-control', id: 'message', placeholder: 'Mensagem' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'form-group col-sm-12' },
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-primary', type: 'submit' },
+              'Enviar'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return RegisterModal;
+}(_react2.default.Component);
+
+exports.default = RegisterModal;
+
+/***/ }),
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24157,7 +24625,7 @@ var _reactSelect = __webpack_require__(8);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _emailConstants = __webpack_require__(53);
+var _emailConstants = __webpack_require__(55);
 
 var _emailConstants2 = _interopRequireDefault(_emailConstants);
 
@@ -24165,7 +24633,7 @@ var _MailForm = __webpack_require__(21);
 
 var _MailForm2 = _interopRequireDefault(_MailForm);
 
-var _MailModal = __webpack_require__(43);
+var _MailModal = __webpack_require__(22);
 
 var _MailModal2 = _interopRequireDefault(_MailModal);
 
@@ -24405,7 +24873,7 @@ exports.default = EmailDetails;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24415,7 +24883,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var emailConstants = {
-  space: [{ value: 1, label: '1GB' }, { value: 2, label: '2GB' }, { value: 5, label: '5GB' }, { value: 10, label: '10GB' }, { value: 50, label: '50GB' }],
+  space: [{ value: 1, label: '1GB' }, { value: 2, label: '2GB' }, { value: 5, label: '5GB' }, { value: 10, label: '10GB' }, { value: 20, label: '20GB' }, { value: 25, label: '25GB' }, { value: 50, label: '50GB' }],
   emailPlans: ['E-mail Umbler', 'E-mail Exchange'],
   emailPrices: [{ size: 1, price: 0.75, benchPrice: 1.58 }, { size: 2, price: 1.5, benchPrice: 3.10 }, { size: 5, price: 3.75, benchPrice: 4.90 }, { size: 10, price: 7.5, benchPrice: 9.90 }, { size: 20, price: 15, benchPrice: 19.90 }, { size: 25, price: 9, benchPrice: 12.90 }, { size: 50, price: 14, benchPrice: 21.90 }]
 };
@@ -24423,7 +24891,7 @@ var emailConstants = {
 exports.default = emailConstants;
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

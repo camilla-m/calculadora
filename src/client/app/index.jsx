@@ -58,10 +58,7 @@ class App extends React.Component {
             {hostSelectedOption.value === 'email' && (
               <EmailDetails {...this.state} />
             )}
-
-            {hostSelectedOption.value === 'app' && (
-              <AppDetails {...this.state} />
-            )}
+            
 	        </div>
 	      </div>
 	    </div>

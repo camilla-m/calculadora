@@ -11,7 +11,7 @@ const siteConstants = {
     {value: 'site', label: 'Site'},{value: 'store', label: 'Loja virtual'}, {value: 'email', label: 'E-mail'}
   ],
   pluralHostOptions: [
-    {value: 'site', label: 'Sites'},{value: 'store', label: 'Lojas virtuais'}, {value: 'app', label: 'Apps'}, {value: 'email', label: 'E-mails'}
+    {value: 'site', label: 'Sites'},{value: 'store', label: 'Lojas virtuais'},{value: 'email', label: 'E-mails'}
   ],
   purposeOptions: [
     {value: 'personal', label: 'uso pessoal'},{value: 'clients', label: 'uso dos meus clientes'}

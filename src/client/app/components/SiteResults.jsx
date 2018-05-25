@@ -1,17 +1,16 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 import Select from 'react-select';
 import MailForm from './MailForm.jsx';
 import MailModal from './MailModal.jsx';
+import RegisterModal from './RegisterModal.jsx';
 import siteConstants from '../constants/siteConstants';
 
 function calcVisits(period, visits, complement, hostNumber) {
   const result = (complement === 'each') ? ((period * visits) * hostNumber)
-                                          : ((period * visits) / hostNumber);
+    : ((period * visits) / hostNumber);
   return result;
 }
-
-
 
 function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
   let result;
@@ -24,7 +23,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
       result = siteConstants.extraSitePrices.mysql1;
     }
   }
-  if(finalVisits === 1000) {
+  if (finalVisits === 1000) {
     result = siteConstants.extraSitePrices.mysql2;
   }
   return result;
@@ -32,7 +31,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
 
 class SiteResults extends React.Component {
   render() {
-    const {hostSelectedOption, hostNumber, platform, environment, databaseNumber, database, period, complement, visits} = this.props;
+    const { hostSelectedOption, hostNumber, platform, environment, databaseNumber, database, period, complement, visits } = this.props;
     let umblerPlan = 0;
     let finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
     let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value);
@@ -42,8 +41,9 @@ class SiteResults extends React.Component {
       if (finalVisits < 360000 || hostNumber.value < 150) {
         umblerPlan = 1;
       }
-      if(hostNumber.value >= 100) {
-        
+      if (hostNumber.value >= 100) {
+        $('#register').on('shown.bs.modal', function () {
+        })
       }
       if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
         umblerPlan = 2;
@@ -64,41 +64,62 @@ class SiteResults extends React.Component {
     let hostPrice = siteConstants.sitePlans[umblerPlan].price;
     let title = siteConstants.sitePlans[umblerPlan].title;
     let price = umblerPlan === 0 ? (hostPrice * hostNumber.value) + databasePrice
-                                 : hostPrice + databasePrice;
+      : hostPrice + databasePrice;
     let benchPrice = umblerPlan === 0 ? (siteConstants.sitePlans[umblerPlan].benchPrice * hostNumber.value) + branchDatabasePrice
-                                       : siteConstants.sitePlans[umblerPlan].benchPrice + branchDatabasePrice;
-    price = price.toLocaleString(window.navigator.language, {style:"currency", currency:"BRL", minimumFractionDigits:2});
-    benchPrice = benchPrice.toLocaleString(window.navigator.language, {style:"currency", currency:"BRL", minimumFractionDigits:2});
+      : siteConstants.sitePlans[umblerPlan].benchPrice + branchDatabasePrice;
+    price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+    benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
 
-    return(
+    return (
       <Frag>
         <div className='row row-result'>
           {hostNumber.value === 1 ? (
-            <span className='h4'>A hospedagem do seu <em>site</em> custará:<br/></span>
+            <span className='h4'>A hospedagem do seu <em>site</em> custará:<br /></span>
           ) : (
-            <span className='h4'>A hospedagem do seus <em>sites</em> custará:<br/></span>
-          )}
+              <span className='h4'>A hospedagem do seus <em>sites</em> custará:<br /></span>
+            )}
 
-            <span className='h3'>{price}  por mês no plano {title}</span><br/>
-            ou em média {benchPrice} por mês em outras empresas
+          <span className='h3'>{price}  por mês no plano {title}</span><br />
+          ou em média {benchPrice} por mês em outras empresas
         </div>
         <div className='row form-inline'>
           <MailModal />
           {platform.value !== 'none' ? (
             <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.</p>
           ) : (
-            <p>Ganhe até R$100 em créditos para hospedar seu site na Umbler.</p>
-          )}
+              <p>Ganhe até R$100 em créditos para hospedar seu site na Umbler.</p>
+            )}
           <MailForm />
 
           {platform.value !== 'none' ? (
             <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites <em>{platform.label}</em>.</p>
           ) : (
-            <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites.</p>
-          )}
+              <p>Ainda com dúvidas? Fale com um especialista em hospedagem de sites.</p>
+            )}
 
           <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
         </div>
+
+        <div class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" id="register">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span class="icon icon-close"></span>
+                </button>
+                <h4 class="modal-title">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary mr-1" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </Frag>
     );
   }
