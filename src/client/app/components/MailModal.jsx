@@ -12,7 +12,7 @@ class MailModal extends React.Component {
   }
 
   openCloseModal() {
-    this.setState ({
+    this.setState({
       modal: !this.state.modal
     });
   }
@@ -33,41 +33,45 @@ class MailModal extends React.Component {
             <h4 className='modal-title'>Receba este resultado por e-mail</h4>
           </div>
           <p className='form-text text-muted'>* Campos obrigatórios</p>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='name'>Nome*</label>
-              <input type='text' className='form-control' id='name' placeholder='Seu nome' />
+          <form action="https://formspree.io/tessis@umbler.com" method="POST">
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='name'>Nome*</label>
+                <input type='text' className='form-control' name='name' id='name' placeholder='Seu nome' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='email'>E-mail*</label>
-              <input type='email' className='form-control' id='email' placeholder='Seu e-mail' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='email'>E-mail*</label>
+                <input type='email' className='form-control' name='email' id='email' placeholder='Seu e-mail' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='company'>Empresa*</label>
-              <input type='text' className='form-control' id='company' placeholder='Nome da sua empresa' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='company'>Empresa*</label>
+                <input type='text' className='form-control' name='company' id='company' placeholder='Nome da sua empresa' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='jobName'>Cargo*</label>
-              <input type='text' className='form-control' id='jobName' placeholder='Nome do cargo que você ocupa' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='jobName'>Cargo*</label>
+                <input type='text' className='form-control' name='job' id='jobName' placeholder='Nome do cargo que você ocupa' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='currentHost'>Hospedagem atual</label>
-              <input type='text' className='form-control' id='currentHost' placeholder='Nome da sua hospedagem atual' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='currentHost'>Hospedagem atual</label>
+                <input type='text' className='form-control' name='currenthost' id='currentHost' placeholder='Nome da sua hospedagem atual' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <button className='btn btn-primary' type='submit'>Enviar</button>
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <button className='btn btn-primary' type='submit'>Enviar</button>
+              </div>
             </div>
-          </div>
+            <input type="hidden" name="_next" value="http://localhost:8000" />
+            <input type="hidden" name="_language" value="pt-BR" />
+          </form>
         </Modal>
       </Frag>
     );

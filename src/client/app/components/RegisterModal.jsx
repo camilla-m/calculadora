@@ -12,60 +12,68 @@ class RegisterModal extends React.Component {
   }
 
   openCloseModalRegister() {
-    this.setState ({
+    this.setState({
       modal: !this.state.modal
     });
   }
-
+  
   render() {
     let modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
     return (
+      <Frag>
+        <p><a href='#' onClick={this.openCloseModalRegister}>Dúvidas? Entre em contato conosco!</a></p>
         <Modal
           isOpen={this.state.modal}
-          onRequestClose={this.openCloseModal}
+          onRequestClose={this.openCloseModalRegister}
           className='mail-modal-content'>
           <div className='modal-header'>
-            <button type='button' className='close' data-dismiss='modal' aria-label='Close' onClick={this.openCloseModal}>
+            <button type='button' className='close' data-dismiss='modal' aria-label='Close' onClick={this.openCloseModalRegister}>
               <span className='icon icon-close'></span>
             </button>
+            <h4 className='modal-title'>Fale com nossos especialistas</h4>
           </div>
           <p className='form-text text-muted'>* Campos obrigatórios</p>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='name'>Nome*</label>
-              <input type='text' className='form-control' id='nameRegister' placeholder='Seu nome' />
+          <form action="https://formspree.io/tessis@umbler.com" method="POST">
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='name'>Nome*</label>
+                <input type='text' className='form-control' name='name' id='nameRegister' placeholder='Seu nome' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='email'>E-mail*</label>
-              <input type='email' className='form-control' id='emailRegister' placeholder='Seu e-mail' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='email'>E-mail*</label>
+                <input type='email' className='form-control' name='email' id='emailRegister' placeholder='Seu e-mail' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='telephone'>Telefone*</label>
-              <input type='text' className='form-control' id='telephone' placeholder='Telefone' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='telephone'>Telefone*</label>
+                <input type='text' className='form-control' name='telephone' id='telephone' placeholder='Telefone' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='issue'>Assunto</label>
-              <input type='text' className='form-control' id='issue' placeholder='Assunto' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='issue'>Assunto</label>
+                <input type='text' className='form-control' name='issue' id='issue' placeholder='Assunto' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <label htmlFor='message'>Mensagem</label>
-              <input type='textarea' className='form-control' id='message' placeholder='Mensagem' />
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <label htmlFor='message'>Mensagem</label>
+                <input type='textarea' className='form-control' name='message' id='message' placeholder='Mensagem' />
+              </div>
             </div>
-          </div>
-          <div className='row'>
-            <div className='form-group col-sm-12'>
-              <button className='btn btn-primary' type='submit'>Enviar</button>
+            <div className='row'>
+              <div className='form-group col-sm-12'>
+                <button className='btn btn-primary' type='submit'>Enviar</button>
+              </div>
             </div>
-          </div>
+            <input type="hidden" name="_next" value="http://localhost:8000" />
+            <input type="hidden" name="_language" value="pt-BR" />
+          </form>
         </Modal>
+      </Frag>
     );
   }
 }

@@ -42,8 +42,7 @@ class SiteResults extends React.Component {
         umblerPlan = 1;
       }
       if (hostNumber.value >= 100) {
-        $('#register').on('shown.bs.modal', function () {
-        })
+        $('#register').show();
       }
       if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
         umblerPlan = 2;
@@ -84,6 +83,7 @@ class SiteResults extends React.Component {
         </div>
         <div className='row form-inline'>
           <MailModal />
+          <RegisterModal />
           {platform.value !== 'none' ? (
             <p>Ganhe até R$100 em créditos para hospedar seu site {platform.label} na Umbler.</p>
           ) : (
@@ -98,26 +98,6 @@ class SiteResults extends React.Component {
             )}
 
           <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
-        </div>
-
-        <div class="modal fade">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header" id="register">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span class="icon icon-close"></span>
-                </button>
-                <h4 class="modal-title">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary mr-1" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
         </div>
 
       </Frag>

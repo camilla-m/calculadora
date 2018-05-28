@@ -361,6 +361,22 @@ if (process.env.NODE_ENV === 'production') {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var Frag = function Frag(_ref) {
+  var children = _ref.children;
+  return children || null;
+};
+exports.default = Frag;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -454,7 +470,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -514,7 +530,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -540,22 +556,6 @@ var siteConstants = {
 };
 
 exports.default = siteConstants;
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var Frag = function Frag(_ref) {
-  var children = _ref.children;
-  return children || null;
-};
-exports.default = Frag;
 
 /***/ }),
 /* 8 */
@@ -3390,7 +3390,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(5);
+  var invariant = __webpack_require__(6);
   var warning = __webpack_require__(10);
   var ReactPropTypesSecret = __webpack_require__(13);
   var loggedTypeFailures = {};
@@ -4044,7 +4044,7 @@ var MailModal = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = MailModal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 23 */
@@ -4250,7 +4250,7 @@ var _mainConstants = __webpack_require__(20);
 
 var _mainConstants2 = _interopRequireDefault(_mainConstants);
 
-var _siteConstants = __webpack_require__(6);
+var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
@@ -4374,7 +4374,7 @@ var App = function (_React$Component) {
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(4),n=__webpack_require__(9),p=__webpack_require__(2),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(5),n=__webpack_require__(9),p=__webpack_require__(2),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -4410,9 +4410,9 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 var emptyObject = __webpack_require__(9);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(6);
 var warning = __webpack_require__(10);
 var emptyFunction = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(12);
@@ -5770,7 +5770,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(14),B=__webpack_require__(4),C=__webpack_require__(2),ba=__webpack_require__(15),da=__webpack_require__(16),ea=__webpack_require__(17),fa=__webpack_require__(18),ia=__webpack_require__(19),D=__webpack_require__(9);
+var aa=__webpack_require__(0),l=__webpack_require__(14),B=__webpack_require__(5),C=__webpack_require__(2),ba=__webpack_require__(15),da=__webpack_require__(16),ea=__webpack_require__(17),fa=__webpack_require__(18),ia=__webpack_require__(19),D=__webpack_require__(9);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -6068,10 +6068,10 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(0);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(6);
 var warning = __webpack_require__(10);
 var ExecutionEnvironment = __webpack_require__(14);
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 var emptyFunction = __webpack_require__(2);
 var EventListener = __webpack_require__(15);
 var getActiveElement = __webpack_require__(16);
@@ -21630,7 +21630,7 @@ var _mainConstants = __webpack_require__(20);
 
 var _mainConstants2 = _interopRequireDefault(_mainConstants);
 
-var _siteConstants = __webpack_require__(6);
+var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
@@ -21709,7 +21709,7 @@ var FirstInput = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = FirstInput;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 39 */
@@ -22000,9 +22000,9 @@ exports.default = AutosizeInput;
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(6);
 var warning = __webpack_require__(10);
-var assign = __webpack_require__(4);
+var assign = __webpack_require__(5);
 
 var ReactPropTypesSecret = __webpack_require__(13);
 var checkPropTypes = __webpack_require__(12);
@@ -22550,7 +22550,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(2);
-var invariant = __webpack_require__(5);
+var invariant = __webpack_require__(6);
 var ReactPropTypesSecret = __webpack_require__(13);
 
 module.exports = function() {
@@ -22680,7 +22680,7 @@ var _reactSelect = __webpack_require__(8);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _siteConstants = __webpack_require__(6);
+var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
@@ -22917,7 +22917,7 @@ var SiteDetails = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SiteDetails;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 44 */
@@ -22954,7 +22954,7 @@ var _RegisterModal = __webpack_require__(53);
 
 var _RegisterModal2 = _interopRequireDefault(_RegisterModal);
 
-var _siteConstants = __webpack_require__(6);
+var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
@@ -23021,7 +23021,7 @@ var SiteResults = function (_React$Component) {
           umblerPlan = 1;
         }
         if (hostNumber.value >= 100) {
-          $('#register').on('shown.bs.modal', function () {});
+          $('#register').show();
         }
         if (finalVisits >= 360000 && finalVisits < 540000 || hostNumber.value === 150) {
           umblerPlan = 2;
@@ -23091,6 +23091,7 @@ var SiteResults = function (_React$Component) {
           'div',
           { className: 'row form-inline' },
           _react2.default.createElement(_MailModal2.default, null),
+          _react2.default.createElement(_RegisterModal2.default, null),
           platform.value !== 'none' ? _react2.default.createElement(
             'p',
             null,
@@ -23123,55 +23124,6 @@ var SiteResults = function (_React$Component) {
             null,
             'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc.'
           )
-        ),
-        _react2.default.createElement(
-          'div',
-          { 'class': 'modal fade' },
-          _react2.default.createElement(
-            'div',
-            { 'class': 'modal-dialog', role: 'document' },
-            _react2.default.createElement(
-              'div',
-              { 'class': 'modal-content' },
-              _react2.default.createElement(
-                'div',
-                { 'class': 'modal-header', id: 'register' },
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', 'class': 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                  _react2.default.createElement('span', { 'class': 'icon icon-close' })
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  { 'class': 'modal-title' },
-                  'Modal title'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { 'class': 'modal-body' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Duis mollis, est non commodo luctus, nisi erat porttitor ligula.'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { 'class': 'modal-footer' },
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', 'class': 'btn btn-primary mr-1', 'data-dismiss': 'modal' },
-                  'Close'
-                ),
-                _react2.default.createElement(
-                  'button',
-                  { type: 'button', 'class': 'btn btn-primary' },
-                  'Save changes'
-                )
-              )
-            )
-          )
         )
       );
     }
@@ -23181,7 +23133,7 @@ var SiteResults = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SiteResults;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 45 */
@@ -24439,7 +24391,7 @@ function polyfill(Component) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(Frag) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -24491,106 +24443,130 @@ var RegisterModal = function (_React$Component) {
     value: function render() {
       var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
       return _react2.default.createElement(
-        _reactModal2.default,
-        {
-          isOpen: this.state.modal,
-          onRequestClose: this.openCloseModal,
-          className: 'mail-modal-content' },
-        _react2.default.createElement(
-          'div',
-          { className: 'modal-header' },
-          _react2.default.createElement(
-            'button',
-            { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModal },
-            _react2.default.createElement('span', { className: 'icon icon-close' })
-          )
-        ),
+        Frag,
+        null,
         _react2.default.createElement(
           'p',
-          { className: 'form-text text-muted' },
-          '* Campos obrigat\xF3rios'
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
+          null,
           _react2.default.createElement(
-            'div',
-            { className: 'form-group col-sm-12' },
-            _react2.default.createElement(
-              'label',
-              { htmlFor: 'name' },
-              'Nome*'
-            ),
-            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'nameRegister', placeholder: 'Seu nome' })
+            'a',
+            { href: '#', onClick: this.openCloseModalRegister },
+            'D\xFAvidas? Entre em contato conosco!'
           )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'row' },
+          _reactModal2.default,
+          {
+            isOpen: this.state.modal,
+            onRequestClose: this.openCloseModalRegister,
+            className: 'mail-modal-content' },
           _react2.default.createElement(
             'div',
-            { className: 'form-group col-sm-12' },
-            _react2.default.createElement(
-              'label',
-              { htmlFor: 'email' },
-              'E-mail*'
-            ),
-            _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'emailRegister', placeholder: 'Seu e-mail' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'form-group col-sm-12' },
-            _react2.default.createElement(
-              'label',
-              { htmlFor: 'telephone' },
-              'Telefone*'
-            ),
-            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'telephone', placeholder: 'Telefone' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'form-group col-sm-12' },
-            _react2.default.createElement(
-              'label',
-              { htmlFor: 'issue' },
-              'Assunto'
-            ),
-            _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'issue', placeholder: 'Assunto' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'form-group col-sm-12' },
-            _react2.default.createElement(
-              'label',
-              { htmlFor: 'message' },
-              'Mensagem'
-            ),
-            _react2.default.createElement('input', { type: 'textarea', className: 'form-control', id: 'message', placeholder: 'Mensagem' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'form-group col-sm-12' },
+            { className: 'modal-header' },
             _react2.default.createElement(
               'button',
-              { className: 'btn btn-primary', type: 'submit' },
-              'Enviar'
+              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModalRegister },
+              _react2.default.createElement('span', { className: 'icon icon-close' })
+            ),
+            _react2.default.createElement(
+              'h4',
+              { className: 'modal-title' },
+              'Fale com nossos especialistas'
             )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'form-text text-muted' },
+            '* Campos obrigat\xF3rios'
+          ),
+          _react2.default.createElement(
+            'form',
+            { action: 'https://formspree.io/camilla-m@outlook.com', method: 'POST' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'name' },
+                  'Nome*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'name', id: 'nameRegister', placeholder: 'Seu nome' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'email' },
+                  'E-mail*'
+                ),
+                _react2.default.createElement('input', { type: 'email', className: 'form-control', name: 'email', id: 'emailRegister', placeholder: 'Seu e-mail' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'telephone' },
+                  'Telefone*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'telephone', id: 'telephone', placeholder: 'Telefone' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'issue' },
+                  'Assunto'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'issue', id: 'issue', placeholder: 'Assunto' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'message' },
+                  'Mensagem'
+                ),
+                _react2.default.createElement('input', { type: 'textarea', className: 'form-control', name: 'message', id: 'message', placeholder: 'Mensagem' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'button',
+                  { className: 'btn btn-primary', type: 'submit' },
+                  'Enviar'
+                )
+              )
+            ),
+            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://localhost:8000' }),
+            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
           )
         )
       );
@@ -24601,6 +24577,7 @@ var RegisterModal = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = RegisterModal;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 54 */
@@ -24870,7 +24847,7 @@ var EmailDetails = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = EmailDetails;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)["default"]))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
 /* 55 */
@@ -24913,7 +24890,7 @@ var _reactSelect = __webpack_require__(8);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _siteConstants = __webpack_require__(6);
+var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
