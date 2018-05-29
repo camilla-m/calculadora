@@ -71,6 +71,7 @@ class RegisterModal extends React.Component {
             </div>
             <input type="hidden" name="_next" value="http://quanto.nodegirlscode.org" />
             <input type="hidden" name="_language" value="pt-BR" />
+            <input type="hidden" id="cc" name="_cc" value=""/>
           </form>
         </Modal>
       </Frag>

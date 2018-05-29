@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <script type="text/javascript">
-    var email = document.getElementById("email").value
-    document.getElementById("cc").value = email;
+  var email = document.getElementById("email");
+  if (email.value != null) {
+    document.getElementById("cc").value = email.value;
+  }   
   </script>
   <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/g/excanvas@r3(excanvas.compiled.js),html5shiv@3.7.3"></script>
