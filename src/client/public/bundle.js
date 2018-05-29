@@ -3919,6 +3919,11 @@ var MailModal = function (_React$Component) {
         Frag,
         null,
         _react2.default.createElement(
+          'script',
+          { type: 'text/javascript' },
+          'var email = document.getElementById("email").value document.getElementById("cc").value = email;'
+        ),
+        _react2.default.createElement(
           'p',
           null,
           _react2.default.createElement(
@@ -4039,7 +4044,8 @@ var MailModal = function (_React$Component) {
               )
             ),
             _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
-            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
+            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' }),
+            _react2.default.createElement('input', { type: 'hidden', id: 'cc', name: '_cc', value: '' })
           )
         )
       );
