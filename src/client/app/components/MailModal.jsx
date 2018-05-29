@@ -21,10 +21,6 @@ class MailModal extends React.Component {
     let modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
     return (
       <Frag>
-        <script type="text/javascript">
-        var email = document.getElementById("email").value
-        document.getElementById("cc").value = email;
-        </script>
         <p><a href='#' onClick={this.openCloseModal}>Receba este resultado por e-mail</a></p>
         <Modal
           isOpen={this.state.modal}
