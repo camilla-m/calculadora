@@ -3953,87 +3953,93 @@ var MailModal = function (_React$Component) {
             '* Campos obrigat\xF3rios'
           ),
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
+            'form',
+            { action: 'https://formspree.io/tessis@umbler.com', method: 'POST' },
             _react2.default.createElement(
               'div',
-              { className: 'form-group col-sm-12' },
+              { className: 'row' },
               _react2.default.createElement(
-                'label',
-                { htmlFor: 'name' },
-                'Nome*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'name', placeholder: 'Seu nome' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'email' },
-                'E-mail*'
-              ),
-              _react2.default.createElement('input', { type: 'email', className: 'form-control', id: 'email', placeholder: 'Seu e-mail' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'company' },
-                'Empresa*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'company', placeholder: 'Nome da sua empresa' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'jobName' },
-                'Cargo*'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'jobName', placeholder: 'Nome do cargo que voc\xEA ocupa' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'label',
-                { htmlFor: 'currentHost' },
-                'Hospedagem atual'
-              ),
-              _react2.default.createElement('input', { type: 'text', className: 'form-control', id: 'currentHost', placeholder: 'Nome da sua hospedagem atual' })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-group col-sm-12' },
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-primary', type: 'submit' },
-                'Enviar'
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'name' },
+                  'Nome*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'name', id: 'name', placeholder: 'Seu nome' })
               )
-            )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'email' },
+                  'E-mail*'
+                ),
+                _react2.default.createElement('input', { type: 'email', className: 'form-control', name: 'email', id: 'email', placeholder: 'Seu e-mail' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'company' },
+                  'Empresa*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'company', id: 'company', placeholder: 'Nome da sua empresa' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'jobName' },
+                  'Cargo*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'job', id: 'jobName', placeholder: 'Nome do cargo que voc\xEA ocupa' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'currentHost' },
+                  'Hospedagem atual'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'currenthost', id: 'currentHost', placeholder: 'Nome da sua hospedagem atual' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'button',
+                  { className: 'btn btn-primary', type: 'submit' },
+                  'Enviar'
+                )
+              )
+            ),
+            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://localhost:8000' }),
+            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
           )
         )
       );
@@ -24481,7 +24487,7 @@ var RegisterModal = function (_React$Component) {
           ),
           _react2.default.createElement(
             'form',
-            { action: 'https://formspree.io/camilla-m@outlook.com', method: 'POST' },
+            { action: 'https://formspree.io/tessis@umbler.com', method: 'POST' },
             _react2.default.createElement(
               'div',
               { className: 'row' },
