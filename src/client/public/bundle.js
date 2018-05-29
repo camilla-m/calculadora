@@ -4038,7 +4038,7 @@ var MailModal = function (_React$Component) {
                 )
               )
             ),
-            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://localhost:8000' }),
+            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
             _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
           )
         )
@@ -24571,7 +24571,7 @@ var RegisterModal = function (_React$Component) {
                 )
               )
             ),
-            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://localhost:8000' }),
+            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
             _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
           )
         )

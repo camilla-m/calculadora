@@ -69,7 +69,7 @@ class MailModal extends React.Component {
                 <button className='btn btn-primary' type='submit'>Enviar</button>
               </div>
             </div>
-            <input type="hidden" name="_next" value="http://localhost:8000" />
+            <input type="hidden" name="_next" value="http://quanto.nodegirlscode.org" />
             <input type="hidden" name="_language" value="pt-BR" />
           </form>
         </Modal>
