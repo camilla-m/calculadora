@@ -3912,6 +3912,14 @@ var MailModal = function (_React$Component) {
       });
     }
   }, {
+    key: 'findEmailAndGetAsCopy',
+    value: function findEmailAndGetAsCopy() {
+      var email = document.getElementById("email");
+      if (email.value != null) {
+        document.getElementById("cc").value = email.value;
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
@@ -3994,7 +4002,7 @@ var MailModal = function (_React$Component) {
                   { htmlFor: 'company' },
                   'Empresa*'
                 ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'company', id: 'company', placeholder: 'Nome da sua empresa', onclick: 'findEmailAndGetAsCopy()' })
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'company', id: 'company', placeholder: 'Nome da sua empresa', onClick: this.findEmailAndGetAsCopy })
               )
             ),
             _react2.default.createElement(
@@ -24446,6 +24454,14 @@ var RegisterModal = function (_React$Component) {
       });
     }
   }, {
+    key: 'findEmailAndGetAsCopy',
+    value: function findEmailAndGetAsCopy() {
+      var email = document.getElementById("email");
+      if (email.value != null) {
+        document.getElementById("cc").value = email.value;
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
@@ -24472,7 +24488,7 @@ var RegisterModal = function (_React$Component) {
             { className: 'modal-header' },
             _react2.default.createElement(
               'button',
-              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModalRegister },
+              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.findEmailAndGetAsCopy },
               _react2.default.createElement('span', { className: 'icon icon-close' })
             ),
             _react2.default.createElement(

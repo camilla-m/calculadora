@@ -17,6 +17,13 @@ class MailModal extends React.Component {
     });
   }
 
+  findEmailAndGetAsCopy() {
+    var email = document.getElementById("email");
+    if (email.value != null) {
+      document.getElementById("cc").value = email.value;
+    }
+  }
+
   render() {
     let modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
     return (
@@ -49,7 +56,7 @@ class MailModal extends React.Component {
             <div className='row'>
               <div className='form-group col-sm-12'>
                 <label htmlFor='company'>Empresa*</label>
-                <input type='text' className='form-control' name='company' id='company' placeholder='Nome da sua empresa' onclick="findEmailAndGetAsCopy()"/>
+                <input type='text' className='form-control' name='company' id='company' placeholder='Nome da sua empresa' onClick={this.findEmailAndGetAsCopy} />
               </div>
             </div>
             <div className='row'>
@@ -71,7 +78,7 @@ class MailModal extends React.Component {
             </div>
             <input type="hidden" name="_next" value="http://quanto.nodegirlscode.org" />
             <input type="hidden" name="_language" value="pt-BR" />
-            <input type="hidden" id="cc" name="_cc" value=""/>
+            <input type="hidden" id="cc" name="_cc" value="" />
           </form>
         </Modal>
       </Frag>

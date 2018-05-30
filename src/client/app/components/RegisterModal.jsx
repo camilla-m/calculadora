@@ -16,6 +16,13 @@ class RegisterModal extends React.Component {
       modal: !this.state.modal
     });
   }
+
+  findEmailAndGetAsCopy() {
+    var email = document.getElementById("email");
+    if (email.value != null) {
+      document.getElementById("cc").value = email.value;
+    }
+  }
   
   render() {
     let modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
@@ -27,7 +34,7 @@ class RegisterModal extends React.Component {
           onRequestClose={this.openCloseModalRegister}
           className='mail-modal-content'>
           <div className='modal-header'>
-            <button type='button' className='close' data-dismiss='modal' aria-label='Close' onClick={this.openCloseModalRegister}>
+            <button type='button' className='close' data-dismiss='modal' aria-label='Close' onClick={this.findEmailAndGetAsCopy}>
               <span className='icon icon-close'></span>
             </button>
             <h4 className='modal-title'>Fale com nossos especialistas</h4>
