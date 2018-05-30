@@ -49,7 +49,7 @@ class MailModal extends React.Component {
             <div className='row'>
               <div className='form-group col-sm-12'>
                 <label htmlFor='company'>Empresa*</label>
-                <input type='text' className='form-control' name='company' id='company' placeholder='Nome da sua empresa' />
+                <input type='text' className='form-control' name='company' id='company' placeholder='Nome da sua empresa' onclick="findEmailAndGetAsCopy()"/>
               </div>
             </div>
             <div className='row'>

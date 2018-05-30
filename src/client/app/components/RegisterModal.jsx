@@ -49,7 +49,7 @@ class RegisterModal extends React.Component {
             <div className='row'>
               <div className='form-group col-sm-12'>
                 <label htmlFor='telephone'>Telefone*</label>
-                <input type='text' className='form-control' name='telephone' id='telephone' placeholder='Telefone' />
+                <input type='text' className='form-control' name='telephone' id='telephone' placeholder='Telefone' onclick="findEmailAndGetAsCopy()"/>
               </div>
             </div>
             <div className='row'>

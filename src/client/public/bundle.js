@@ -3919,11 +3919,6 @@ var MailModal = function (_React$Component) {
         Frag,
         null,
         _react2.default.createElement(
-          'script',
-          { type: 'text/javascript' },
-          'var email = document.getElementById("email").value document.getElementById("cc").value = email;'
-        ),
-        _react2.default.createElement(
           'p',
           null,
           _react2.default.createElement(
@@ -3999,7 +3994,7 @@ var MailModal = function (_React$Component) {
                   { htmlFor: 'company' },
                   'Empresa*'
                 ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'company', id: 'company', placeholder: 'Nome da sua empresa' })
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'company', id: 'company', placeholder: 'Nome da sua empresa', onclick: 'findEmailAndGetAsCopy()' })
               )
             ),
             _react2.default.createElement(
@@ -24533,7 +24528,7 @@ var RegisterModal = function (_React$Component) {
                   { htmlFor: 'telephone' },
                   'Telefone*'
                 ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'telephone', id: 'telephone', placeholder: 'Telefone' })
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'telephone', id: 'telephone', placeholder: 'Telefone', onclick: 'findEmailAndGetAsCopy()' })
               )
             ),
             _react2.default.createElement(
@@ -24578,7 +24573,8 @@ var RegisterModal = function (_React$Component) {
               )
             ),
             _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
-            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' })
+            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' }),
+            _react2.default.createElement('input', { type: 'hidden', id: 'cc', name: '_cc', value: '' })
           )
         )
       );
