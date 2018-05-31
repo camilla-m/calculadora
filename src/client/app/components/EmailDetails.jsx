@@ -107,11 +107,11 @@ class EmailDetails extends React.Component {
 	      </div>
 	      <div className='row row-result'>
 	        {hostNumber.value === 1 ? (
-	          <span className='h3'>A hospedagem do seu <em>e-mail</em> custará:<br/></span>
+	          <span className='h4'>A hospedagem do seu <em>e-mail</em> custará:<br/></span>
 	        ) : (
-	          <span className='h3'>A hospedagem do seus <em>e-mails</em> custará:<br/></span>
+	          <span className='h4'>A hospedagem do seus <em>e-mails</em> custará:<br/></span>
 	        )}
-	          <span className='h2'>{price}  por mês no plano {title}</span><br />
+	          <span className='h3'>{price}  por mês no plano {title}</span><br />
             ou em média {benchPrice} por mês em outras empresas
 	      </div>
 	      <div className='row form-inline'>
