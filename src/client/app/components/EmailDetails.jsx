@@ -115,12 +115,26 @@ class EmailDetails extends React.Component {
             ou em média {benchPrice} por mês em outras empresas
 	      </div>
 	      <div className='row form-inline'>
-          <MailModal />
-	        <p>Ganhe até R$100 em créditos para hospedar seus e-mails na Umbler.</p>
+
+          {platform.value !== 'none' ? (
+            <p><b>Quer ganhar até R$100 em créditos para hospedar seu site {platform.label} na Umbler?</b></p>
+          ) : (
+              <p><b>Quer ganhar até R$100 em créditos para hospedar seu site na Umbler?</b></p>
+            )}
+
           <MailForm />
-	        <p>Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc.</p>
-	      </div>
-	    </Frag>
+
+          </div>
+
+          <MailModal />
+
+          <RegisterModal />
+
+          <p class="legal-text">Texto legal afirmando que trata-se de uma simulação e dando detalhes sobre os recursos específicos de cada plano, banco de dados, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor mauris et accumsan sodales. Cras consequat, diam eget egestas volutpat, diam lacus bibendum quam, in posuere elit velit vel turpis. Ut sit amet nibh molestie, ullamcorper nunc ut, luctus dolor. Nulla scelerisque metus a lacus ultricies commodo. Etiam lacinia enim at malesuada hendrerit. Aliquam gravida, justo nec dignissim auctor, metus tortor tempor orci, at vestibulum sapien sem eu massa. Phasellus ac risus ex. In fermentum consequat ex id venenatis. Proin a suscipit urna, ac dapibus ipsum. </p>
+
+          <p class="umbler-text"><span class="icon icon-umbler-logo icon-primary"></span> Umbler, Inc. © 2018</p>    
+
+      </Frag>
     );
   }
 }
