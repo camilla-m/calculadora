@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(28);
-} else {
   module.exports = __webpack_require__(29);
+} else {
+  module.exports = __webpack_require__(30);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -349,9 +349,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(30);
+  module.exports = __webpack_require__(31);
 } else {
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(34);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -572,9 +572,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultArrowRenderer", function() { return arrowRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultClearRenderer", function() { return clearRenderer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultFilterOptions", function() { return filterOptions; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_input_autosize___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react_input_autosize__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -3366,11 +3366,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(40)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(41)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(41)();
+  module.exports = __webpack_require__(42)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -3710,7 +3710,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(31);
+var isTextNode = __webpack_require__(32);
 
 /*eslint-disable no-bitwise */
 
@@ -4065,7 +4065,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Modal = __webpack_require__(45);
+var _Modal = __webpack_require__(46);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -4156,7 +4156,7 @@ exports.show = show;
 exports.documentNotReadyOrSSRTesting = documentNotReadyOrSSRTesting;
 exports.resetForTesting = resetForTesting;
 
-var _warning = __webpack_require__(49);
+var _warning = __webpack_require__(50);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -4223,7 +4223,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.canUseDOM = undefined;
 
-var _exenv = __webpack_require__(51);
+var _exenv = __webpack_require__(52);
 
 var _exenv2 = _interopRequireDefault(_exenv);
 
@@ -4239,6 +4239,201 @@ exports.default = SafeHTMLElement;
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Frag) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactModal = __webpack_require__(23);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RegisterModal = function (_React$Component) {
+  _inherits(RegisterModal, _React$Component);
+
+  function RegisterModal(props) {
+    _classCallCheck(this, RegisterModal);
+
+    var _this = _possibleConstructorReturn(this, (RegisterModal.__proto__ || Object.getPrototypeOf(RegisterModal)).call(this, props));
+
+    _this.state = {
+      modal: false
+    };
+
+    _this.openCloseModalRegister = _this.openCloseModalRegister.bind(_this);
+    return _this;
+  }
+
+  _createClass(RegisterModal, [{
+    key: 'openCloseModalRegister',
+    value: function openCloseModalRegister() {
+      this.setState({
+        modal: !this.state.modal
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
+      return _react2.default.createElement(
+        Frag,
+        null,
+        _react2.default.createElement(
+          'p',
+          { 'class': 'col-sm-6 link-boxes' },
+          _react2.default.createElement(
+            'a',
+            { href: '#', onClick: this.openCloseModalRegister },
+            _react2.default.createElement('span', { 'class': 'icon icon-question-mark' }),
+            ' D\xFAvidas? Entre em contato conosco!'
+          )
+        ),
+        _react2.default.createElement(
+          _reactModal2.default,
+          {
+            isOpen: this.state.modal,
+            onRequestClose: this.openCloseModalRegister,
+            className: 'mail-modal-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'modal-header' },
+            _react2.default.createElement(
+              'button',
+              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModalRegister },
+              _react2.default.createElement('span', { className: 'icon icon-close' })
+            ),
+            _react2.default.createElement(
+              'h4',
+              { className: 'modal-title' },
+              'Fale com nossos especialistas'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'form-text text-muted' },
+            '* Campos obrigat\xF3rios'
+          ),
+          _react2.default.createElement(
+            'form',
+            { action: 'https://formspree.io/tessis@umbler.com', method: 'POST' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'name' },
+                  'Nome*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'name', id: 'nameRegister', placeholder: 'Seu nome' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'email' },
+                  'E-mail*'
+                ),
+                _react2.default.createElement('input', { type: 'email', className: 'form-control', name: 'email', id: 'emailRegister', placeholder: 'Seu e-mail' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'telephone' },
+                  'Telefone*'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'telephone', id: 'telephone', placeholder: 'Telefone' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'issue' },
+                  'Assunto'
+                ),
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'issue', id: 'issue', placeholder: 'Assunto' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'label',
+                  { htmlFor: 'message' },
+                  'Mensagem'
+                ),
+                _react2.default.createElement('input', { type: 'textarea', className: 'form-control', name: 'message', id: 'message', placeholder: 'Mensagem' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'form-group col-sm-12' },
+                _react2.default.createElement(
+                  'button',
+                  { className: 'btn btn-primary', type: 'submit' },
+                  'Enviar'
+                )
+              )
+            ),
+            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
+            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' }),
+            _react2.default.createElement('input', { type: 'hidden', id: 'cc', name: '_cc', value: '' })
+          )
+        )
+      );
+    }
+  }]);
+
+  return RegisterModal;
+}(_react2.default.Component);
+
+exports.default = RegisterModal;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
+
+/***/ }),
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4262,11 +4457,11 @@ var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
-var _FirstInput = __webpack_require__(38);
+var _FirstInput = __webpack_require__(39);
 
 var _FirstInput2 = _interopRequireDefault(_FirstInput);
 
-var _SiteDetails = __webpack_require__(43);
+var _SiteDetails = __webpack_require__(44);
 
 var _SiteDetails2 = _interopRequireDefault(_SiteDetails);
 
@@ -4369,7 +4564,7 @@ var App = function (_React$Component) {
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById('app'));
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4397,7 +4592,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5762,7 +5957,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5998,7 +6193,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6013,7 +6208,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(32);
+var isNode = __webpack_require__(33);
 
 /**
  * @param {*} object The object to check.
@@ -6026,7 +6221,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6054,7 +6249,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6088,8 +6283,8 @@ var containsNode = __webpack_require__(18);
 var focusNode = __webpack_require__(19);
 var emptyObject = __webpack_require__(9);
 var checkPropTypes = __webpack_require__(12);
-var hyphenateStyleName = __webpack_require__(34);
-var camelizeStyleName = __webpack_require__(36);
+var hyphenateStyleName = __webpack_require__(35);
+var camelizeStyleName = __webpack_require__(37);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -21456,7 +21651,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21471,7 +21666,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(35);
+var hyphenate = __webpack_require__(36);
 
 var msPattern = /^ms-/;
 
@@ -21498,7 +21693,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21534,7 +21729,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21549,7 +21744,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(37);
+var camelize = __webpack_require__(38);
 
 var msPattern = /^-ms-/;
 
@@ -21577,7 +21772,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21612,7 +21807,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21743,7 +21938,7 @@ exports.default = FirstInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22017,7 +22212,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22567,7 +22762,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22632,7 +22827,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22687,7 +22882,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22715,7 +22910,7 @@ var _siteConstants = __webpack_require__(7);
 
 var _siteConstants2 = _interopRequireDefault(_siteConstants);
 
-var _SiteResults = __webpack_require__(44);
+var _SiteResults = __webpack_require__(45);
 
 var _SiteResults2 = _interopRequireDefault(_SiteResults);
 
@@ -22917,7 +23112,7 @@ exports.default = SiteDetails;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22947,7 +23142,7 @@ var _MailModal = __webpack_require__(22);
 
 var _MailModal2 = _interopRequireDefault(_MailModal);
 
-var _RegisterModal = __webpack_require__(53);
+var _RegisterModal = __webpack_require__(27);
 
 var _RegisterModal2 = _interopRequireDefault(_RegisterModal);
 
@@ -23129,7 +23324,7 @@ exports.default = SiteResults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23156,7 +23351,7 @@ var _propTypes = __webpack_require__(11);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ModalPortal = __webpack_require__(46);
+var _ModalPortal = __webpack_require__(47);
 
 var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
 
@@ -23168,7 +23363,7 @@ var _safeHTMLElement = __webpack_require__(26);
 
 var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
 
-var _reactLifecyclesCompat = __webpack_require__(52);
+var _reactLifecyclesCompat = __webpack_require__(53);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -23394,7 +23589,7 @@ Modal.defaultStyles = {
 exports.default = Modal;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23418,11 +23613,11 @@ var _propTypes = __webpack_require__(11);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _focusManager = __webpack_require__(47);
+var _focusManager = __webpack_require__(48);
 
 var focusManager = _interopRequireWildcard(_focusManager);
 
-var _scopeTab = __webpack_require__(48);
+var _scopeTab = __webpack_require__(49);
 
 var _scopeTab2 = _interopRequireDefault(_scopeTab);
 
@@ -23430,7 +23625,7 @@ var _ariaAppHider = __webpack_require__(25);
 
 var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
 
-var _classList = __webpack_require__(50);
+var _classList = __webpack_require__(51);
 
 var classList = _interopRequireWildcard(_classList);
 
@@ -23801,7 +23996,7 @@ module.exports = exports["default"];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23901,7 +24096,7 @@ function teardownScopedFocus() {
 }
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23984,7 +24179,7 @@ function scopeTab(node, event) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24052,7 +24247,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24166,7 +24361,7 @@ var remove = exports.remove = function remove(element, classString) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -24213,7 +24408,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24380,201 +24575,6 @@ function polyfill(Component) {
 
 
 /***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(Frag) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _reactModal = __webpack_require__(23);
-
-var _reactModal2 = _interopRequireDefault(_reactModal);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var RegisterModal = function (_React$Component) {
-  _inherits(RegisterModal, _React$Component);
-
-  function RegisterModal(props) {
-    _classCallCheck(this, RegisterModal);
-
-    var _this = _possibleConstructorReturn(this, (RegisterModal.__proto__ || Object.getPrototypeOf(RegisterModal)).call(this, props));
-
-    _this.state = {
-      modal: false
-    };
-
-    _this.openCloseModalRegister = _this.openCloseModalRegister.bind(_this);
-    return _this;
-  }
-
-  _createClass(RegisterModal, [{
-    key: 'openCloseModalRegister',
-    value: function openCloseModalRegister() {
-      this.setState({
-        modal: !this.state.modal
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var modalClass = this.state.modal ? 'modal fade in' : 'modal fade';
-      return _react2.default.createElement(
-        Frag,
-        null,
-        _react2.default.createElement(
-          'p',
-          { 'class': 'col-sm-6 link-boxes' },
-          _react2.default.createElement(
-            'a',
-            { href: '#', onClick: this.openCloseModalRegister },
-            _react2.default.createElement('span', { 'class': 'icon icon-question-mark' }),
-            ' D\xFAvidas? Entre em contato conosco!'
-          )
-        ),
-        _react2.default.createElement(
-          _reactModal2.default,
-          {
-            isOpen: this.state.modal,
-            onRequestClose: this.openCloseModalRegister,
-            className: 'mail-modal-content' },
-          _react2.default.createElement(
-            'div',
-            { className: 'modal-header' },
-            _react2.default.createElement(
-              'button',
-              { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close', onClick: this.openCloseModalRegister },
-              _react2.default.createElement('span', { className: 'icon icon-close' })
-            ),
-            _react2.default.createElement(
-              'h4',
-              { className: 'modal-title' },
-              'Fale com nossos especialistas'
-            )
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'form-text text-muted' },
-            '* Campos obrigat\xF3rios'
-          ),
-          _react2.default.createElement(
-            'form',
-            { action: 'https://formspree.io/tessis@umbler.com', method: 'POST' },
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'name' },
-                  'Nome*'
-                ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'name', id: 'nameRegister', placeholder: 'Seu nome' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'email' },
-                  'E-mail*'
-                ),
-                _react2.default.createElement('input', { type: 'email', className: 'form-control', name: 'email', id: 'emailRegister', placeholder: 'Seu e-mail' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'telephone' },
-                  'Telefone*'
-                ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'telephone', id: 'telephone', placeholder: 'Telefone' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'issue' },
-                  'Assunto'
-                ),
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', name: 'issue', id: 'issue', placeholder: 'Assunto' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'label',
-                  { htmlFor: 'message' },
-                  'Mensagem'
-                ),
-                _react2.default.createElement('input', { type: 'textarea', className: 'form-control', name: 'message', id: 'message', placeholder: 'Mensagem' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'div',
-                { className: 'form-group col-sm-12' },
-                _react2.default.createElement(
-                  'button',
-                  { className: 'btn btn-primary', type: 'submit' },
-                  'Enviar'
-                )
-              )
-            ),
-            _react2.default.createElement('input', { type: 'hidden', name: '_next', value: 'http://quanto.nodegirlscode.org' }),
-            _react2.default.createElement('input', { type: 'hidden', name: '_language', value: 'pt-BR' }),
-            _react2.default.createElement('input', { type: 'hidden', id: 'cc', name: '_cc', value: '' })
-          )
-        )
-      );
-    }
-  }]);
-
-  return RegisterModal;
-}(_react2.default.Component);
-
-exports.default = RegisterModal;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)["default"]))
-
-/***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24582,7 +24582,7 @@ exports.default = RegisterModal;
 /* WEBPACK VAR INJECTION */(function(Frag) {
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24609,6 +24609,10 @@ var _MailModal = __webpack_require__(22);
 
 var _MailModal2 = _interopRequireDefault(_MailModal);
 
+var _RegisterModal = __webpack_require__(27);
+
+var _RegisterModal2 = _interopRequireDefault(_RegisterModal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24618,222 +24622,243 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var EmailDetails = function (_React$Component) {
-		_inherits(EmailDetails, _React$Component);
+  _inherits(EmailDetails, _React$Component);
 
-		function EmailDetails(props) {
-				_classCallCheck(this, EmailDetails);
+  function EmailDetails(props) {
+    _classCallCheck(this, EmailDetails);
 
-				var _this = _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).call(this, props));
 
-				_this.state = {
-						emailSpace: _emailConstants2.default.space[0],
-						mapi: false,
-						activesync: false,
-						share: false
-				};
+    _this.state = {
+      emailSpace: _emailConstants2.default.space[0],
+      mapi: false,
+      activesync: false,
+      share: false
+    };
 
-				_this.handleSpaceChange = _this.handleSpaceChange.bind(_this);
-				_this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
-				_this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
-				_this.handleShareCheck = _this.handleShareCheck.bind(_this);
-				return _this;
-		}
+    _this.handleSpaceChange = _this.handleSpaceChange.bind(_this);
+    _this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
+    _this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
+    _this.handleShareCheck = _this.handleShareCheck.bind(_this);
+    return _this;
+  }
 
-		_createClass(EmailDetails, [{
-				key: 'handleSpaceChange',
-				value: function handleSpaceChange(emailSpace) {
-						this.setState({ emailSpace: emailSpace });
-				}
-		}, {
-				key: 'handleMapiCheck',
-				value: function handleMapiCheck() {
-						this.setState({ mapi: !this.state.mapi });
-				}
-		}, {
-				key: 'handleActivesyncCheck',
-				value: function handleActivesyncCheck() {
-						this.setState({ activesync: !this.state.activesync });
-				}
-		}, {
-				key: 'handleShareCheck',
-				value: function handleShareCheck() {
-						this.setState({ share: !this.state.share });
-				}
-		}, {
-				key: 'render',
-				value: function render() {
-						var _state = this.state,
-						    emailSpace = _state.emailSpace,
-						    mapi = _state.mapi,
-						    activesync = _state.activesync,
-						    share = _state.share;
-						var hostNumber = this.props.hostNumber;
-						var emailPlans = _emailConstants2.default.emailPlans,
-						    emailPrices = _emailConstants2.default.emailPrices,
-						    space = _emailConstants2.default.space;
+  _createClass(EmailDetails, [{
+    key: 'handleSpaceChange',
+    value: function handleSpaceChange(emailSpace) {
+      this.setState({ emailSpace: emailSpace });
+    }
+  }, {
+    key: 'handleMapiCheck',
+    value: function handleMapiCheck() {
+      this.setState({ mapi: !this.state.mapi });
+    }
+  }, {
+    key: 'handleActivesyncCheck',
+    value: function handleActivesyncCheck() {
+      this.setState({ activesync: !this.state.activesync });
+    }
+  }, {
+    key: 'handleShareCheck',
+    value: function handleShareCheck() {
+      this.setState({ share: !this.state.share });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _state = this.state,
+          emailSpace = _state.emailSpace,
+          mapi = _state.mapi,
+          activesync = _state.activesync,
+          share = _state.share;
+      var hostNumber = this.props.hostNumber;
+      var emailPlans = _emailConstants2.default.emailPlans,
+          emailPrices = _emailConstants2.default.emailPrices,
+          space = _emailConstants2.default.space;
 
-						var pricePlan = emailPrices[0];
-						var title = emailPlans[0];
+      var pricePlan = emailPrices[0];
+      var title = emailPlans[0];
 
-						if (mapi || activesync || share || emailSpace.value === 50) {
-								title = emailPlans[1];
-								pricePlan = emailPrices[6];
-						} else {
-								pricePlan = emailPrices.find(function (plan) {
-										return plan.size === emailSpace.value;
-								});
-						}
+      if (mapi || activesync || share || emailSpace.value === 50) {
+        title = emailPlans[1];
+        pricePlan = emailPrices[6];
+      } else {
+        pricePlan = emailPrices.find(function (plan) {
+          return plan.size === emailSpace.value;
+        });
+      }
 
-						var price = pricePlan.price * hostNumber.value;
-						var benchPrice = pricePlan.benchPrice * hostNumber.value;
-						price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
-						benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+      var price = pricePlan.price * hostNumber.value;
+      var benchPrice = pricePlan.benchPrice * hostNumber.value;
+      price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+      benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
 
-						return _react2.default.createElement(
-								Frag,
-								null,
-								_react2.default.createElement(
-										'div',
-										{ className: 'row' },
-										_react2.default.createElement(
-												'span',
-												{ className: 'input-text' },
-												'Cada conta precisar\xE1 ter '
-										),
-										_react2.default.createElement(_reactSelect2.default, {
-												name: 'emailSpace',
-												value: emailSpace,
-												onChange: this.handleSpaceChange,
-												options: space,
-												className: 'select',
-												searchable: false,
-												clearable: false }),
-										_react2.default.createElement(
-												'span',
-												{ className: 'input-text' },
-												'de espa\xE7o '
-										)
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'row row--checkbox' },
-										_react2.default.createElement(
-												'legend',
-												{ className: 'col-form-legend col-sm-4' },
-												'Preciso tamb\xE9m de'
-										),
-										_react2.default.createElement(
-												'div',
-												{ className: 'col-sm-8' },
-												_react2.default.createElement(
-														'div',
-														{ className: 'form-check' },
-														_react2.default.createElement('input', {
-																className: 'form-check-input',
-																type: 'checkbox',
-																name: 'mapi',
-																id: 'mapi',
-																checked: mapi,
-																onClick: this.handleMapiCheck }),
-														_react2.default.createElement(
-																'label',
-																{ className: 'form-check-label', htmlFor: 'mapi' },
-																'MAPI'
-														)
-												),
-												_react2.default.createElement(
-														'div',
-														{ className: 'form-check' },
-														_react2.default.createElement('input', {
-																className: 'form-check-input',
-																type: 'checkbox',
-																name: 'activesync',
-																id: 'activesync',
-																checked: activesync,
-																onClick: this.handleActivesyncCheck }),
-														_react2.default.createElement(
-																'label',
-																{ className: 'form-check-label', htmlFor: 'activesync' },
-																'Active Sync'
-														)
-												),
-												_react2.default.createElement(
-														'div',
-														{ className: 'form-check' },
-														_react2.default.createElement('input', {
-																className: 'form-check-input',
-																type: 'checkbox',
-																name: 'share',
-																id: 'share',
-																checked: share,
-																onClick: this.handleShareCheck }),
-														_react2.default.createElement(
-																'label',
-																{ className: 'form-check-label', htmlFor: 'share' },
-																'Compartilhamento de agenda entre contas'
-														)
-												)
-										)
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'row row-result' },
-										hostNumber.value === 1 ? _react2.default.createElement(
-												'span',
-												{ className: 'h3' },
-												'A hospedagem do seu ',
-												_react2.default.createElement(
-														'em',
-														null,
-														'e-mail'
-												),
-												' custar\xE1:',
-												_react2.default.createElement('br', null)
-										) : _react2.default.createElement(
-												'span',
-												{ className: 'h3' },
-												'A hospedagem do seus ',
-												_react2.default.createElement(
-														'em',
-														null,
-														'e-mails'
-												),
-												' custar\xE1:',
-												_react2.default.createElement('br', null)
-										),
-										_react2.default.createElement(
-												'span',
-												{ className: 'h2' },
-												price,
-												'  por m\xEAs no plano ',
-												title
-										),
-										_react2.default.createElement('br', null),
-										'ou em m\xE9dia ',
-										benchPrice,
-										' por m\xEAs em outras empresas'
-								),
-								_react2.default.createElement(
-										'div',
-										{ className: 'row form-inline' },
-										_react2.default.createElement(_MailModal2.default, null),
-										_react2.default.createElement(
-												'p',
-												null,
-												'Ganhe at\xE9 R$100 em cr\xE9ditos para hospedar seus e-mails na Umbler.'
-										),
-										_react2.default.createElement(_MailForm2.default, null),
-										_react2.default.createElement(
-												'p',
-												null,
-												'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc.'
-										)
-								)
-						);
-				}
-		}]);
+      return _react2.default.createElement(
+        Frag,
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'span',
+            { className: 'input-text' },
+            'Cada conta precisar\xE1 ter '
+          ),
+          _react2.default.createElement(_reactSelect2.default, {
+            name: 'emailSpace',
+            value: emailSpace,
+            onChange: this.handleSpaceChange,
+            options: space,
+            className: 'select',
+            searchable: false,
+            clearable: false }),
+          _react2.default.createElement(
+            'span',
+            { className: 'input-text' },
+            'de espa\xE7o '
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row row--checkbox' },
+          _react2.default.createElement(
+            'legend',
+            { className: 'col-form-legend col-sm-4' },
+            'Preciso tamb\xE9m de'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-sm-8' },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-check' },
+              _react2.default.createElement('input', {
+                className: 'form-check-input',
+                type: 'checkbox',
+                name: 'mapi',
+                id: 'mapi',
+                checked: mapi,
+                onClick: this.handleMapiCheck }),
+              _react2.default.createElement(
+                'label',
+                { className: 'form-check-label', htmlFor: 'mapi' },
+                'MAPI'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-check' },
+              _react2.default.createElement('input', {
+                className: 'form-check-input',
+                type: 'checkbox',
+                name: 'activesync',
+                id: 'activesync',
+                checked: activesync,
+                onClick: this.handleActivesyncCheck }),
+              _react2.default.createElement(
+                'label',
+                { className: 'form-check-label', htmlFor: 'activesync' },
+                'Active Sync'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-check' },
+              _react2.default.createElement('input', {
+                className: 'form-check-input',
+                type: 'checkbox',
+                name: 'share',
+                id: 'share',
+                checked: share,
+                onClick: this.handleShareCheck }),
+              _react2.default.createElement(
+                'label',
+                { className: 'form-check-label', htmlFor: 'share' },
+                'Compartilhamento de agenda entre contas'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row row-result' },
+          hostNumber.value === 1 ? _react2.default.createElement(
+            'span',
+            { className: 'h4' },
+            'A hospedagem do seu ',
+            _react2.default.createElement(
+              'em',
+              null,
+              'e-mail'
+            ),
+            ' custar\xE1:',
+            _react2.default.createElement('br', null)
+          ) : _react2.default.createElement(
+            'span',
+            { className: 'h4' },
+            'A hospedagem do seus ',
+            _react2.default.createElement(
+              'em',
+              null,
+              'e-mails'
+            ),
+            ' custar\xE1:',
+            _react2.default.createElement('br', null)
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'h3' },
+            price,
+            '  por m\xEAs no plano ',
+            title
+          ),
+          _react2.default.createElement('br', null),
+          'ou em m\xE9dia ',
+          benchPrice,
+          ' por m\xEAs em outras empresas'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row form-inline' },
+          platform.value !== 'none' ? _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'b',
+              null,
+              'Quer ganhar at\xE9 R$100 em cr\xE9ditos para hospedar seu site ',
+              platform.label,
+              ' na Umbler?'
+            )
+          ) : _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'b',
+              null,
+              'Quer ganhar at\xE9 R$100 em cr\xE9ditos para hospedar seu site na Umbler?'
+            )
+          ),
+          _react2.default.createElement(_MailForm2.default, null)
+        ),
+        _react2.default.createElement(_MailModal2.default, null),
+        _react2.default.createElement(_RegisterModal2.default, null),
+        _react2.default.createElement(
+          'p',
+          { 'class': 'legal-text' },
+          'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor mauris et accumsan sodales. Cras consequat, diam eget egestas volutpat, diam lacus bibendum quam, in posuere elit velit vel turpis. Ut sit amet nibh molestie, ullamcorper nunc ut, luctus dolor. Nulla scelerisque metus a lacus ultricies commodo. Etiam lacinia enim at malesuada hendrerit. Aliquam gravida, justo nec dignissim auctor, metus tortor tempor orci, at vestibulum sapien sem eu massa. Phasellus ac risus ex. In fermentum consequat ex id venenatis. Proin a suscipit urna, ac dapibus ipsum. '
+        ),
+        _react2.default.createElement(
+          'p',
+          { 'class': 'umbler-text' },
+          _react2.default.createElement('span', { 'class': 'icon icon-umbler-logo icon-primary' }),
+          ' Umbler, Inc. \xA9 2018'
+        )
+      );
+    }
+  }]);
 
-		return EmailDetails;
+  return EmailDetails;
 }(_react2.default.Component);
 
 exports.default = EmailDetails;
