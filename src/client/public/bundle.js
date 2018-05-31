@@ -24582,7 +24582,7 @@ function polyfill(Component) {
 /* WEBPACK VAR INJECTION */(function(Frag) {
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24622,243 +24622,233 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var EmailDetails = function (_React$Component) {
-  _inherits(EmailDetails, _React$Component);
+	_inherits(EmailDetails, _React$Component);
 
-  function EmailDetails(props) {
-    _classCallCheck(this, EmailDetails);
+	function EmailDetails(props) {
+		_classCallCheck(this, EmailDetails);
 
-    var _this = _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (EmailDetails.__proto__ || Object.getPrototypeOf(EmailDetails)).call(this, props));
 
-    _this.state = {
-      emailSpace: _emailConstants2.default.space[0],
-      mapi: false,
-      activesync: false,
-      share: false
-    };
+		_this.state = {
+			emailSpace: _emailConstants2.default.space[0],
+			mapi: false,
+			activesync: false,
+			share: false
+		};
 
-    _this.handleSpaceChange = _this.handleSpaceChange.bind(_this);
-    _this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
-    _this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
-    _this.handleShareCheck = _this.handleShareCheck.bind(_this);
-    return _this;
-  }
+		_this.handleSpaceChange = _this.handleSpaceChange.bind(_this);
+		_this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
+		_this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
+		_this.handleShareCheck = _this.handleShareCheck.bind(_this);
+		return _this;
+	}
 
-  _createClass(EmailDetails, [{
-    key: 'handleSpaceChange',
-    value: function handleSpaceChange(emailSpace) {
-      this.setState({ emailSpace: emailSpace });
-    }
-  }, {
-    key: 'handleMapiCheck',
-    value: function handleMapiCheck() {
-      this.setState({ mapi: !this.state.mapi });
-    }
-  }, {
-    key: 'handleActivesyncCheck',
-    value: function handleActivesyncCheck() {
-      this.setState({ activesync: !this.state.activesync });
-    }
-  }, {
-    key: 'handleShareCheck',
-    value: function handleShareCheck() {
-      this.setState({ share: !this.state.share });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _state = this.state,
-          emailSpace = _state.emailSpace,
-          mapi = _state.mapi,
-          activesync = _state.activesync,
-          share = _state.share;
-      var hostNumber = this.props.hostNumber;
-      var emailPlans = _emailConstants2.default.emailPlans,
-          emailPrices = _emailConstants2.default.emailPrices,
-          space = _emailConstants2.default.space;
+	_createClass(EmailDetails, [{
+		key: 'handleSpaceChange',
+		value: function handleSpaceChange(emailSpace) {
+			this.setState({ emailSpace: emailSpace });
+		}
+	}, {
+		key: 'handleMapiCheck',
+		value: function handleMapiCheck() {
+			this.setState({ mapi: !this.state.mapi });
+		}
+	}, {
+		key: 'handleActivesyncCheck',
+		value: function handleActivesyncCheck() {
+			this.setState({ activesync: !this.state.activesync });
+		}
+	}, {
+		key: 'handleShareCheck',
+		value: function handleShareCheck() {
+			this.setState({ share: !this.state.share });
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var _state = this.state,
+			    emailSpace = _state.emailSpace,
+			    mapi = _state.mapi,
+			    activesync = _state.activesync,
+			    share = _state.share;
+			var hostNumber = this.props.hostNumber;
+			var emailPlans = _emailConstants2.default.emailPlans,
+			    emailPrices = _emailConstants2.default.emailPrices,
+			    space = _emailConstants2.default.space;
 
-      var pricePlan = emailPrices[0];
-      var title = emailPlans[0];
+			var pricePlan = emailPrices[0];
+			var title = emailPlans[0];
 
-      if (mapi || activesync || share || emailSpace.value === 50) {
-        title = emailPlans[1];
-        pricePlan = emailPrices[6];
-      } else {
-        pricePlan = emailPrices.find(function (plan) {
-          return plan.size === emailSpace.value;
-        });
-      }
+			if (mapi || activesync || share || emailSpace.value === 50) {
+				title = emailPlans[1];
+				pricePlan = emailPrices[6];
+			} else {
+				pricePlan = emailPrices.find(function (plan) {
+					return plan.size === emailSpace.value;
+				});
+			}
 
-      var price = pricePlan.price * hostNumber.value;
-      var benchPrice = pricePlan.benchPrice * hostNumber.value;
-      price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
-      benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+			var price = pricePlan.price * hostNumber.value;
+			var benchPrice = pricePlan.benchPrice * hostNumber.value;
+			price = price.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
+			benchPrice = benchPrice.toLocaleString(window.navigator.language, { style: "currency", currency: "BRL", minimumFractionDigits: 2 });
 
-      return _react2.default.createElement(
-        Frag,
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'span',
-            { className: 'input-text' },
-            'Cada conta precisar\xE1 ter '
-          ),
-          _react2.default.createElement(_reactSelect2.default, {
-            name: 'emailSpace',
-            value: emailSpace,
-            onChange: this.handleSpaceChange,
-            options: space,
-            className: 'select',
-            searchable: false,
-            clearable: false }),
-          _react2.default.createElement(
-            'span',
-            { className: 'input-text' },
-            'de espa\xE7o '
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row row--checkbox' },
-          _react2.default.createElement(
-            'legend',
-            { className: 'col-form-legend col-sm-4' },
-            'Preciso tamb\xE9m de'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-sm-8' },
-            _react2.default.createElement(
-              'div',
-              { className: 'form-check' },
-              _react2.default.createElement('input', {
-                className: 'form-check-input',
-                type: 'checkbox',
-                name: 'mapi',
-                id: 'mapi',
-                checked: mapi,
-                onClick: this.handleMapiCheck }),
-              _react2.default.createElement(
-                'label',
-                { className: 'form-check-label', htmlFor: 'mapi' },
-                'MAPI'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'form-check' },
-              _react2.default.createElement('input', {
-                className: 'form-check-input',
-                type: 'checkbox',
-                name: 'activesync',
-                id: 'activesync',
-                checked: activesync,
-                onClick: this.handleActivesyncCheck }),
-              _react2.default.createElement(
-                'label',
-                { className: 'form-check-label', htmlFor: 'activesync' },
-                'Active Sync'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'form-check' },
-              _react2.default.createElement('input', {
-                className: 'form-check-input',
-                type: 'checkbox',
-                name: 'share',
-                id: 'share',
-                checked: share,
-                onClick: this.handleShareCheck }),
-              _react2.default.createElement(
-                'label',
-                { className: 'form-check-label', htmlFor: 'share' },
-                'Compartilhamento de agenda entre contas'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row row-result' },
-          hostNumber.value === 1 ? _react2.default.createElement(
-            'span',
-            { className: 'h4' },
-            'A hospedagem do seu ',
-            _react2.default.createElement(
-              'em',
-              null,
-              'e-mail'
-            ),
-            ' custar\xE1:',
-            _react2.default.createElement('br', null)
-          ) : _react2.default.createElement(
-            'span',
-            { className: 'h4' },
-            'A hospedagem do seus ',
-            _react2.default.createElement(
-              'em',
-              null,
-              'e-mails'
-            ),
-            ' custar\xE1:',
-            _react2.default.createElement('br', null)
-          ),
-          _react2.default.createElement(
-            'span',
-            { className: 'h3' },
-            price,
-            '  por m\xEAs no plano ',
-            title
-          ),
-          _react2.default.createElement('br', null),
-          'ou em m\xE9dia ',
-          benchPrice,
-          ' por m\xEAs em outras empresas'
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row form-inline' },
-          platform.value !== 'none' ? _react2.default.createElement(
-            'p',
-            null,
-            _react2.default.createElement(
-              'b',
-              null,
-              'Quer ganhar at\xE9 R$100 em cr\xE9ditos para hospedar seu site ',
-              platform.label,
-              ' na Umbler?'
-            )
-          ) : _react2.default.createElement(
-            'p',
-            null,
-            _react2.default.createElement(
-              'b',
-              null,
-              'Quer ganhar at\xE9 R$100 em cr\xE9ditos para hospedar seu site na Umbler?'
-            )
-          ),
-          _react2.default.createElement(_MailForm2.default, null)
-        ),
-        _react2.default.createElement(_MailModal2.default, null),
-        _react2.default.createElement(_RegisterModal2.default, null),
-        _react2.default.createElement(
-          'p',
-          { 'class': 'legal-text' },
-          'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor mauris et accumsan sodales. Cras consequat, diam eget egestas volutpat, diam lacus bibendum quam, in posuere elit velit vel turpis. Ut sit amet nibh molestie, ullamcorper nunc ut, luctus dolor. Nulla scelerisque metus a lacus ultricies commodo. Etiam lacinia enim at malesuada hendrerit. Aliquam gravida, justo nec dignissim auctor, metus tortor tempor orci, at vestibulum sapien sem eu massa. Phasellus ac risus ex. In fermentum consequat ex id venenatis. Proin a suscipit urna, ac dapibus ipsum. '
-        ),
-        _react2.default.createElement(
-          'p',
-          { 'class': 'umbler-text' },
-          _react2.default.createElement('span', { 'class': 'icon icon-umbler-logo icon-primary' }),
-          ' Umbler, Inc. \xA9 2018'
-        )
-      );
-    }
-  }]);
+			return _react2.default.createElement(
+				Frag,
+				null,
+				_react2.default.createElement(
+					'div',
+					{ className: 'row' },
+					_react2.default.createElement(
+						'span',
+						{ className: 'input-text' },
+						'Cada conta precisar\xE1 ter '
+					),
+					_react2.default.createElement(_reactSelect2.default, {
+						name: 'emailSpace',
+						value: emailSpace,
+						onChange: this.handleSpaceChange,
+						options: space,
+						className: 'select',
+						searchable: false,
+						clearable: false }),
+					_react2.default.createElement(
+						'span',
+						{ className: 'input-text' },
+						'de espa\xE7o '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'row row--checkbox' },
+					_react2.default.createElement(
+						'legend',
+						{ className: 'col-form-legend col-sm-4' },
+						'Preciso tamb\xE9m de'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-sm-8' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'form-check' },
+							_react2.default.createElement('input', {
+								className: 'form-check-input',
+								type: 'checkbox',
+								name: 'mapi',
+								id: 'mapi',
+								checked: mapi,
+								onClick: this.handleMapiCheck }),
+							_react2.default.createElement(
+								'label',
+								{ className: 'form-check-label', htmlFor: 'mapi' },
+								'MAPI'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'form-check' },
+							_react2.default.createElement('input', {
+								className: 'form-check-input',
+								type: 'checkbox',
+								name: 'activesync',
+								id: 'activesync',
+								checked: activesync,
+								onClick: this.handleActivesyncCheck }),
+							_react2.default.createElement(
+								'label',
+								{ className: 'form-check-label', htmlFor: 'activesync' },
+								'Active Sync'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'form-check' },
+							_react2.default.createElement('input', {
+								className: 'form-check-input',
+								type: 'checkbox',
+								name: 'share',
+								id: 'share',
+								checked: share,
+								onClick: this.handleShareCheck }),
+							_react2.default.createElement(
+								'label',
+								{ className: 'form-check-label', htmlFor: 'share' },
+								'Compartilhamento de agenda entre contas'
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'row row-result' },
+					hostNumber.value === 1 ? _react2.default.createElement(
+						'span',
+						{ className: 'h4' },
+						'A hospedagem do seu ',
+						_react2.default.createElement(
+							'em',
+							null,
+							'e-mail'
+						),
+						' custar\xE1:',
+						_react2.default.createElement('br', null)
+					) : _react2.default.createElement(
+						'span',
+						{ className: 'h4' },
+						'A hospedagem do seus ',
+						_react2.default.createElement(
+							'em',
+							null,
+							'e-mails'
+						),
+						' custar\xE1:',
+						_react2.default.createElement('br', null)
+					),
+					_react2.default.createElement(
+						'span',
+						{ className: 'h3' },
+						price,
+						'  por m\xEAs no plano ',
+						title
+					),
+					_react2.default.createElement('br', null),
+					'ou em m\xE9dia ',
+					benchPrice,
+					' por m\xEAs em outras empresas'
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'row form-inline' },
+					_react2.default.createElement(
+						'p',
+						null,
+						_react2.default.createElement(
+							'b',
+							null,
+							'Quer ganhar at\xE9 R$100 em cr\xE9ditos para hospedar seus emails na Umbler?'
+						)
+					),
+					_react2.default.createElement(_MailForm2.default, null)
+				),
+				_react2.default.createElement(_MailModal2.default, null),
+				_react2.default.createElement(_RegisterModal2.default, null),
+				_react2.default.createElement(
+					'p',
+					{ 'class': 'legal-text' },
+					'Texto legal afirmando que trata-se de uma simula\xE7\xE3o e dando detalhes sobre os recursos espec\xEDficos de cada plano, banco de dados, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor mauris et accumsan sodales. Cras consequat, diam eget egestas volutpat, diam lacus bibendum quam, in posuere elit velit vel turpis. Ut sit amet nibh molestie, ullamcorper nunc ut, luctus dolor. Nulla scelerisque metus a lacus ultricies commodo. Etiam lacinia enim at malesuada hendrerit. Aliquam gravida, justo nec dignissim auctor, metus tortor tempor orci, at vestibulum sapien sem eu massa. Phasellus ac risus ex. In fermentum consequat ex id venenatis. Proin a suscipit urna, ac dapibus ipsum. '
+				),
+				_react2.default.createElement(
+					'p',
+					{ 'class': 'umbler-text' },
+					_react2.default.createElement('span', { 'class': 'icon icon-umbler-logo icon-primary' }),
+					' Umbler, Inc. \xA9 2018'
+				)
+			);
+		}
+	}]);
 
-  return EmailDetails;
+	return EmailDetails;
 }(_react2.default.Component);
 
 exports.default = EmailDetails;
