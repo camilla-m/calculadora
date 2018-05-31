@@ -4,6 +4,7 @@ import Select from 'react-select';
 import emailConstants from '../constants/emailConstants';
 import MailForm from './MailForm.jsx';
 import MailModal from './MailModal.jsx';
+import RegisterModal from './RegisterModal.jsx';
 
 class EmailDetails extends React.Component {
   constructor(props) {
