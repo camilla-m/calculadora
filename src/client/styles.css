@@ -1,0 +1,121 @@
+#app {
+  line-height: 34px;
+  margin-top: 20px;
+}
+
+.legal-text {
+  font-size: 0.6rem !important;
+}
+
+.link-boxes {
+  font-size: 1rem !important;
+  margin-bottom: 50px;
+}
+
+.row-result {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+.umbler-text {
+  font-style: bold;
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+.form-inline {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #6f7380;
+}
+
+.row {
+  font-size: 1.4rem;
+}
+
+.boxes {
+  line-height: 54px;
+}
+
+.row--checkbox {
+  text-align: left;
+}
+
+.row--checkbox legend {
+  text-align: right;
+  padding: 0;
+}
+
+.select {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.input-number {
+  min-width: 40px;
+  text-align: center;
+  margin: 0 5px;
+  max-width: 80px;
+  font-size: 1.4rem;
+}
+
+.input-number--database {
+  max-width: 50px;
+  font-size: 1.4rem;
+}
+
+.input-text,
+.select {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+}
+
+/* Modal Component */
+.ReactModal__Overlay {
+  background: rgba(0,0,0,.3) !important;
+}
+
+.mail-modal-content {
+  width: 80%;
+  margin: 3vh auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.modal-header {
+  padding: 0;
+}
+
+/* Select component changes */
+.Select-control,
+.input-number {
+  border: 0;
+  border-bottom: 2px dashed;
+  border-radius: 0;
+  width: auto;
+}
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  position: relative;
+}
+
+.Select-control .Select-input,
+.Select-control .Select-input:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+}
+
+.Select-menu-outer {
+  min-width: 125px;
+}
+
+.Select-arrow-zone {
+  display: none;
+}
