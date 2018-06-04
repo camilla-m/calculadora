@@ -23014,6 +23014,40 @@ var SiteDetails = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'row', 'class': 'boxes' },
+          hostNumber.value === 1 ? _react2.default.createElement(
+            'span',
+            { className: 'input-text' },
+            'Programado em'
+          ) : _react2.default.createElement(
+            'span',
+            { className: 'input-text' },
+            'Programados em'
+          ),
+          _react2.default.createElement(_reactSelect2.default, {
+            name: 'programming-language',
+            value: programmingLanguage,
+            onChange: this.handleProgrammingLanguageChange,
+            options: _siteConstants2.default.programmingLanguages,
+            className: 'select',
+            searchable: false,
+            clearable: false }),
+          _react2.default.createElement(
+            'span',
+            { className: 'input-text' },
+            'utilizando plataforma '
+          ),
+          _react2.default.createElement(_reactSelect2.default, {
+            name: 'platform',
+            value: platform,
+            onChange: this.handlePlatformChange,
+            options: _siteConstants2.default.platforms,
+            className: 'select',
+            searchable: false,
+            clearable: false })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'row', 'class': 'boxes' },
           _react2.default.createElement(
             'span',
             { className: 'input-text' },

@@ -59,7 +59,31 @@ class SiteDetails extends React.Component {
     const {hostNumber} = this.props;
     const {programmingLanguage, platform, environment, databaseNumber, database, period, complement, visits} = this.state;
     return(
-      <Frag>
+        <Frag>
+        <div className='row' class='boxes'>
+          {hostNumber.value === 1 ? (
+            <span className='input-text'>Programado em</span>
+          ) : (
+            <span className='input-text'>Programados em</span>
+          )}
+          <Select
+            name='programming-language'
+            value={programmingLanguage}
+            onChange={this.handleProgrammingLanguageChange}
+            options={siteConstants.programmingLanguages}
+            className='select'
+            searchable={false}
+            clearable={false} />
+          <span className='input-text'>utilizando plataforma </span>
+          <Select
+            name='platform'
+            value={platform}
+            onChange={this.handlePlatformChange}
+            options={siteConstants.platforms}
+            className='select'
+            searchable={false}
+            clearable={false} />
+        </div>
         <div className='row' class='boxes'>
           <span className='input-text'>em ambiente </span>
           <Select
