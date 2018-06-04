@@ -3844,7 +3844,7 @@ var MailForm = function (_React$Component) {
         'p',
         null,
         'Seu E-mail: ',
-        _react2.default.createElement('input', { type: 'text', name: 'email', className: 'form-control mr-2', onChange: this.handleInputChage }),
+        _react2.default.createElement('input', { type: 'text', name: 'email', className: 'form-control mr-2', onChange: this.handleInputChage, style: 'width: 50%;' }),
         _react2.default.createElement(
           'button',
           { className: 'btn btn-primary', onClick: this.handleForm },

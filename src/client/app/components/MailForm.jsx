@@ -21,7 +21,7 @@ class MailForm extends React.Component {
 
   render() {
     return (
-      <p>Seu E-mail: <input type='text' name='email' className='form-control mr-2' onChange={this.handleInputChage} />
+      <p>Seu E-mail: <input type='text' name='email' className='form-control mr-2' onChange={this.handleInputChage} style="width: 50%;" />
         <button className='btn btn-primary' onClick={this.handleForm}>TESTAR GRÁTIS</button>
       </p>
     );

@@ -28,7 +28,7 @@
   margin-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #6f7380;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .row {
@@ -60,6 +60,7 @@
   margin: 0 5px;
   max-width: 80px;
   font-size: 1.4rem;
+  height: 40px;
 }
 
 .input-number--database {
