@@ -15,7 +15,7 @@ class MailForm extends React.Component {
   }
 
   handleForm () {
-    let finalUrl = 'https://app.umbler.com/?email=' + this.state.emailValue;
+    let finalUrl = 'https://app.umbler.com/account/register/?email=' + this.state.emailValue;
     window.open(finalUrl);
   }
 
