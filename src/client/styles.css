@@ -13,9 +13,9 @@
 }
 
 .row-result {
-  margin-top: 30px;
   font-size: 1.4rem;
   margin-top: 50px;
+  padding: 100px;
 }
 
 .umbler-text {
@@ -33,6 +33,7 @@
 
 .row {
   font-size: 1.4rem;
+  margin-bottom: 50px;
 }
 
 .boxes {

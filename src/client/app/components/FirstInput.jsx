@@ -13,7 +13,7 @@ class FirstInput extends React.Component {
         <div class="row">
             <p class='h5'>Na Umbler você tem facilidade, segurança e estabilidade. <br /> Agora poderá descobrir quanto irá economizar e qual o plano <br /> indicado para sua necessidade!</p>
         </div>
-        <p className='input-text'>Quero hospedar</p>
+        <span className='input-text'>Quero hospedar</span>
         <Select
           name='host-number'
           value={hostNumber}
@@ -32,7 +32,7 @@ class FirstInput extends React.Component {
           clearable={false} />
         {(hostSelectedOption.value === 'site' || hostSelectedOption.value === 'store') && (
           <Frag>
-            <p className='input-text'>para</p>
+            <span className='input-text'>para</span>
             <Select
               name='purpose-type'
               value={purposeSelectedOption}
