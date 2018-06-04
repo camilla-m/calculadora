@@ -17,7 +17,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
   if (database === 'sql') {
     result = databaseNumber * siteConstants.extraSitePrices.sql;
   } else {
-    if (databaseNumber > 25 || finalVisits >= 120000 || hostSelectedOption === 'store') {
+    if (databaseNumber > 25 || finalVisits >= 30000 || hostSelectedOption === 'store') {
       result = siteConstants.extraSitePrices.mysql2;
     } else {
       result = siteConstants.extraSitePrices.mysql1;
