@@ -23,7 +23,6 @@ class EmailDetails extends React.Component {
 	}
 
 	handleSpaceChange(emailSpace) {
-
 		this.setState({ emailSpace });
 	}
 

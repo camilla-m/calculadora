@@ -24646,7 +24646,6 @@ var EmailDetails = function (_React$Component) {
 	_createClass(EmailDetails, [{
 		key: 'handleSpaceChange',
 		value: function handleSpaceChange(emailSpace) {
-
 			this.setState({ emailSpace: emailSpace });
 		}
 	}, {
