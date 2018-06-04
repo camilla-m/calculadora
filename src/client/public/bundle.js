@@ -548,7 +548,7 @@ var siteConstants = {
   platforms: [{ value: 'wordpress', label: 'WordPress' }, { value: 'joomla', label: 'Joomla' }, { value: 'drupal', label: 'Drupal' }, { value: 'opencart', label: 'OpenCart' }, { value: 'prestashop', label: 'PrestaShop' }, { value: 'laravel', label: 'Laravel' }, { value: 'none', label: 'Não utiliza / não sei a plataforma' }],
   environments: [{ value: 'shared', label: 'compartilhado' }, { value: 'dedicated', label: 'dedicado' }],
   databaseNumbers: [{ value: 1, label: '1 banco' }, { value: 2, label: '2 bancos' }, { value: 3, label: '3 bancos' }, { value: 4, label: '4 bancos' }, { value: 5, label: '5 bancos' }, { value: 10, label: 'até 10' }, { value: 25, label: 'até 25' }, { value: 50, label: 'mais de 50' }],
-  databases: [{ value: 'mysql1', label: 'MySQL com 25 Conexões Simultâneas' }, { value: 'mysql2', label: 'MySQL com 50 Conexões Simultâneas' }, { value: 'sql', label: 'SQL Server' }],
+  databases: [{ value: 'mysql1', label: 'MySQL Gratuito' }, { value: 'mysql2', label: 'MySQL' }, { value: 'sql', label: 'SQL Server' }],
   periods: [{ value: 1, label: 'Mês' }, { value: 30, label: 'Dia' }],
   complements: [{ value: 'each', label: 'cada um deles' }, { value: 'all', label: 'todos eles' }],
   sitePlans: [{ title: 'Site Pro', price: 6, benchPrice: 34.90 }, { title: 'Cloud Sites PP', price: 60, benchPrice: 273.60 }, { title: 'Cloud Sites P', price: 120, benchPrice: 454.40 }, { title: 'Cloud Sites M', price: 240, benchPrice: 640.90 }, { title: 'Cloud Sites G', price: 480, benchPrice: 640.90 }, { title: 'Cloud Sites GG', price: 960, benchPrice: 1259.30 }],
@@ -3844,7 +3844,7 @@ var MailForm = function (_React$Component) {
         'p',
         null,
         'Seu E-mail: ',
-        _react2.default.createElement('input', { type: 'text', name: 'email', className: 'form-control mr-2', onChange: this.handleInputChage, style: 'width: 50%;' }),
+        _react2.default.createElement('input', { type: 'text', name: 'email', className: 'form-control mr-2 formsize', onChange: this.handleInputChage }),
         _react2.default.createElement(
           'button',
           { className: 'btn btn-primary', onClick: this.handleForm },
@@ -23173,9 +23173,6 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
     } else {
       result = _siteConstants2.default.extraSitePrices.mysql1;
     }
-  }
-  if (finalVisits === 1000) {
-    result = _siteConstants2.default.extraSitePrices.mysql2;
   }
   return result;
 }

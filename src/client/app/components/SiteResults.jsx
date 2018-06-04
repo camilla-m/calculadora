@@ -23,9 +23,6 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
       result = siteConstants.extraSitePrices.mysql1;
     }
   }
-  if (finalVisits === 1000) {
-    result = siteConstants.extraSitePrices.mysql2;
-  }
   return result;
 }
 

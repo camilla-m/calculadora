@@ -7,6 +7,10 @@
   font-size: 0.6rem !important;
 }
 
+.formsize {
+  width: 50% !important;
+}
+
 .link-boxes {
   font-size: 1rem !important;
   margin-bottom: 50px;
@@ -15,7 +19,7 @@
 .row-result {
   font-size: 1.4rem;
   margin-top: 50px;
-  padding: 100px;
+  padding: 50px;
 }
 
 .umbler-text {

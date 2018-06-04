@@ -33,7 +33,7 @@ const siteConstants = {
     {value: 5, label: '5 bancos'}, {value: 10, label: 'até 10'}, {value: 25, label: 'até 25'}, {value: 50, label: 'mais de 50'}
   ],
   databases: [
-    {value: 'mysql1', label: 'MySQL com 25 Conexões Simultâneas'},{value: 'mysql2', label: 'MySQL com 50 Conexões Simultâneas'},{value: 'sql', label: 'SQL Server'}
+    {value: 'mysql1', label: 'MySQL Gratuito'},{value: 'mysql2', label: 'MySQL'},{value: 'sql', label: 'SQL Server'}
   ],
   periods: [
     {value: 1, label: 'Mês'},{value: 30, label: 'Dia'}
