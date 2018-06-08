@@ -11,6 +11,10 @@
   width: 50% !important;
 }
 
+.spacerow {
+  margin-bottom: 50px;
+}
+
 .link-boxes {
   font-size: 1rem !important;
   margin-bottom: 50px;
@@ -37,7 +41,6 @@
 
 .row {
   font-size: 1.4rem;
-  margin-bottom: 50px;
 }
 
 .boxes {

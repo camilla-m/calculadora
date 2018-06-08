@@ -10,7 +10,7 @@ class FirstInput extends React.Component {
     return (
       <div className='row' class='boxes'>
         <h1 class='display-sm-4 mb-3'><span class="text-wordpress">QuantoCusta</span> Hospedar?me</h1>
-        <div class="row">
+        <div class="row spacerow">
             <p class='h5'>Na Umbler você tem facilidade, segurança e estabilidade. <br /> Agora poderá descobrir quanto irá economizar e qual o plano <br /> indicado para sua necessidade!</p>
         </div>
         <span className='input-text'>Quero hospedar</span>
