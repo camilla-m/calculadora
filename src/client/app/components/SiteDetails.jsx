@@ -55,6 +55,41 @@ class SiteDetails extends React.Component {
     this.setState({visits: value});
   }
 
+updateByHostNumber(hostNumber) {
+  let sitePlan = priceConstants.sitePlans[0].title;
+  let environment = siteConstants.environments[0];
+  if (hostNumber.value > 150) {
+    environment = siteConstants.environments[1];
+  }
+  this.setState({environment, sitePlan});
+}
+
+componentDidMount() {
+  this.updateByHostNumber(this.props.hostNumber);
+}
+
+componentWillReceiveProps(nextProps) {
+  this.updateByHostNumber(nextProps.hostNumber);
+}
+
+updateByHostNumber(hostNumber) {
+  let sitePlan = siteConstants.sitePlans[0].title;
+  let environment = siteConstants.environments[0];
+  if (hostNumber.value > 150) {
+    environment = siteConstants.environments[1];
+  }
+  this.setState({environment, sitePlan});
+}
+
+componentDidMount() {
+  this.updateByHostNumber(this.props.hostNumber);
+}
+
+componentWillReceiveProps(nextProps) {
+  this.updateByHostNumber(nextProps.hostNumber);
+}
+
+
   render() {
     const {hostNumber} = this.props;
     const {programmingLanguage, platform, environment, databaseNumber, database, period, complement, visits} = this.state;

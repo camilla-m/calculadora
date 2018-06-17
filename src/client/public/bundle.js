@@ -22995,6 +22995,46 @@ var SiteDetails = function (_React$Component) {
       this.setState({ visits: value });
     }
   }, {
+    key: 'updateByHostNumber',
+    value: function updateByHostNumber(hostNumber) {
+      var sitePlan = priceConstants.sitePlans[0].title;
+      var environment = _siteConstants2.default.environments[0];
+      if (hostNumber.value > 150) {
+        environment = _siteConstants2.default.environments[1];
+      }
+      this.setState({ environment: environment, sitePlan: sitePlan });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.updateByHostNumber(this.props.hostNumber);
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.updateByHostNumber(nextProps.hostNumber);
+    }
+  }, {
+    key: 'updateByHostNumber',
+    value: function updateByHostNumber(hostNumber) {
+      var sitePlan = _siteConstants2.default.sitePlans[0].title;
+      var environment = _siteConstants2.default.environments[0];
+      if (hostNumber.value > 150) {
+        environment = _siteConstants2.default.environments[1];
+      }
+      this.setState({ environment: environment, sitePlan: sitePlan });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.updateByHostNumber(this.props.hostNumber);
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.updateByHostNumber(nextProps.hostNumber);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var hostNumber = this.props.hostNumber;
@@ -24671,6 +24711,7 @@ var EmailDetails = function (_React$Component) {
 		_this.handleMapiCheck = _this.handleMapiCheck.bind(_this);
 		_this.handleActivesyncCheck = _this.handleActivesyncCheck.bind(_this);
 		_this.handleShareCheck = _this.handleShareCheck.bind(_this);
+		_this.checkOptions = _this.checkOptions.bind(_this);
 		return _this;
 	}
 
@@ -24682,26 +24723,40 @@ var EmailDetails = function (_React$Component) {
 	}, {
 		key: 'handleMapiCheck',
 		value: function handleMapiCheck() {
-			this.setState({ mapi: !this.state.mapi });
+			this.setState({ mapi: !this.state.mapi }, this.checkOptions);
 		}
 	}, {
 		key: 'handleActivesyncCheck',
 		value: function handleActivesyncCheck() {
-			this.setState({ activesync: !this.state.activesync });
+			this.setState({ activesync: !this.state.activesync }, this.checkOptions);
 		}
 	}, {
 		key: 'handleShareCheck',
 		value: function handleShareCheck() {
-			this.setState({ share: !this.state.share });
+			this.setState({ share: !this.state.share }, this.checkOptions);
+		}
+	}, {
+		key: 'checkOptions',
+		value: function checkOptions() {
+			var _state = this.state,
+			    mapi = _state.mapi,
+			    activesync = _state.activesync,
+			    share = _state.share;
+
+			if (mapi || activesync || share) {
+				this.setState({ emailSpace: _emailConstants2.default.space[6] });
+			} else {
+				this.setState({ emailSpace: _emailConstants2.default.space[0] });
+			}
 		}
 	}, {
 		key: 'render',
 		value: function render() {
-			var _state = this.state,
-			    emailSpace = _state.emailSpace,
-			    mapi = _state.mapi,
-			    activesync = _state.activesync,
-			    share = _state.share;
+			var _state2 = this.state,
+			    emailSpace = _state2.emailSpace,
+			    mapi = _state2.mapi,
+			    activesync = _state2.activesync,
+			    share = _state2.share;
 			var hostNumber = this.props.hostNumber;
 			var emailPlans = _emailConstants2.default.emailPlans,
 			    emailPrices = _emailConstants2.default.emailPrices,

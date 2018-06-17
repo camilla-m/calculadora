@@ -20,6 +20,7 @@ class EmailDetails extends React.Component {
 		this.handleMapiCheck = this.handleMapiCheck.bind(this);
 		this.handleActivesyncCheck = this.handleActivesyncCheck.bind(this);
 		this.handleShareCheck = this.handleShareCheck.bind(this);
+		this.checkOptions = this.checkOptions.bind(this);
 	}
 
 	handleSpaceChange(emailSpace) {
@@ -27,15 +28,24 @@ class EmailDetails extends React.Component {
 	}
 
 	handleMapiCheck() {
-		this.setState({ mapi: !this.state.mapi });
+		this.setState({ mapi: !this.state.mapi }, this.checkOptions);
 	}
 
 	handleActivesyncCheck() {
-		this.setState({ activesync: !this.state.activesync });
+		this.setState({ activesync: !this.state.activesync }, this.checkOptions);
 	}
 
 	handleShareCheck() {
-		this.setState({ share: !this.state.share });
+		this.setState({ share: !this.state.share }, this.checkOptions);
+	}
+
+	checkOptions() {
+		const { mapi, activesync, share } = this.state;
+		if (mapi || activesync || share) {
+			this.setState({ emailSpace: emailConstants.space[6] });
+		} else {
+			this.setState({ emailSpace: emailConstants.space[0] });
+		}
 	}
 
 	render() {
