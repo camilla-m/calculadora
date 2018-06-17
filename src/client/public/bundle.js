@@ -23241,6 +23241,8 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
   var result = void 0;
   if (database === 'sql') {
     result = databaseNumber * _siteConstants2.default.extraSitePrices.sql;
+  } else if (database === 'mysql2') {
+    result = databaseNumber * _siteConstants2.default.extraSitePrices.mysql2;
   } else {
     if (databaseNumber > 25 || finalVisits >= 30000 || hostSelectedOption === 'store') {
       result = _siteConstants2.default.extraSitePrices.mysql2;
