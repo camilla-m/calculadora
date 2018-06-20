@@ -50,9 +50,15 @@ class SiteDetails extends React.Component {
   handleComplementChange (complement) {
     this.setState({complement});
   }
-  handleVisitsChange (e) {
-    let value = parseInt(e.target.value);
-    this.setState({visits: value});
+  handleVisitsChange (e) { 
+    let value = parseInt(e.target .value);
+    let visits = value;
+    let database = siteConstants.databases[0];
+    if (value >= 120000 )
+    { 
+      database = siteConstants.databases[1]; 
+    } 
+    this.setState({visits, database}); 
   }
 
 updateByHostNumber(hostNumber) {
