@@ -12,7 +12,7 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
+function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption, hostNumber) {
   let result;
   if (database === 'sql') {
     result = databaseNumber * siteConstants.extraSitePrices.sql;
@@ -25,6 +25,9 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
     } else {
       result = siteConstants.extraSitePrices.mysql1;
     }
+    if (finalVisits >= 1000 && hostNumber == 1) {
+      result = siteConstants.extraSitePrices.mysql2;
+    }
   }
   return result;
 }
@@ -34,7 +37,7 @@ class SiteResults extends React.Component {
     const { hostSelectedOption, hostNumber, platform, environment, databaseNumber, database, period, complement, visits } = this.props;
     let umblerPlan = 0;
     let finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-    let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value);
+    let databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value, hostNumber.value);
     let branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
     if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {

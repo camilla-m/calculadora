@@ -22935,7 +22935,7 @@ var SiteDetails = function (_React$Component) {
       platform: _siteConstants2.default.platforms[0],
       environment: _siteConstants2.default.environments[0],
       databaseNumber: 1,
-      database: _siteConstants2.default.databases[0],
+      database: _siteConstants2.default.databases[1],
       period: _siteConstants2.default.periods[0],
       complement: _siteConstants2.default.complements[0],
       visits: 1000
@@ -22993,6 +22993,7 @@ var SiteDetails = function (_React$Component) {
     value: function handleVisitsChange(e) {
       var value = parseInt(e.target.value);
       var visits = value;
+      var hostNumber = _siteConstants2.default.hostNumbers[0].value;
       var database = _siteConstants2.default.databases[0];
       var environment = _siteConstants2.default.environments[0];
       if (value >= 120000) {
@@ -23000,6 +23001,9 @@ var SiteDetails = function (_React$Component) {
       }
       if (value >= 180000) {
         environment = _siteConstants2.default.environments[1];
+      }
+      if (value == 1000 && hostNumber == 1) {
+        database = _siteConstants2.default.databases[1];
       }
       this.setState({ visits: visits, database: database, environment: environment });
     }
@@ -23246,7 +23250,7 @@ function calcVisits(period, visits, complement, hostNumber) {
   return result;
 }
 
-function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption) {
+function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption, hostNumber) {
   var result = void 0;
   if (database === 'sql') {
     result = databaseNumber * _siteConstants2.default.extraSitePrices.sql;
@@ -23257,6 +23261,9 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption)
       result = _siteConstants2.default.extraSitePrices.mysql2;
     } else {
       result = _siteConstants2.default.extraSitePrices.mysql1;
+    }
+    if (finalVisits >= 1000 && hostNumber == 1) {
+      result = _siteConstants2.default.extraSitePrices.mysql2;
     }
   }
   return result;
@@ -23287,7 +23294,7 @@ var SiteResults = function (_React$Component) {
 
       var umblerPlan = 0;
       var finalVisits = calcVisits(period.value, visits, complement.value, hostNumber.value);
-      var databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value);
+      var databasePrice = calcDatabase(database.value, databaseNumber, finalVisits, hostSelectedOption.value, hostNumber.value);
       var branchDatabasePrice = databaseNumber > 1 ? databaseNumber * 10 : 0;
 
       if (hostNumber.value >= 10 || environment.value === 'dedicated' || finalVisits >= 180000) {

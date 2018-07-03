@@ -12,7 +12,7 @@ class SiteDetails extends React.Component {
       platform: siteConstants.platforms[0],
       environment: siteConstants.environments[0],
       databaseNumber: 1,
-      database: siteConstants.databases[0],
+      database: siteConstants.databases[1],
       period: siteConstants.periods[0],
       complement: siteConstants.complements[0],
       visits: 1000
@@ -51,7 +51,7 @@ class SiteDetails extends React.Component {
     this.setState({complement});
   }
   handleVisitsChange (e) { 
-    let value = parseInt(e.target .value);
+    let value = parseInt(e.target.value);
     let visits = value;
     let database = siteConstants.databases[0];
     let environment = siteConstants.environments[0];
@@ -62,7 +62,10 @@ class SiteDetails extends React.Component {
     if (value >= 180000)
     { 
       environment = siteConstants.environments[1];
-    } 
+    }
+    if (value >= 1000) {
+      database = siteConstants.databases[1]; 
+    }
     this.setState({visits, database, environment}); 
   }
 
