@@ -72,7 +72,7 @@ class SiteDetails extends React.Component {
 updateByHostNumber(hostNumber) {
   let sitePlan = priceConstants.sitePlans[0].title;
   let environment = siteConstants.environments[0];
-  if (hostNumber.value > 150) {
+  if (hostNumber.value >= 10) {
     environment = siteConstants.environments[1];
   }
   this.setState({environment, sitePlan});
@@ -89,7 +89,7 @@ componentWillReceiveProps(nextProps) {
 updateByHostNumber(hostNumber) {
   let sitePlan = siteConstants.sitePlans[0].title;
   let environment = siteConstants.environments[0];
-  if (hostNumber.value > 150) {
+  if (hostNumber.value >= 10) {
     environment = siteConstants.environments[1];
   }
   this.setState({environment, sitePlan});

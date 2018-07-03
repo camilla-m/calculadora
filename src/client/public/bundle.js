@@ -22993,7 +22993,6 @@ var SiteDetails = function (_React$Component) {
     value: function handleVisitsChange(e) {
       var value = parseInt(e.target.value);
       var visits = value;
-      var hostNumber = _siteConstants2.default.hostNumbers[0].value;
       var database = _siteConstants2.default.databases[0];
       var environment = _siteConstants2.default.environments[0];
       if (value >= 120000) {
@@ -23002,7 +23001,7 @@ var SiteDetails = function (_React$Component) {
       if (value >= 180000) {
         environment = _siteConstants2.default.environments[1];
       }
-      if (value == 1000 && hostNumber == 1) {
+      if (value >= 1000) {
         database = _siteConstants2.default.databases[1];
       }
       this.setState({ visits: visits, database: database, environment: environment });
@@ -23012,7 +23011,7 @@ var SiteDetails = function (_React$Component) {
     value: function updateByHostNumber(hostNumber) {
       var sitePlan = priceConstants.sitePlans[0].title;
       var environment = _siteConstants2.default.environments[0];
-      if (hostNumber.value > 150) {
+      if (hostNumber.value >= 10) {
         environment = _siteConstants2.default.environments[1];
       }
       this.setState({ environment: environment, sitePlan: sitePlan });
@@ -23032,7 +23031,7 @@ var SiteDetails = function (_React$Component) {
     value: function updateByHostNumber(hostNumber) {
       var sitePlan = _siteConstants2.default.sitePlans[0].title;
       var environment = _siteConstants2.default.environments[0];
-      if (hostNumber.value > 150) {
+      if (hostNumber.value >= 10) {
         environment = _siteConstants2.default.environments[1];
       }
       this.setState({ environment: environment, sitePlan: sitePlan });
