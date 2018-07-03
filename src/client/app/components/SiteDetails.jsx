@@ -54,11 +54,16 @@ class SiteDetails extends React.Component {
     let value = parseInt(e.target .value);
     let visits = value;
     let database = siteConstants.databases[0];
-    if (value >= 120000 )
+    let environment = siteConstants.environments[0];
+    if (value >= 120000)
     { 
       database = siteConstants.databases[1]; 
     } 
-    this.setState({visits, database}); 
+    if (value >= 180000)
+    { 
+      environment = siteConstants.environments[1];
+    } 
+    this.setState({visits, database, environment}); 
   }
 
 updateByHostNumber(hostNumber) {

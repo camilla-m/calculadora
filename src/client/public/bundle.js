@@ -22994,10 +22994,14 @@ var SiteDetails = function (_React$Component) {
       var value = parseInt(e.target.value);
       var visits = value;
       var database = _siteConstants2.default.databases[0];
+      var environment = _siteConstants2.default.environments[0];
       if (value >= 120000) {
         database = _siteConstants2.default.databases[1];
       }
-      this.setState({ visits: visits, database: database });
+      if (value >= 180000) {
+        environment = _siteConstants2.default.environments[1];
+      }
+      this.setState({ visits: visits, database: database, environment: environment });
     }
   }, {
     key: 'updateByHostNumber',
