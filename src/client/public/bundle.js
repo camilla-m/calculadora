@@ -22935,7 +22935,7 @@ var SiteDetails = function (_React$Component) {
       platform: _siteConstants2.default.platforms[0],
       environment: _siteConstants2.default.environments[0],
       databaseNumber: 1,
-      database: _siteConstants2.default.databases[1],
+      database: _siteConstants2.default.databases[0],
       period: _siteConstants2.default.periods[0],
       complement: _siteConstants2.default.complements[0],
       visits: 1000
@@ -23000,9 +23000,6 @@ var SiteDetails = function (_React$Component) {
       }
       if (value >= 180000) {
         environment = _siteConstants2.default.environments[1];
-      }
-      if (value >= 1000) {
-        database = _siteConstants2.default.databases[1];
       }
       this.setState({ visits: visits, database: database, environment: environment });
     }
@@ -23256,13 +23253,10 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption,
   } else if (database === 'mysql2') {
     result = databaseNumber * _siteConstants2.default.extraSitePrices.mysql2;
   } else {
-    if (databaseNumber > 25 || finalVisits >= 30000 || hostSelectedOption === 'store') {
+    if (databaseNumber > 25 || finalVisits >= 120000) {
       result = _siteConstants2.default.extraSitePrices.mysql2;
     } else {
       result = _siteConstants2.default.extraSitePrices.mysql1;
-    }
-    if (finalVisits >= 1000 && hostNumber == 1) {
-      result = _siteConstants2.default.extraSitePrices.mysql2;
     }
   }
   return result;
