@@ -20,7 +20,7 @@ function calcDatabase(database, databaseNumber, finalVisits, hostSelectedOption,
   else if (database === 'mysql2') {
     result = databaseNumber * siteConstants.extraSitePrices.mysql2;
   } else {
-    if (databaseNumber > 25 || finalVisits >= 120000) {
+    if (databaseNumber > 25 || finalVisits >= 120000 && finalVisits < 180000) {
       result = siteConstants.extraSitePrices.mysql2;
     } else {
       result = siteConstants.extraSitePrices.mysql1;

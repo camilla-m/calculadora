@@ -56,7 +56,7 @@ class SiteDetails extends React.Component {
     let period = siteConstants.periods[0];
     let database = siteConstants.databases[0];
     let environment = siteConstants.environments[0];
-    if (visits >= 4000)
+    if (visits >= 4000 && visits < 6000)
     { 
       database = siteConstants.databases[1]; 
     } 
