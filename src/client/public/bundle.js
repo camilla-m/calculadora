@@ -22993,12 +22993,13 @@ var SiteDetails = function (_React$Component) {
     value: function handleVisitsChange(e) {
       var value = parseInt(e.target.value);
       var visits = value;
+      var period = _siteConstants2.default.periods[0];
       var database = _siteConstants2.default.databases[0];
       var environment = _siteConstants2.default.environments[0];
-      if (value >= 120000) {
+      if (visits >= 4000) {
         database = _siteConstants2.default.databases[1];
       }
-      if (value >= 180000) {
+      if (visits >= 6000) {
         environment = _siteConstants2.default.environments[1];
       }
       this.setState({ visits: visits, database: database, environment: environment });

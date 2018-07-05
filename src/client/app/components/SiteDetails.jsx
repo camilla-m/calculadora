@@ -53,13 +53,14 @@ class SiteDetails extends React.Component {
   handleVisitsChange (e) { 
     let value = parseInt(e.target.value);
     let visits = value;
+    let period = siteConstants.periods[0];
     let database = siteConstants.databases[0];
     let environment = siteConstants.environments[0];
-    if (value >= 120000)
+    if (visits >= 4000)
     { 
       database = siteConstants.databases[1]; 
     } 
-    if (value >= 180000)
+    if (visits >= 6000)
     { 
       environment = siteConstants.environments[1];
     }
